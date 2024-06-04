@@ -1,4 +1,6 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
+
 interface Props {
 	title: string;
 }
@@ -15,11 +17,14 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<ViewTransitions />
 	</head>
 	<body class="min-h-screen">
-		<slot>
-			Default if nothing
-		</slot>
+		<div transition:animate="slide">
+			<slot>
+				Default if nothing
+			</slot>
+		</div>
 	</body>
 </html>
 <style is:global>
@@ -40,7 +45,7 @@ const { title } = Astro.props;
 	}
 	html {
 		font-family: system-ui, sans-serif;
-		background: #13151a;
+		background: #818693;
 		background-size: 224px;
 	}
 	code {

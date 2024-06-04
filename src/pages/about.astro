@@ -1,7 +1,15 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import {ViewTransitions} from 'astro:transitions'
 ---
 
+
 <MainLayout title="About">
+	<ViewTransitions />
 	<h1>About</h1>
+	<a href="/"><button style="height: 50px; width: 200px"></button></a>
+	<br>
+	<br>
+	<img style="padding-left: 20%;" src="MH.jpg" alt="img" transition:name="mhImage">
+
 </MainLayout>
