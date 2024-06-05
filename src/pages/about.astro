@@ -5,35 +5,40 @@ import {ViewTransitions} from 'astro:transitions'
 
 
 <MainLayout title="About">
-	<ViewTransitions />
-	<h1>About</h1>
-	<a href="/"><button style="height: 50px; width: 200px"></button></a>
-	<br>
-	<br>
-	<img style="padding-left: 20%;" src="MH.jpg" alt="img" transition:name="mhImage">
+	<div id="body">
+		<h1>About</h1>
+		<a href="/"><button style="height: 50px; width: 200px"></button></a>
+		<br>
+		<br>
+		<img style="padding-left: 20%;" src="MH.jpg" alt="img">
 
-	<h1>Hi Mom!</h1>
-
-	<section class="hidden">
-		<h1>Hi Mom</h1>
-		<h2>This is my website</h2>
-	</section>
-
-	<section class="hidden2">
-		<h2>Buy my product</h2>
-		<p>oiauedhfiuwshefiuaheswrfgaserg
-			a
-			srg
-			dasrg
-			dzr
-			gdrg
-		</p>
-	</section>
-
-	<section class="hidden">
-		<h3>It's a very good website
-		</h3>
-	</section>
+	
+		<section class="hidden">
+			<h1>Hi Mom</h1>
+			<h2>This is my website</h2>
+		</section>
+	
+		<section class="hidden2">
+			<h2>Buy my product</h2>
+			<p>oiauedhfiuwshefiuaheswrfgaserg
+				a
+				srg
+				dasrg
+				dzr
+				gdrg
+			</p>
+		</section>
+	
+		<section class="hidden">
+			<h3>It's a very good website
+			</h3>
+		</section>
+	
+		<section class="final">
+			<h3>It's a very good website
+			</h3>
+		</section>
+	</div>
 
 </MainLayout>
 
@@ -54,6 +59,11 @@ import {ViewTransitions} from 'astro:transitions'
 		transition: all 2s;
 	}
 
+	.final
+	{
+		min-height: 20vh;
+	}
+
 	.show
 	{
 		opacity: 1;
@@ -72,25 +82,38 @@ import {ViewTransitions} from 'astro:transitions'
 		display: grid;
 		place-items: center;
 		align-content: center;
-		min-height: 100vh;
+		min-height: 70vh;
 	}
 
+	.fadeOut{
+		opacity: 0;
+  		transition: visibility 0s 2s, opacity 2s linear;
+	}
 </style>
 
 <script defer>
-	const observer = new IntersectionObserver((entries) => {
+	var observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
-        if(entry.isIntersecting) {
+		if (entry.isIntersecting && entry.target.classList.contains("final")) {
+			document.querySelector('#body').classList.add("fadeOut");
+			setTimeout(function(){window.location.href = "\\";  }, 3000);
+		}
+        else if(entry.isIntersecting) {
+			console.log("normal")
             entry.target.classList.add('show');
-        } else {
+			entry.target.style.background = "#ffffff no-repeat right top";
+			entry.target.style.color = "black";
+		} else {
             entry.target.classList.remove('show');
+			entry.target.style.background = "#fffffff no-repeat right top";
         }
     });
 });
 
-const hiddenElements = document.querySelectorAll('.hidden');
+var hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
-const hiddenElements2 = document.querySelectorAll('.hidden2');
+var hiddenElements2 = document.querySelectorAll('.hidden2');
 hiddenElements2.forEach((el) => observer.observe(el));
+var hiddenElements3 = document.querySelectorAll('.final');
+hiddenElements3.forEach((el) => observer.observe(el));
 </script>
