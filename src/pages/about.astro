@@ -1,11 +1,12 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import "../Styles/transitions.css";
 import {ViewTransitions} from 'astro:transitions'
 ---
 
 
 <MainLayout title="About">
-	<div id="body">
+	<div class="content">
 		<h1>About</h1>
 		<a href="/"><button style="height: 50px; width: 200px"></button></a>
 		<br>
@@ -42,61 +43,13 @@ import {ViewTransitions} from 'astro:transitions'
 
 </MainLayout>
 
-<style>
-	.hidden
-	{
-		opacity: 0;
-		filter: blur(5px);
-		transform: translateX(100%);
-		transition: all 2s;
-	}
-
-	.hidden2
-	{
-		opacity: 0;
-		filter: blur(5px);
-		transform: translateX(-100%);
-		transition: all 2s;
-	}
-
-	.final
-	{
-		min-height: 20vh;
-	}
-
-	.show
-	{
-		opacity: 1;
-		filter: blur(0);
-		transform: translateX(0);
-	}
-
-	body{
-		background-color: #131316;
-		color: #ffffff;
-		padding: 0;
-		font-size: large;
-		margin: 0;}
-
-	section{
-		display: grid;
-		place-items: center;
-		align-content: center;
-		min-height: 70vh;
-	}
-
-	.fadeOut{
-		opacity: 0;
-  		transition: visibility 0s 2s, opacity 2s linear;
-	}
-</style>
-
 <script defer>
+	setTimeout(function(){document.querySelector('.content').classList.add("showBody");}, 500);
 	var observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
 		if (entry.isIntersecting && entry.target.classList.contains("final")) {
-			document.querySelector('#body').classList.add("fadeOut");
-			setTimeout(function(){window.location.href = "\\";  }, 3000);
+			document.querySelector('.content').classList.add("fadeOut");
+			setTimeout(function(){window.location.href = "\\";  }, 1000);
 		}
         else if(entry.isIntersecting) {
 			console.log("normal")
