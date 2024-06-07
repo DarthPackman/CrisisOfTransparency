@@ -17,7 +17,8 @@
 
 	.final
 	{
-		min-height: 20vh;
+		margin-top: 10%;
+		min-height: 100vh;
 	}
 
 	.show
@@ -25,11 +26,23 @@
 		opacity: 1;
 		filter: blur(0);
 		transform: translateX(0);
+        background-color:#00000900;
 	}
 
+    #title
+    {   
+        padding-left: 50%;
+        margin-top: 0px;
+    }
+
+    html
+    {
+        scroll-snap-type: y mandatory;
+    }
+
 	body{
-		background-color: #131316;
 		color: #ffffff;
+        padding-top: 5%;
 		padding: 0;
 		font-size: large;
 		margin: 0;
@@ -37,23 +50,29 @@
 
 	section{
 		display: grid;
-		place-items: center;
-		align-content: center;
-		min-height: 70vh;
+		grid-template-rows: 100px 300px;
+		min-height: 100.5vh;
+        scroll-snap-align: start;
+        column-gap: 100px;
+		grid-template-columns: auto auto auto;
+		grid-template-rows: 30vh 300px;
 	}
 
 	.content
 	{
 		opacity: 0;
 		filter: blur(5px);
-		transform: translateY(100%);
-	}
+		/* transform: translateY(100%); */
+        background: conic-gradient(from 90deg at 50% 125%, #20b2aa, #135da5, #0d0895, #4b0082, #4b0082, #0d0895, #135da5, #20b2aa);
+        
+    }
 
+	
 	.showBody
 	{
 		opacity: 1;
 		filter: blur(0);
-		transform: translateY(0%);
+		/* transform: translateY(0%); */
 		transition: all 1s;
 	}
 
@@ -61,3 +80,54 @@
 		opacity: 0;
   		transition: visibility 0s 1s, opacity 1s linear;
 	}
+
+    .box
+    {
+		margin-left: 10%;
+        width: 20vh;
+		height: 20vh;
+		margin: auto;
+		border-radius: 10%;
+        background: conic-gradient(from -90deg at 50% -25%, blue, blueviolet);
+		box-sizing: border-box;
+		box-shadow: 2px 3px 5px rgb(43, 31, 92);
+    }
+
+	.box:nth-child(2){
+		background: conic-gradient(from 90deg at 50% 125%, #1f005c, #003298, #005ac6, #007fdc, #00a2d3, #00c4ae,
+		#00e474, #00ff00, #1f005c, #003298, #005ac6, #007fdc, #00a2d3, #00c4ae, #00e474, #00ff00);
+	}
+
+	.box1{
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.box2{
+		grid-column: 3;
+		grid-row: 1;
+	}
+
+	.box3{
+		grid-column: 1;
+		grid-row: 2;
+	}
+
+	.box4{
+		grid-column: 3;
+		grid-row: 2;
+	}
+
+	.box5{
+		grid-column: 1;
+		grid-row: 3;
+	}
+
+	p
+	{
+		text-align: center;
+	}
+
+	
+
+	
