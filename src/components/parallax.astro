@@ -1,47 +1,38 @@
 ---
 
 import { Picture } from 'astro:assets';
+import HOCBuild from '../assets/HOC - Building.png';
 
 ---
 
-<div  class="scroll"  data-speed="3.9">
-	<Picture  src={import('../assets/HOC - Building.png')}  widths={[100]} class="flyGuy"  alt="flyguy"  />
+<style>
+  .flyGuy {
+    width: 100%;
+  }
+</style>
+
+<div class="scroll" data-speed="3.9">
+  <Picture src={HOCBuild} widths={[100]} class="HOCBuild" alt="HOCBuild" />
 </div>
 
-<script  type="module">
+<script type="module">
+  function enableParallax() {
+    const isMac =
+      navigator.userAgentData?.platform.toLowerCase().includes('mac') ||
+      navigator.platform?.toLowerCase().includes('mac');
+    const isChrome = navigator.userAgent.toLowerCase().includes('chrome');
 
-function  enableParallax() {
+    // Laggy behavior on chrome and mac with parallax scrolling
+    if (isMac && isChrome) return;
 
-	const  isMac =
+    const targets = document.querySelectorAll('.scroll');
+    window.addEventListener('scroll', () => {
+      const offset = window.scrollY / 10;
+      targets.forEach((target) => {
+        target.style.transform = `translateY(${offset * target.dataset.speed}px)`;
+      });
+    });
+  }
 
-	navigator.userAgentData?.platform.toLowerCase().includes('mac') ||
-
-	navigator.platform?.toLowerCase().includes('mac');
-
-	const  isChrome = navigator.userAgent.toLowerCase().includes('chrome');
-
-  
-
-// Laggy behavior on chrome and mac with parallax scrolling
-
-	if (isMac && isChrome) return;
-
-	  
-
-	const  targets = document.querySelectorAll('.scroll');
-
-	window.addEventListener('scroll', () => {
-	
-		const  offset = window.scrollY / 10;
-
-		targets.forEach((target) => {
-
-		target.style.transform = `translateY(${offset * target.dataset.speed}px)`;
-
-			});
-		});
-	}
-
-enableParallax();
-
+  enableParallax();
 </script>
