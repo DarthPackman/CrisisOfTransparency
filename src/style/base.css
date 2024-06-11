@@ -1,0 +1,19 @@
+.scroll {
+
+    position: fixed;
+    
+    left: 0;
+    
+    z-index: 1;
+    
+    }
+    
+    .flyGuy {
+    
+    transform: rotate(81deg);
+    
+    top: 0.5rem;
+    
+    z-index: 1;
+    
+    }
