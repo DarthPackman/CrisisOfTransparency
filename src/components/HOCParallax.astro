@@ -1,0 +1,31 @@
+---
+import Building from "../assets/HOC/HOC - Building.png";
+import TopClouds from "../assets/HOC/HOC - Cloud Top.png";
+import Clouds from "../assets/HOC/HOC - Clouds.png";
+import Door from "../assets/HOC/HOC - Door.png";
+import FirePit from "../assets/HOC/HOC - Firepit.png";
+import Grass from "../assets/HOC/HOC - Grass.png";
+import Gravel from "../assets/HOC/HOC - Gravel.png";
+import Hedge from "../assets/HOC/HOC - Hedge.png";
+import Path from "../assets/HOC/HOC - Path.png";
+import Sky from "../assets/HOC/HOC - Sky.png";
+import Steps from "../assets/HOC/HOC - Steps.png";
+
+const images = [
+  Sky, TopClouds, Clouds, Building, Door,
+  FirePit, Grass, Gravel, Hedge, Path, Steps
+];
+
+import ParallaxLayer from './ParallaxLayer.astro';
+---
+
+<div class="section">
+    {images.map((src, index) => (
+      <ParallaxLayer
+        src={src}
+        speed={index % 2 === 0 ? '0.5' : '0.2'}
+        layerClass={`parallax__layer parallax__layer--${index % 2 === 0 ? 'back' : 'base'}`}
+        index={index}
+      />
+    ))}
+  </div>
