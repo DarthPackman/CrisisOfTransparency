@@ -1,15 +1,15 @@
 ---
-const Building = "https://imgur.com/WyHLSPG";
-const TopClouds = "https://imgur.com/l0bfmBC";
-const Clouds = "hhttps://imgur.com/Sl74Mwh";
-const Door = "https://imgur.com/7TgbhPq";
-const FirePit = "https://imgur.com/0QixYzM";
-const Grass = "https://imgur.com/MorJBHy";
-const Gravel = "https://imgur.com/MbaGLMB";
-const Hedge = "https://imgur.com/SBIjaca";
-const Path = "https://imgur.com/V9vbXIu";
-const Sky = "https://imgur.com/XeHmffr";
-const Steps = "https://imgur.com/PJxbZxD";
+const Building = "src\components\img\HOC\HOC-Building.png";
+const TopClouds = "src\components\img\HOC\HOC-CloudsTop.png";
+const Clouds = "src\components\img\HOC\HOC-Clouds.png";
+const Door = "src\components\img\HOC\HOC-Door.png";
+const FirePit = "src\components\img\HOC\HOC-Firepit.png";
+const Grass = "src\components\img\HOC\HOC-Grass.png";
+const Gravel = "src\components\img\HOC\HOC-Gravel.png";
+const Hedge = "src\components\img\HOC\HOC-Hedge.png";
+const Path = "src\components\img\HOC\HOC-Path.png";
+const Sky = "src\components\img\HOC\HOC-Sky.png";
+const Steps = "src\components\img\HOC\HOC-Steps.png";
 
 const images = [
   { src: Sky, alt: "Sky" },
@@ -31,6 +31,7 @@ import ParallaxLayer from './ParallaxLayer.astro';
 <div class="section">
   {images.map(({ src, alt }, index) => (
     <ParallaxLayer
+
       src={src}
       alt={alt}
       speed={index % 2 === 0 ? '0.5' : '0.2'}
