@@ -1,15 +1,15 @@
 ---
 import Building from "../assets/HOC/HOC-Building.png";
-import TopClouds from "../assets/HOC/HOC - Clouds Top.png";
-import Clouds from "../assets/HOC/HOC - Clouds.png";
-import Door from "../assets/HOC/HOC - Door.png";
-import FirePit from "../assets/HOC/HOC - Firepit.png";
-import Grass from "../assets/HOC/HOC - Grass.png";
-import Gravel from "../assets/HOC/HOC - Gravel.png";
-import Hedge from "../assets/HOC/HOC - Hedge.png";
-import Path from "../assets/HOC/HOC - Path.png";
-import Sky from "../assets/HOC/HOC - Sky.png";
-import Steps from "../assets/HOC/HOC - Steps.png";
+import TopClouds from "../assets/HOC/HOC-CloudsTop.png";
+import Clouds from "../assets/HOC/HOC-Clouds.png";
+import Door from "../assets/HOC/HOC-Door.png";
+import FirePit from "../assets/HOC/HOC-Firepit.png";
+import Grass from "../assets/HOC/HOC-Grass.png";
+import Gravel from "../assets/HOC/HOC-Gravel.png";
+import Hedge from "../assets/HOC/HOC-Hedge.png";
+import Path from "../assets/HOC/HOC-Path.png";
+import Sky from "../assets/HOC/HOC-Sky.png";
+import Steps from "../assets/HOC/HOC-Steps.png";
 
 const images = [
   Sky, TopClouds, Clouds, Building, Door,
@@ -20,17 +20,6 @@ import ParallaxLayer from './ParallaxLayer.astro';
 ---
 
 <div class="section">
-    <div class="layer layer--0"><img src="../assets/HOC/HOC - Sky.png" alt="Sky"></div>
-    <div class="layer layer--1"><img src="../assets/HOC/HOC - Clouds Top.png" alt="Top Clouds"></div>
-    <div class="layer layer--2"><img src="../assets/HOC/HOC - Clouds.png" alt="Clouds"></div>
-    <div class="layer layer--3"><img src="../assets/HOC/HOC - Building.png" alt="Building"></div>
-    <div class="layer layer--4"><img src="../assets/HOC/HOC - Door.png" alt="Door"></div>
-    <div class="layer layer--5"><img src="../assets/HOC/HOC - Firepit.png" alt="FirePit"></div>
-    <div class="layer layer--6"><img src="../assets/HOC/HOC - Grass.png" alt="Grass"></div>
-    <div class="layer layer--7"><img src="../assets/HOC/HOC - Gravel.png" alt="Gravel"></div>
-    <div class="layer layer--8"><img src="../assets/HOC/HOC - Hedge.png" alt="Hedge"></div>
-    <div class="layer layer--9"><img src="../assets/HOC/HOC - Path.png" alt="Path"></div>
-    <div class="layer layer--10"><img src="../assets/HOC/HOC - Steps.png" alt="Steps"></div>
     {images.map((src, index) => (
       <ParallaxLayer
         src={src}
