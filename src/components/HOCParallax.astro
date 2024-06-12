@@ -1,31 +1,40 @@
 ---
-import Building from "../assets/HOC/HOC-Building.png";
-import TopClouds from "../assets/HOC/HOC-CloudsTop.png";
-import Clouds from "../assets/HOC/HOC-Clouds.png";
-import Door from "../assets/HOC/HOC-Door.png";
-import FirePit from "../assets/HOC/HOC-Firepit.png";
-import Grass from "../assets/HOC/HOC-Grass.png";
-import Gravel from "../assets/HOC/HOC-Gravel.png";
-import Hedge from "../assets/HOC/HOC-Hedge.png";
-import Path from "../assets/HOC/HOC-Path.png";
-import Sky from "../assets/HOC/HOC-Sky.png";
-import Steps from "../assets/HOC/HOC-Steps.png";
+const Building = "../assets/HOC/HOC-Building.png";
+const TopClouds = "../assets/HOC/HOC-CloudsTop.png";
+const Clouds = "../assets/HOC/HOC-Clouds.png";
+const Door = "../assets/HOC/HOC-Door.png";
+const FirePit = "../assets/HOC/HOC-Firepit.png";
+const Grass = "../assets/HOC/HOC-Grass.png";
+const Gravel = "../assets/HOC/HOC-Gravel.png";
+const Hedge = "../assets/HOC/HOC-Hedge.png";
+const Path = "../assets/HOC/HOC-Path.png";
+const Sky = "../assets/HOC/HOC-Sky.png";
+const Steps = "../assets/HOC/HOC-Steps.png";
 
 const images = [
-  Sky, TopClouds, Clouds, Building, Door,
-  FirePit, Grass, Gravel, Hedge, Path, Steps
+  { src: Sky, alt: "Sky" },
+  { src: TopClouds, alt: "Top Clouds" },
+  { src: Clouds, alt: "Clouds" },
+  { src: Building, alt: "Building" },
+  { src: Door, alt: "Door" },
+  { src: FirePit, alt: "Fire Pit" },
+  { src: Grass, alt: "Grass" },
+  { src: Gravel, alt: "Gravel" },
+  { src: Hedge, alt: "Hedge" },
+  { src: Path, alt: "Path" },
+  { src: Steps, alt: "Steps" }
 ];
 
 import ParallaxLayer from './ParallaxLayer.astro';
 ---
 
 <div class="section">
-    {images.map((src, index) => (
-      <ParallaxLayer
-        src={src}
-        speed={index % 2 === 0 ? '0.5' : '0.2'}
-        layerClass={`parallax__layer parallax__layer--${index % 2 === 0 ? 'back' : 'base'}`}
-        index={index}
-      />
-    ))}
-  </div>
+  {images.map(({ src, alt }, index) => (
+    <ParallaxLayer
+      src={src}
+      alt={alt}
+      speed={index % 2 === 0 ? '0.5' : '0.2'}
+      layerClass={`parallax__layer parallax__layer--${index % 2 === 0 ? 'back' : 'base'}`}
+    />
+  ))}
+</div>

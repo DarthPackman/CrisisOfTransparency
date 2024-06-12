@@ -1,7 +1,14 @@
 ---
-const { src, speed, layerClass } = Astro.props;
+export interface Props {
+  src: string;
+  alt: string;
+  speed: string;
+  layerClass: string;
+}
+
+const { src, alt, speed, layerClass } = Astro.props;
 ---
 
-<div class={layerClass} data-speed={speed}>
-  <img src={src} alt="Parallax Image" style="width: 100%; height: auto;">
+<div class={layerClass} style={`animation-duration: ${speed}s;`}>
+  <img src={src} alt={alt} />
 </div>
