@@ -1,15 +1,15 @@
 ---
-const Building = "src\components\img\HOC\HOC-Building.png";
-const TopClouds = "src\components\img\HOC\HOC-CloudsTop.png";
-const Clouds = "src\components\img\HOC\HOC-Clouds.png";
-const Door = "src\components\img\HOC\HOC-Door.png";
-const FirePit = "src\components\img\HOC\HOC-Firepit.png";
-const Grass = "src\components\img\HOC\HOC-Grass.png";
-const Gravel = "src\components\img\HOC\HOC-Gravel.png";
-const Hedge = "src\components\img\HOC\HOC-Hedge.png";
-const Path = "src\components\img\HOC\HOC-Path.png";
-const Sky = "src\components\img\HOC\HOC-Sky.png";
-const Steps = "src\components\img\HOC\HOC-Steps.png";
+const Building = "src/components/img/HOC/HOC-Building.png";
+const TopClouds = "src/components/img/HOC/HOC-CloudsTop.png";
+const Clouds = "src/components/img/HOC/HOC-Clouds.png";
+const Door = "src/components/img/HOC/HOC-Door.png";
+const FirePit = "src/components/img/HOC/HOC-Firepit.png";
+const Grass = "src/components/img/HOC/HOC-Grass.png";
+const Gravel = "src/components/img/HOC/HOC-Gravel.png";
+const Hedge = "src/components/img/HOC/HOC-Hedge.png";
+const Path = "src/components/img/HOC/HOC-Path.png";
+const Sky = "src/components/img/HOC/HOC-Sky.png";
+const Steps = "src/components/img/HOC/HOC-Steps.png";
 
 const images = [
   { src: Sky, alt: "Sky" },
@@ -28,14 +28,3 @@ const images = [
 import ParallaxLayer from './ParallaxLayer.astro';
 ---
 
-<div class="section">
-  {images.map(({ src, alt }, index) => (
-    <ParallaxLayer
-
-      src={src}
-      alt={alt}
-      speed={index % 2 === 0 ? '0.5' : '0.2'}
-      layerClass={`parallax__layer parallax__layer--${index % 2 === 0 ? 'back' : 'base'}`}
-    />
-  ))}
-</div>
