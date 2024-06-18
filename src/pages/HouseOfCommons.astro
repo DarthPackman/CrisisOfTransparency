@@ -35,11 +35,6 @@ const imgURL = "https://i.imgur.com/1Pg1vIw.png";
 				<h3>It's a very good website
 				</h3>
 			</section>
-		
-			<!--<section class="final">-->
-			<!--	<h3>It's a very good website-->
-			<!--	</h3>-->
-			<!--</section>-->
 		</div>
 	</div>
 
@@ -55,7 +50,7 @@ const imgURL = "https://i.imgur.com/1Pg1vIw.png";
 		if (entry.isIntersecting && entry.target.classList.contains("final")) {
 			console.log("final")
 			document.querySelector('.content2').classList.add("fadeOut");
-			setTimeout(function(){window.location.href = "HOME1";}, 1000);
+			setTimeout(function(){window.location.href = "";}, 1000);
 		}
         else if(entry.isIntersecting) {
 			console.log("normal")
