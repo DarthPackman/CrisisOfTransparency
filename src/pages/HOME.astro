@@ -1,6 +1,15 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import "../Styles/transitions.css";
+import "../styles/transitions.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = 'Home Page';
+const startColor = '#0a0149';
+const endColor = '#daeafa';
+const headImage = {
+	src: 'https://i.imgur.com/wW0XdWK.png',
+	alt: 'HOC Hill Image'
+};
 ---
 
 <MainLayout title="Home">
@@ -41,7 +50,11 @@ import "../Styles/transitions.css";
 		</section>
 	</div>
 
-	
+	<BaseLayout title={title} startColor={startColor} endColor={endColor} headImage ={headImage}>
+		<div>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque bibendum elementum lectus vitae ultricies. Donec vitae luctus massa. Nam sit amet est semper, rutrum magna id, elementum arcu. Maecenas dictum lacinia dolor. Vivamus rutrum vel turpis id placerat. Nullam viverra, leo in consectetur scelerisque, arcu tortor commodo dui, quis rhoncus magna est sit amet eros. Nunc pulvinar, mauris sed convallis commodo, nisl mauris consectetur lacus, sit amet luctus lectus elit at metus. Donec tortor justo, feugiat eget nisi eget, dictum venenatis nibh. Ut porttitor accumsan enim in rhoncus. Fusce lacinia vestibulum egestas. Aliquam at rutrum nulla. Aenean viverra maximus nunc a porta. Quisque ipsum nisl, aliquam id ultricies eu, iaculis eget tortor. Nulla arcu lorem, efficitur sed dui non, auctor molestie eros. Donec et ante bibendum odio rutrum semper. Integer odio sapien, fermentum a quam ac, hendrerit accumsan neque.
+		</div>
+	</BaseLayout>
 
 </MainLayout>
 
@@ -52,7 +65,7 @@ import "../Styles/transitions.css";
 		if (entry.isIntersecting && entry.target.classList.contains("final")) {
 			console.log("final")
 			document.querySelector('.content').classList.add("fadeOut");
-			setTimeout(function(){window.location.href = "about";}, 1000);
+			setTimeout(function(){window.location.href = "ABOUT";}, 1000);
 		}
         else if(entry.isIntersecting) {
 			console.log("normal")
