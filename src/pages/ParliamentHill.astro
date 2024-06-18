@@ -101,9 +101,7 @@ const imgURL = "https://i.imgur.com/1Pg1vIw.png";
 			document.querySelector('.content2').classList.add("fadeOut");
 			setTimeout(function()
 			{
-				const currentPath = window.location.pathname;
-				const newPath = currentPath.replace('/parliamenthill', '/houseofcommons');
-				window.location.href = newPath;
+				setTimeout(function(){window.location.href = "HouseOfCommons";}, 1000);
 			}, 1000);
 		}
         else if(entry.isIntersecting) {
