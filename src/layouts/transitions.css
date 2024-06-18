@@ -130,6 +130,13 @@
 		grid-row: 3;
 	}
 
+	.box6{
+		grid-column: 2;
+		grid-row: 1;
+	}
+	
+	
+
 	p
 	{
 		text-align: center;
