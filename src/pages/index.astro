@@ -1,15 +1,10 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const title = 'Home Page';
+const startColor = '#0a0149';
+const endColor = '#daeafa';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body style={`--start-color: 0a0149; --end-color: daeafa;`}>
-		<img src="src/components/img/FullImg/HOCHill.png" alt="HOC Hill Image" />
-	</body>
-</html>
+<BaseLayout title={title} startColor={startColor} endColor={endColor}>
+    <img src="src/components/img/FullImg/HOC.png" alt="HOC Outside Image" />
+</BaseLayout>

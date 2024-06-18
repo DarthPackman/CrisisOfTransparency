@@ -1,0 +1,20 @@
+---
+const { title, children, startColor, endColor } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{title}</title>
+        <link rel="stylesheet" href="/styles/gradient.css">
+    </head>
+    <body style={`--start-color: ${startColor}; --end-color: ${endColor};`}>
+        <header>
+            <h1>{title}</h1>
+        </header>
+        <main>
+            {children}
+        </main>
+    </body>
+</html>
