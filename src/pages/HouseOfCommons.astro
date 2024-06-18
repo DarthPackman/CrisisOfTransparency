@@ -2,66 +2,67 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import "../styles/transitions.css";
 
-const title = 'Home Page';
-const startColor = '#0a0149';
-const endColor = '#daeafa';
+const title = 'House Of Commons';
+const startColor = '#96a2ba';
+const endColor = '#adc473';
 const imgURL = "https://i.imgur.com/1Pg1vIw.png";
 ---
 
-<MainLayout title="Home" startColor={startColor} endColor={endColor} imgURL={imgURL}>
-	<div class="content">
-		<section class="mainImg" style="background-color: blue">
-			<!--<a href="ABOUT"><button style="height: 50px; width: 200px"></button></a>-->
+<MainLayout title="Home 3" startColor={startColor} endColor={endColor} imgURL={imgURL}>
+	<div class="content2">
+		<section class="mainImg3">
 			<br>
 			<br>
 		</section>
-		
+
 		<div class="gradient">
-			<section class="hidden num1">
+			<section class="hidden">
 				<h1>Hi Mom</h1>
 				<h2>This is my website</h2>
 			</section>
 		
-			<section class="hidden2 num2">
+			<section class="hidden2">
 				<h2>Buy my product</h2>
-				<p>
+				<p>oiauedhfiuwshefiuaheswrfgaserg
+					a
+					srg
+					dasrg
+					dzr
+					gdrg
 				</p>
 			</section>
 		
-			<section class="hidden num3">
+			<section class="hidden">
 				<h3>It's a very good website
 				</h3>
 			</section>
 		
-			<section class="final num4">
-				<h3>It's a very good website
-				</h3>
-			</section>
+			<!--<section class="final">-->
+			<!--	<h3>It's a very good website-->
+			<!--	</h3>-->
+			<!--</section>-->
 		</div>
-
 	</div>
 
 </MainLayout>
 
+
 <script defer>
-	setTimeout(function(){document.querySelector('.content').classList.add("showBody");}, 1000);
+	setTimeout(function(){document.querySelector('.content2').classList.add("showBody");}, 1000);
 	setTimeout(function(){document.querySelector('html').classList.add("snap");}, 2000);
 	
 	var observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
 		if (entry.isIntersecting && entry.target.classList.contains("final")) {
 			console.log("final")
-			document.querySelector('.content').classList.add("fadeOut");
-			setTimeout(function(){window.location.href = "HOME2";}, 1000);
+			document.querySelector('.content2').classList.add("fadeOut");
+			setTimeout(function(){window.location.href = "HOME1";}, 1000);
 		}
         else if(entry.isIntersecting) {
 			console.log("normal")
             entry.target.classList.add('show');
-			//entry.target.style.background = "#ffffff no-repeat right top";
-			//entry.target.style.color = "black";
 		} else {
             entry.target.classList.remove('show');
-			//entry.target.style.background = "#fffffff no-repeat right top";
         }
     });
 });
@@ -77,6 +78,6 @@ hiddenElementsIndex3.forEach((el) => observer.observe(el));
 <style>
 	.gradient
 	{
-		background-image: linear-gradient(#0a0149, #daeafa);
+		background-image: linear-gradient( #adc473, #000000);
 	}
 </style>
