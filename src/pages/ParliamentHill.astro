@@ -1,18 +1,15 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import "../styles/transitions.css";
-import BaseLayout from "../layouts/BaseLayout.astro";
 
-const title = 'Home 3 Page';
-
-const startColor = '#96a2ba';
-const endColor = '#adc473';
+const title = 'Parliment Hill';
+const startColor = '#daeafa';
+const endColor = '#96a2ba';
 const imgURL = "https://i.imgur.com/1Pg1vIw.png";
 ---
 
-<MainLayout title="Home 3" startColor={startColor} endColor={endColor} imgURL={imgURL}>
+<MainLayout title={title} startColor={startColor} endColor={endColor} imgURL={imgURL}>
 	<div class="content2">
-		<section class="mainImg3">
+		<section class="mainImg2">
 			<br>
 			<br>
 		</section>
@@ -26,11 +23,6 @@ const imgURL = "https://i.imgur.com/1Pg1vIw.png";
 			<section class="hidden2">
 				<h2>Buy my product</h2>
 				<p>oiauedhfiuwshefiuaheswrfgaserg
-					a
-					srg
-					dasrg
-					dzr
-					gdrg
 				</p>
 			</section>
 		
@@ -48,26 +40,30 @@ const imgURL = "https://i.imgur.com/1Pg1vIw.png";
 
 </MainLayout>
 
-
 <script defer>
+	const cont = document.querySelector(".content2");
+	const newSec = document.createElement("section");
+	
+	
 	setTimeout(function(){document.querySelector('.content2').classList.add("showBody");}, 1000);
-	setTimeout(function(){document.querySelector('html').classList.add("snap");}, 2000);
+	setTimeout(function(){document.querySelector('html').classList.add("snap"); }, 2000);
+	setTimeout(function(){ cont.appendChild(newSec); newSec.classList.add("hidden final"); }, 5000);
+	
+	
+	
 	
 	var observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
 		if (entry.isIntersecting && entry.target.classList.contains("final")) {
 			console.log("final")
 			document.querySelector('.content2').classList.add("fadeOut");
-			setTimeout(function(){window.location.href = "HOME1";}, 1000);
+			setTimeout(function(){window.location.href = "HouseOfCommons";}, 1000);
 		}
         else if(entry.isIntersecting) {
 			console.log("normal")
             entry.target.classList.add('show');
-			//entry.target.style.background = "#ffffff no-repeat right top";
-			//entry.target.style.color = "black";
 		} else {
             entry.target.classList.remove('show');
-			//entry.target.style.background = "#fffffff no-repeat right top";
         }
     });
 });
@@ -83,6 +79,6 @@ hiddenElementsIndex3.forEach((el) => observer.observe(el));
 <style>
 	.gradient
 	{
-		background-image: linear-gradient( #adc473, #000000);
+		background-image: linear-gradient(#96a2ba, #96a2ba);
 	}
 </style>

@@ -1,16 +1,77 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-const title = 'Parliment Hill';
+import MainLayout from "../layouts/MainLayout.astro";
+
+const title = 'Crisis Of Transparency';
 const startColor = '#0a0149';
 const endColor = '#daeafa';
-const headImage = {
-  src: 'https://i.imgur.com/wW0XdWK.png',
-  alt: 'HOC Hill Image'
-};
+const imgURL = "https://i.imgur.com/1Pg1vIw.png";
 ---
 
-<BaseLayout title={title} startColor={startColor} endColor={endColor} headImage ={headImage}>
-	<div>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque bibendum elementum lectus vitae ultricies. Donec vitae luctus massa. Nam sit amet est semper, rutrum magna id, elementum arcu. Maecenas dictum lacinia dolor. Vivamus rutrum vel turpis id placerat. Nullam viverra, leo in consectetur scelerisque, arcu tortor commodo dui, quis rhoncus magna est sit amet eros. Nunc pulvinar, mauris sed convallis commodo, nisl mauris consectetur lacus, sit amet luctus lectus elit at metus. Donec tortor justo, feugiat eget nisi eget, dictum venenatis nibh. Ut porttitor accumsan enim in rhoncus. Fusce lacinia vestibulum egestas. Aliquam at rutrum nulla. Aenean viverra maximus nunc a porta. Quisque ipsum nisl, aliquam id ultricies eu, iaculis eget tortor. Nulla arcu lorem, efficitur sed dui non, auctor molestie eros. Donec et ante bibendum odio rutrum semper. Integer odio sapien, fermentum a quam ac, hendrerit accumsan neque.
+<MainLayout title={title} startColor={startColor} endColor={endColor} imgURL={imgURL}>
+	<div class="content">
+		<section class="mainImg" style="background-color: blue">
+			<br>
+			<br>
+		</section>
+		
+		<div class="gradient">
+			<section class="hidden num1">
+				<h1>Hi Mom</h1>
+				<h2>This is my website</h2>
+			</section>
+		
+			<section class="hidden2 num2">
+				<h2>Buy my product</h2>
+				<p>
+				</p>
+			</section>
+		
+			<section class="hidden num3">
+				<h3>It's a very good website
+				</h3>
+			</section>
+		
+			<section class="final num4">
+				<h3>It's a very good website
+				</h3>
+			</section>
+		</div>
+
 	</div>
-</BaseLayout>
+
+</MainLayout>
+
+<script defer>
+	setTimeout(function(){document.querySelector('.content').classList.add("showBody");}, 1000);
+	setTimeout(function(){document.querySelector('html').classList.add("snap");}, 2000);
+	
+	var observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+		if (entry.isIntersecting && entry.target.classList.contains("final")) {
+			console.log("final")
+			document.querySelector('.content').classList.add("fadeOut");
+			setTimeout(function(){window.location.href = "ParliamentHill";}, 1000);
+		}
+        else if(entry.isIntersecting) {
+			console.log("normal")
+            entry.target.classList.add('show');
+		} else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+var hiddenElementsIndex = document.querySelectorAll('.hidden');
+hiddenElementsIndex.forEach((el) => observer.observe(el));
+var hiddenElementsIndex2 = document.querySelectorAll('.hidden2');
+hiddenElementsIndex2.forEach((el) => observer.observe(el));
+var hiddenElementsIndex3 = document.querySelectorAll('.final');
+hiddenElementsIndex3.forEach((el) => observer.observe(el));
+</script>
+
+<style>
+	.gradient
+	{
+		background-image: linear-gradient(#0a0149, #daeafa);
+	}
+</style>
