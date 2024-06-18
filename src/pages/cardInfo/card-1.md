@@ -1,5 +1,4 @@
 ---
-layout: "../../layouts/BaseLayout.astro"
 title: A Post about Important Items Of Life
 image: {
   src: "/images/post-1.jpg",
