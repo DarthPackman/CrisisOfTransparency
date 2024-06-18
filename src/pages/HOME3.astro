@@ -1,0 +1,88 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/transitions.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = 'Home 3 Page';
+
+const startColor = '#96a2ba';
+const endColor = '#adc473';
+const imgURL = "https://i.imgur.com/1Pg1vIw.png";
+---
+
+<MainLayout title="Home 3" startColor={startColor} endColor={endColor} imgURL={imgURL}>
+	<div class="content2">
+		<section class="mainImg3">
+			<br>
+			<br>
+		</section>
+
+		<div class="gradient">
+			<section class="hidden">
+				<h1>Hi Mom</h1>
+				<h2>This is my website</h2>
+			</section>
+		
+			<section class="hidden2">
+				<h2>Buy my product</h2>
+				<p>oiauedhfiuwshefiuaheswrfgaserg
+					a
+					srg
+					dasrg
+					dzr
+					gdrg
+				</p>
+			</section>
+		
+			<section class="hidden">
+				<h3>It's a very good website
+				</h3>
+			</section>
+		
+			<section class="final">
+				<h3>It's a very good website
+				</h3>
+			</section>
+		</div>
+	</div>
+
+</MainLayout>
+
+
+<script defer>
+	setTimeout(function(){document.querySelector('.content2').classList.add("showBody");}, 1000);
+	setTimeout(function(){document.querySelector('html').classList.add("snap");}, 2000);
+	
+	var observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+		if (entry.isIntersecting && entry.target.classList.contains("final")) {
+			console.log("final")
+			document.querySelector('.content2').classList.add("fadeOut");
+			setTimeout(function(){window.location.href = "HOME1";}, 1000);
+		}
+        else if(entry.isIntersecting) {
+			console.log("normal")
+            entry.target.classList.add('show');
+			//entry.target.style.background = "#ffffff no-repeat right top";
+			//entry.target.style.color = "black";
+		} else {
+            entry.target.classList.remove('show');
+			//entry.target.style.background = "#fffffff no-repeat right top";
+        }
+    });
+});
+
+var hiddenElementsIndex = document.querySelectorAll('.hidden');
+hiddenElementsIndex.forEach((el) => observer.observe(el));
+var hiddenElementsIndex2 = document.querySelectorAll('.hidden2');
+hiddenElementsIndex2.forEach((el) => observer.observe(el));
+var hiddenElementsIndex3 = document.querySelectorAll('.final');
+hiddenElementsIndex3.forEach((el) => observer.observe(el));
+</script>
+
+<style>
+	.gradient
+	{
+		background-image: linear-gradient( #adc473, #000000);
+	}
+</style>
