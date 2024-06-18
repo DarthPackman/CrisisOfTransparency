@@ -1,0 +1,75 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import "../Styles/transitions.css";
+---
+
+
+<MainLayout title="About">
+	<div class="content">
+		<section class="hidden">
+			<!-- <h1 id="title">About</h1> -->
+			<div class="box1 box">
+				<p>This is conenttt1</p>
+			</div>
+		</section>
+
+	
+		<section class="hidden">
+			<div class="box2 box">
+				<p>This is contenttt2</p>
+			</div>
+		</section>
+	
+		<section class="hidden2">
+			<div class="box3 box">
+				<p>This is conenttt3</p>
+			</div>
+		</section>
+	
+		<section class="hidden">
+			<div class="box4 box">
+				<p>This is conenttt4</p>
+			</div>
+		</section>
+
+		<section class="hidden2">
+			<div class="box5 box">
+				<p>This is conenttt5</p>
+			</div>
+		</section>
+	
+		<section class="final">
+			<h3>It's a very good website
+			</h3>
+		</section>
+	</div>
+
+</MainLayout>
+
+<script defer>
+	setTimeout(function(){document.querySelector('.content').classList.add("showBody");}, 1000);
+	var observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+		if (entry.isIntersecting && entry.target.classList.contains("final")) {
+			document.querySelector('.content').classList.add("fadeOut");
+			setTimeout(function(){window.location.href = "HOME";  }, 1000);
+		}
+        else if(entry.isIntersecting) {
+			console.log("normal")
+            entry.target.classList.add('show');
+			//entry.target.style.background = "#ffffff no-repeat right top";
+			//entry.target.style.color = "black";
+		} else {
+            entry.target.classList.remove('show');
+			entry.target.style.background = "#fffffff no-repeat right top";
+        }
+    });
+});
+
+var hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+var hiddenElements2 = document.querySelectorAll('.hidden2');
+hiddenElements2.forEach((el) => observer.observe(el));
+var hiddenElements3 = document.querySelectorAll('.final');
+hiddenElements3.forEach((el) => observer.observe(el));
+</script>

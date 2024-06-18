@@ -1,0 +1,75 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import "../Styles/transitions.css";
+---
+
+<MainLayout title="Home">
+	<div class="content">
+		<section class="hidden2">
+			<h1 id="title">Home</h1>
+			<a href="ABOUT"><button style="height: 50px; width: 200px"></button></a>
+			<br>
+			<br>
+			<img style="padding-left: 10%;" src="MH.jpg" alt="img">
+
+		</section>
+
+		<section class="hidden">
+			<h1>Hi Mom</h1>
+			<h2>This is my website</h2>
+		</section>
+	
+		<section class="hidden2">
+			<h2>Buy my product</h2>
+			<p>oiauedhfiuwshefiuaheswrfgaserg
+				a
+				srg
+				dasrg
+				dzr
+				gdrg
+			</p>
+		</section>
+	
+		<section class="hidden">
+			<h3>It's a very good website
+			</h3>
+		</section>
+	
+		<section class="final">
+			<h3>It's a very good website
+			</h3>
+		</section>
+	</div>
+
+	
+
+</MainLayout>
+
+<script defer>
+	setTimeout(function(){document.querySelector('.content').classList.add("showBody");}, 1000);
+	var observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+		if (entry.isIntersecting && entry.target.classList.contains("final")) {
+			console.log("final")
+			document.querySelector('.content').classList.add("fadeOut");
+			setTimeout(function(){window.location.href = "about";}, 1000);
+		}
+        else if(entry.isIntersecting) {
+			console.log("normal")
+            entry.target.classList.add('show');
+			//entry.target.style.background = "#ffffff no-repeat right top";
+			//entry.target.style.color = "black";
+		} else {
+            entry.target.classList.remove('show');
+			//entry.target.style.background = "#fffffff no-repeat right top";
+        }
+    });
+});
+
+var hiddenElementsIndex = document.querySelectorAll('.hidden');
+hiddenElementsIndex.forEach((el) => observer.observe(el));
+var hiddenElementsIndex2 = document.querySelectorAll('.hidden2');
+hiddenElementsIndex2.forEach((el) => observer.observe(el));
+var hiddenElementsIndex3 = document.querySelectorAll('.final');
+hiddenElementsIndex3.forEach((el) => observer.observe(el));
+</script>
