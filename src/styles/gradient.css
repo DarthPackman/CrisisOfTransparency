@@ -1,9 +1,19 @@
-body {
-    font-family: Arial, sans-serif;
+/* Remove default margin and padding */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full viewport height and width */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
     background-image: linear-gradient(to right, var(--start-color, #ff7e5f), var(--end-color, #feb47b));
-    min-height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
