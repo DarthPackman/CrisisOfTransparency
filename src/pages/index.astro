@@ -8,7 +8,7 @@ const endColor = '#daeafa';
 const imgURL = "https://i.imgur.com/1Pg1vIw.png";
 ---
 
-<MainLayout title="Home" startColor={startColor} endColor={endColor} imgURL={imgURL}>
+<MainLayout title={title} startColor={startColor} endColor={endColor} imgURL={imgURL}>
 	<div class="content">
 		<section class="mainImg" style="background-color: blue">
 			<br>
@@ -51,7 +51,7 @@ const imgURL = "https://i.imgur.com/1Pg1vIw.png";
 		if (entry.isIntersecting && entry.target.classList.contains("final")) {
 			console.log("final")
 			document.querySelector('.content').classList.add("fadeOut");
-			setTimeout(function(){window.location.href = "ParlimentHill";}, 1000);
+			setTimeout(function(){window.location.href = "ParliamentHill";}, 1000);
 		}
         else if(entry.isIntersecting) {
 			console.log("normal")
