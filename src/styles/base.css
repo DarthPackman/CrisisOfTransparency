@@ -13,7 +13,7 @@ html, body {
 
 body {
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(to right, var(--start-color, #ff7e5f), var(--end-color, #feb47b));
+    background-image: linear-gradient(var(--start-color, #ff7e5f), var(--end-color, #feb47b));
     display: flex;
     justify-content: center;
     align-items: center;

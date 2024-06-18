@@ -1,5 +1,5 @@
 ---
-const { title, children, startColor, endColor } = Astro.props;
+const { title, children, startColor, endColor, headImage } = Astro.props;
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -7,17 +7,18 @@ const { title, children, startColor, endColor } = Astro.props;
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{title}</title>
-        <link rel="stylesheet" href="src\styles\gradient.css">
+        <link rel="stylesheet" href="src/styles/base.css">
     </head>
     <body style={`--start-color: ${startColor}; --end-color: ${endColor};`}>
         <div id="content">
-            <slot>
-            </slot>
             <header>
+                {headImage && <img src={headImage.src} alt={headImage.alt} />}
                 <h1>{title}</h1>
             </header>
             <main>
                 {children}
+                <slot>
+                </slot>
             </main>
         </div>
     </body>
