@@ -3,39 +3,36 @@ import MainLayout from "../layouts/MainLayout.astro";
 import "../Styles/transitions.css";
 ---
 
-
-<MainLayout title="About">
+<MainLayout title="Home">
 	<div class="content">
-		<section class="hidden">
-			<!-- <h1 id="title">About</h1> -->
-			<div class="box1 box">
-				<p>This is conenttt1</p>
-			</div>
+		<section class="hidden2">
+			<h1 id="title">Home</h1>
+			<a href="ABOUT"><button style="height: 50px; width: 200px"></button></a>
+			<br>
+			<br>
+			<img style="padding-left: 10%;" src="MH.jpg" alt="img">
+
 		</section>
 
-	
 		<section class="hidden">
-			<div class="box2 box">
-				<p>This is contenttt2</p>
-			</div>
+			<h1>Hi Mom</h1>
+			<h2>This is my website</h2>
 		</section>
 	
 		<section class="hidden2">
-			<div class="box3 box">
-				<p>This is conenttt3</p>
-			</div>
+			<h2>Buy my product</h2>
+			<p>oiauedhfiuwshefiuaheswrfgaserg
+				a
+				srg
+				dasrg
+				dzr
+				gdrg
+			</p>
 		</section>
 	
 		<section class="hidden">
-			<div class="box4 box">
-				<p>This is conenttt4</p>
-			</div>
-		</section>
-
-		<section class="hidden2">
-			<div class="box5 box">
-				<p>This is conenttt5</p>
-			</div>
+			<h3>It's a very good website
+			</h3>
 		</section>
 	
 		<section class="final">
@@ -44,6 +41,8 @@ import "../Styles/transitions.css";
 		</section>
 	</div>
 
+	
+
 </MainLayout>
 
 <script defer>
@@ -51,8 +50,9 @@ import "../Styles/transitions.css";
 	var observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
 		if (entry.isIntersecting && entry.target.classList.contains("final")) {
+			console.log("final")
 			document.querySelector('.content').classList.add("fadeOut");
-			setTimeout(function(){window.location.href = "\\";  }, 1000);
+			setTimeout(function(){window.location.href = "about";}, 1000);
 		}
         else if(entry.isIntersecting) {
 			console.log("normal")
@@ -61,15 +61,15 @@ import "../Styles/transitions.css";
 			//entry.target.style.color = "black";
 		} else {
             entry.target.classList.remove('show');
-			entry.target.style.background = "#fffffff no-repeat right top";
+			//entry.target.style.background = "#fffffff no-repeat right top";
         }
     });
 });
 
-var hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el));
-var hiddenElements2 = document.querySelectorAll('.hidden2');
-hiddenElements2.forEach((el) => observer.observe(el));
-var hiddenElements3 = document.querySelectorAll('.final');
-hiddenElements3.forEach((el) => observer.observe(el));
+var hiddenElementsIndex = document.querySelectorAll('.hidden');
+hiddenElementsIndex.forEach((el) => observer.observe(el));
+var hiddenElementsIndex2 = document.querySelectorAll('.hidden2');
+hiddenElementsIndex2.forEach((el) => observer.observe(el));
+var hiddenElementsIndex3 = document.querySelectorAll('.final');
+hiddenElementsIndex3.forEach((el) => observer.observe(el));
 </script>
