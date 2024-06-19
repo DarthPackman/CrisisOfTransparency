@@ -1,5 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import FlipCard from "../layouts/FlipCard.astro";
 
 const title = 'Parliment Hill';
 const startColor = '#daeafa';
@@ -8,7 +9,6 @@ const imgURL = "https://i.imgur.com/1Pg1vIw.png";
 ---
 
 <MainLayout title={title} startColor={startColor} endColor={endColor} imgURL={imgURL}>
-	<!-- <h1 id="mainTitle">A Crisis of Transparency</h1> -->
 	<div class="content2">
 		<section class="mainImg2">
 			<br>
@@ -17,48 +17,48 @@ const imgURL = "https://i.imgur.com/1Pg1vIw.png";
 
 		<div class="gradient">
 			<section class="hidden">
-				<div class="flip-card box box6">
-					<div class="flip-card-inner">
-						<div class="flip-card-front">
-							<p class="title">FLIP CARD</p>
-							<p>Hover Me</p>
-						</div>
-						<div class="flip-card-back">
-							<p class="title">BACK</p>
-							<a href="/ABOUT">Enter About.</a>
-						</div>
-					</div>
-				</div>
+				<FlipCard
+					FrontTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
+					FrontContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
+					BackTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
+					BackContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
+				/>
+				<FlipCard
+					FrontTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
+					FrontContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
+					BackTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
+					BackContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
+				/>
 			</section>
 		
 			<section class="hidden2">
-				<div class="flip-card box box6">
-					<div class="flip-card-inner">
-						<div class="flip-card-front">
-							<p class="title">FLIP CARD</p>
-							<p>Hover Me</p>
-						</div>
-						<div class="flip-card-back">
-							<p class="title">BACK</p>
-							<a href="/ABOUT">Enter About.</a>
-						</div>
-					</div>
-				</div>
+				<FlipCard
+					FrontTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
+					FrontContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
+					BackTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
+					BackContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
+				/>
+				<FlipCard
+					FrontTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
+					FrontContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
+					BackTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
+					BackContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
+				/>
 			</section>
 		
 			<section class="hidden">
-				<div class="flip-card box box6">
-					<div class="flip-card-inner">
-						<div class="flip-card-front">
-							<p class="title">FLIP CARD</p>
-							<p>Hover Me</p>
-						</div>
-						<div class="flip-card-back">
-							<p class="title">BACK</p>
-							<a href="/ABOUT">Enter About.</a>
-						</div>
-					</div>
-				</div>
+				<FlipCard
+					FrontTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
+					FrontContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
+					BackTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
+					BackContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
+				/>
+				<FlipCard
+					FrontTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
+					FrontContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
+					BackTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
+					BackContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
+				/>
 			</section>
 			
 			<section class="final">
@@ -72,41 +72,37 @@ const imgURL = "https://i.imgur.com/1Pg1vIw.png";
 	const cont = document.querySelector(".content2");
 	const newSec = document.createElement("section");
 	
-	
 	setTimeout(function(){document.querySelector('.content2').classList.add("showBody");}, 1000);
 	setTimeout(function(){document.querySelector('html').classList.add("snap"); }, 2000);
 	setTimeout(function(){ cont.appendChild(newSec); newSec.classList.add("hidden final"); }, 5000);
 	
-	
-	
-	
 	var observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-		if (entry.isIntersecting && entry.target.classList.contains("final")) {
-			console.log("final")
-			document.querySelector('.content2').classList.add("fadeOut");
-			setTimeout(function()
-			{
-				    const currentPath = window.location.pathname;
-                    const newPath = currentPath.replace('/parliamenthill', '/houseofcommons');
-                    window.location.href = newPath;
-			}, 1000);
-		}
-        else if(entry.isIntersecting) {
-			console.log("normal")
-            entry.target.classList.add('show');
-		} else {
-            entry.target.classList.remove('show');
-        }
-    });
-});
+		entries.forEach((entry) => {
+			if (entry.isIntersecting && entry.target.classList.contains("final")) {
+				console.log("final")
+				document.querySelector('.content2').classList.add("fadeOut");
+				setTimeout(function()
+				{
+						const currentPath = window.location.pathname;
+						const newPath = currentPath.replace('/parliamenthill', '/houseofcommons');
+						window.location.href = newPath;
+				}, 1000);
+			}
+			else if(entry.isIntersecting) {
+				console.log("normal")
+				entry.target.classList.add('show');
+			} else {
+				entry.target.classList.remove('show');
+			}
+    	});
+	});
 
-var hiddenElementsIndex = document.querySelectorAll('.hidden');
-hiddenElementsIndex.forEach((el) => observer.observe(el));
-var hiddenElementsIndex2 = document.querySelectorAll('.hidden2');
-hiddenElementsIndex2.forEach((el) => observer.observe(el));
-var hiddenElementsIndex3 = document.querySelectorAll('.final');
-hiddenElementsIndex3.forEach((el) => observer.observe(el));
+	var hiddenElementsIndex = document.querySelectorAll('.hidden');
+	hiddenElementsIndex.forEach((el) => observer.observe(el));
+	var hiddenElementsIndex2 = document.querySelectorAll('.hidden2');
+	hiddenElementsIndex2.forEach((el) => observer.observe(el));
+	var hiddenElementsIndex3 = document.querySelectorAll('.final');
+	hiddenElementsIndex3.forEach((el) => observer.observe(el));
 </script>
 
 <style>
