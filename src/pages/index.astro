@@ -1,14 +1,14 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import FlipCard from "../layouts/FlipCard.astro";
 
 const title = 'Crisis Of Transparency';
 const startColor = '#0a0149';
 const endColor = '#daeafa';
-const imgURL = "https://i.imgur.com/1Pg1vIw.png";
+const imgURL = "https://i.imgur.com/wW0XdWK.png";
 ---
 
 <MainLayout title={title} startColor={startColor} endColor={endColor} imgURL={imgURL}>
-	<!-- <h1 id="mainTitle">A Crisis of Transparency</h1> -->
 	<div class="content">
 		<section class="mainImg" style="background-color: blue">
 			<br>
@@ -17,56 +17,54 @@ const imgURL = "https://i.imgur.com/1Pg1vIw.png";
 		
 		<div class="gradient">
 			<section class="hidden">
-				<div class="flip-card box box1">
-					<div class="flip-card-inner">
-						<div class="flip-card-front">
-							<p class="title"></p>
-							<p>Access to information is a cornerstone of democracy, but Canada’s system has broken down. </p>
-							<p>A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society.</p>
-							<p>This crisis of transparency has helped undermine Canadian trust in their government. </p>
-							<!-- <b class="instruction">Hold click to flip the card</b> -->
-							<!-- <img class="arrow" src="arrow.png"/> -->
-						</div>
-						<div class="flip-card-back">
-							<p class="title">BACK</p>
-							<a href="/ABOUT">Enter About.</a>
-						</div>
-					</div>
-				</div>
+				<FlipCard
+					FrontTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
+					FrontContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
+					BackTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
+					BackContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
+				/>
+				<FlipCard
+					FrontTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
+					FrontContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
+					BackTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
+					BackContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
+				/>
 			</section>
 		
 			<section class="hidden2">
-				<div class="flip-card box box2">
-					<div class="flip-card-inner">
-						<div class="flip-card-front">
-							<p class="title"></p>
-							<p>Every time a new government takes office, they pledge transparency, yet once elected, this promise often fades. Instead of progress, there's a pattern of backtracking, leaving citizens disillusioned with unfulfilled expectations.</p>
-							<!-- <b class="instruction">Hold click to flip the card</b>
-							<img class="arrow" src="arrow.png"/> -->
-						</div>
-						<div class="flip-card-back">
-							<p class="title">BACK</p>
-							<a href="/ABOUT">Enter About.</a>
-						</div>
-					</div>
-				</div>
+				<FlipCard
+					FrontTitle = "This crisis of transparency has helped undermine Canadian trust in their government."
+					FrontContent = "Every time a new government takes office, they pledge transparency, yet once elected, this promise often fades. Instead of progress, there's a pattern of backtracking, leaving citizens disillusioned with unfulfilled expectations."
+					BackTitle = "This crisis of transparency has helped undermine Canadian trust in their government."
+					BackContent = "Every time a new government takes office, they pledge transparency, yet once elected, this promise often fades. Instead of progress, there's a pattern of backtracking, leaving citizens disillusioned with unfulfilled expectations."
+				/>
+				<FlipCard
+					FrontTitle = "This crisis of transparency has helped undermine Canadian trust in their government."
+					FrontContent = "Every time a new government takes office, they pledge transparency, yet once elected, this promise often fades. Instead of progress, there's a pattern of backtracking, leaving citizens disillusioned with unfulfilled expectations."
+					BackTitle = "This crisis of transparency has helped undermine Canadian trust in their government."
+					BackContent = "Every time a new government takes office, they pledge transparency, yet once elected, this promise often fades. Instead of progress, there's a pattern of backtracking, leaving citizens disillusioned with unfulfilled expectations."
+				/>
 			</section>
 		
 			<section class="hidden">
-				<div class="flip-card box box6">
-					<div class="flip-card-inner">
-						<div class="flip-card-front">
-							<p class="title">VIDEO OF HARPER/CONS W/ FEDERAL ACCOUNTABILITY ACT</p>
-							<!-- <iframe style="border:none;" class="vid" width="560" height="315" src="https://www.youtube.com/embed/R3M8Auy7nJs?autoplay=1&mute=1&si=3Aw42EIyRdAaCHTK&amp;controls=0&amp;start=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-						</div>
-						<div class="flip-card-back">
-							<p class="title">BACK</p>
-							<a href="/ABOUT">Enter About.</a>
-						</div>
-					</div>
-				</div>
-
-				
+				<FlipCard
+					BackContent = "https://www.parl.ca/DocumentViewer/en/39-1/bill/C-2/royal-assent"
+				>
+					<div slot="front-slot">
+						<iframe class="card-vid"
+							src="https://www.youtube.com/embed/R3M8Auy7nJs">
+						</iframe>
+					</slot>
+				</FlipCard>
+				<FlipCard
+					BackContent = "https://www.parl.ca/DocumentViewer/en/41-2/bill/C-613/first-reading"
+				>
+					<div slot="front-slot">
+						<iframe class="card-vid"
+							src="https://www.youtube.com/watch?v=0PDMbvgSSG4">
+						</iframe>
+					</slot>
+			</FlipCard>
 			</section>
 			
 			<section class="final">
