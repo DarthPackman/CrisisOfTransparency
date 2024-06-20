@@ -62,7 +62,7 @@
 
 	.content
 	{
-		opacity: 0;
+		/* opacity: 0; */
 		filter: blur(5px);
     }
 
