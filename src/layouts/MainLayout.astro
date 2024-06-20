@@ -1,5 +1,5 @@
 ---
-const { title,  startColor, endColor, imgURL} = Astro.props;
+const { title} = Astro.props;
 import "./transitions.css";
 ---
 
@@ -14,7 +14,7 @@ import "./transitions.css";
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<title>{title}</title>
 	</head>
-	<body style={`--start-color: ${startColor}; --end-color: ${endColor}; --imgURL: ${imgURL}`}>
+	<body>
 		<div>
 			<slot>
 			</slot>

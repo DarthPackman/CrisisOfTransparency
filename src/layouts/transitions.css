@@ -41,7 +41,6 @@
 	}
 
 	body{
-		background-image: linear-gradient(var(--start-color, #ff7e5f), var(--end-color, #feb47b));
 		color: #ffffff;
         padding-top: 5%;
 		padding: 0;
@@ -156,8 +155,8 @@
 		background-image: url("https://i.imgur.com/1Pg1vIw.png");
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-color: white;
 	}
 	
+
 
 	
