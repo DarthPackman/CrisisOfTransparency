@@ -1,34 +1,24 @@
 ---
 
-const { href, title, body } = Astro.props;
+const { frontTitle, frontContent, backTitle, backLink } = Astro.props;
 ---
 
-<li class="link-card">
-	<a href={href}>
-		<h2>
-			{title}
-			<span>&rarr;</span>
-		</h2>
-		<p>
-			{body}
-		</p>
-	</a>
-</li>
 
 <div class="flip-card">
     <div class="flip-card-inner">
         <div class="flip-card-front">
-            <p class="title">FLIP CARD</p>
-            <p>Click Me</p>
+            <p class="title">{frontTitle}</p>
+            <p>{frontContent}</p>
         </div>
         <div class="flip-card-back">
-            <p class="title">BACK</p>
-            <a href="/ABOUT">Enter About</a>
+            <p class="title">{backTitle}</p>
+            <a href="/ABOUT">{backLink}</a>
         </div>
     </div>
 </div>
+
 <style>
-	.link-card {
+	.flip-card {
 		list-style: none;
 		display: flex;
 		padding: 1px;
@@ -39,14 +29,13 @@ const { href, title, body } = Astro.props;
 		border-radius: 7px;
 		background-position: 100%;
 		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
 	}
 	
-	.link-card:hover {
+	.flip-card:click {
 		transform: rotateY(180deg);
 	}
 
-	.link-card-front, .link-card-back {
+	.flip-card-front, .flip-card-back {
 		position: absolute;
 		display: flex;
 		flex-direction: column;
@@ -57,7 +46,7 @@ const { href, title, body } = Astro.props;
 	}
 
 
-	.link-card > a {
+	.flip-card > a {
 		width: 100%;
 		text-decoration: none;
 		line-height: 1.4;
@@ -76,11 +65,11 @@ const { href, title, body } = Astro.props;
 		margin-top: 0.5rem;
 		margin-bottom: 0;
 	}
-	.link-card:is(:hover, :focus-within) {
+/* 	.flip-card:is(:hover, :focus-within) {
 		background-position: 0;
 		background-image: var(--accent-gradient);
 	}
-	.link-card:is(:hover, :focus-within) h2 {
+	.flip-card:is(:hover, :focus-within) h2 {
 		color: rgb(var(--accent-light));
-	}
+	} */
 </style>
