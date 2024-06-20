@@ -1,11 +1,10 @@
 ---
 const { title,  startColor, endColor, imgURL} = Astro.props;
-import { ViewTransitions } from "astro:transitions";
 import "./transitions.css";
 ---
 
 <!doctype html>
-<html lang="en" transition:animate="none">
+<html lang="en" >
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -14,7 +13,6 @@ import "./transitions.css";
 		<meta name="generator" content={Astro.generator} />
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<title>{title}</title>
-		<ViewTransitions />
 	</head>
 	<body style={`--start-color: ${startColor}; --end-color: ${endColor}; --imgURL: ${imgURL}`}>
 		<div>
