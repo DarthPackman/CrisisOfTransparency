@@ -1,6 +1,7 @@
 ---
 const { FrontTitle,  BackTitle, FrontContent, BackContent, GridNum} = Astro.props;
-import "./FlipCard.css";
+//import "./FlipCard.css";
+import "./src/styles/flipCard.css";
 ---
 
 <div class="flip-card" style={`grid-column: ${GridNum}`}>
@@ -23,3 +24,27 @@ import "./FlipCard.css";
 </div>
 <script type="module" src="./FlipCard.js"></script>
 
+<!-- 
+---
+
+const { frontTitle, frontContent, backTitle, backContent, backLink } = Astro.props;
+---
+
+
+<div class="flip-card">
+	<input type ="checkbox" class="flipTrigger">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <p class="title">{frontTitle}</p>
+            <p>{frontContent}</p>
+        </div>
+		
+        <div class="flip-card-back">
+            <p class="title">{backTitle}</p>
+			<p>{backContent}</p>
+            <a href={backLink}>Learn More</a>
+        </div>
+    </div>
+	</input>
+</div>
+-->
