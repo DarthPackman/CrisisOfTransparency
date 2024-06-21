@@ -1,6 +1,5 @@
 .flip-card {
-    padding-top: 12.5vh;
-    padding-left: 12.5vh;
+    padding: 10vh;
     background-color: transparent;
     width: 75vh;
     height: 75vh;
@@ -63,8 +62,8 @@
     width: 5vh;
     rotate: 180deg;
     transform: scaleX(-1);
-    margin-top: 55vh;
-    margin-left: 55vh;
+    margin-top: 48vh;
+    margin-left: 49vh;
 }
 
 .title {

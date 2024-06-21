@@ -1,9 +1,9 @@
 ---
-const { FrontTitle,  BackTitle, FrontContent, BackContent} = Astro.props;
+const { FrontTitle,  BackTitle, FrontContent, BackContent, GridNum} = Astro.props;
 import "./FlipCard.css";
 ---
 
-<div class="flip-card">
+<div class="flip-card" style={`grid-column: ${GridNum}`}>
     <div class="flip-card-inner">
         <div class="flip-card-front">
             <h1 class="title">{FrontTitle}</h1>

@@ -50,12 +50,11 @@
 
 	section{
 		display: grid;
-		grid-template-rows: 100px 300px;
-		min-height: 100.5vh;
+		height: 100vh;
         scroll-snap-align: start;
-        column-gap: 100px;
-		grid-template-columns: auto auto auto;
-		grid-template-rows: 30vh 300px;
+        /*column-gap: 100px;*/
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
 		background-color: rgba(0,0,0,0);
 	}
 
@@ -135,8 +134,6 @@
 	
 	.mainImg
 	{
-		width: 100%;
-		height: auto;
 		background-image: url("https://i.imgur.com/wW0XdWK.png");
 		background-repeat: no-repeat;
 		background-size: cover;
