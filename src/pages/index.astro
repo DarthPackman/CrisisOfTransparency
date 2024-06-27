@@ -1,72 +1,33 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import FlipCard from "../layouts/FlipCard.astro";
+import FlipCard from "../OLD/FlipCard.astro";
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
 const title = 'Crisis Of Transparency';
+const blueBlack = '#010007';
 const darkBlue = '#0a0149';
 const lightBlue = '#daeafa';
 const slateGray = '#96a2ba';
 const lightGray = 'DDDCE2';
 const mossGreen = '#adc473';
+const greenWhite = 'f7fcec';
 ---
 
 <MainLayout title={title}>
 	<div class="content">
+		<div class="section1" style="background-image: linear-gradient(#02000f,#0a0149);">
+			<br>
+			<br>
+		</div>
+
 		<section class="mainImg" style="background-color: #0a0149"> 
 			<br>
 			<br>
 		</section>
 		
 		<div class="section1" style="background-image: linear-gradient(#0a0149,#daeafa);">
-			<section class="hidden">
-				<FlipCard 
-					FrontTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
-					FrontContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
-					BackTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
-					BackContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
-					GridNum = 1
-				/>
-				<FlipCard
-					FrontTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
-					FrontContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
-					BackTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
-					BackContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
-					GridNum = 3
-				/>
-			</section>
-		
-			<section class="hidden2">
-				<FlipCard
-					FrontTitle = "This crisis of transparency has helped undermine Canadian trust in their government."
-					FrontContent = "Every time a new government takes office, they pledge transparency, yet once elected, this promise often fades. Instead of progress, there's a pattern of backtracking, leaving citizens disillusioned with unfulfilled expectations."
-					BackTitle = "This crisis of transparency has helped undermine Canadian trust in their government."
-					BackContent = "Every time a new government takes office, they pledge transparency, yet once elected, this promise often fades. Instead of progress, there's a pattern of backtracking, leaving citizens disillusioned with unfulfilled expectations."
-					GridNum = 1
-				/>
-				<FlipCard
-					FrontTitle = "This crisis of transparency has helped undermine Canadian trust in their government."
-					FrontContent = "Every time a new government takes office, they pledge transparency, yet once elected, this promise often fades. Instead of progress, there's a pattern of backtracking, leaving citizens disillusioned with unfulfilled expectations."
-					BackTitle = "This crisis of transparency has helped undermine Canadian trust in their government."
-					BackContent = "Every time a new government takes office, they pledge transparency, yet once elected, this promise often fades. Instead of progress, there's a pattern of backtracking, leaving citizens disillusioned with unfulfilled expectations."
-					GridNum = 3
-				/>
-			</section>
-		
-			<section class="hidden">
-				<FlipCard GridNum = 1>
-					<div slot="front-slot">
-						<iframe class="card-vid"
-							src="https://www.youtube.com/embed/R3M8Auy7nJs">
-						</iframe>
-					</slot>
-				</FlipCard>
-				<FlipCard GridNum = 3>
-					<div slot="front-slot">
-						<a href="https://www.parl.ca/DocumentViewer/en/39-1/bill/C-2/royal-assent">Royal Assent</a>
-					</slot>
-				</FlipCard>
-			</section>
+			<br>
+			<br>
 		</div>
 
 		<section class="mainImg2" style="background-color: #daeafa">
@@ -75,60 +36,8 @@ const mossGreen = '#adc473';
 		</section>
 
 		<div class="section2" style="background-image: linear-gradient(#96a2ba,#DDDCE2);">
-			<section class="hidden">
-				<FlipCard
-					FrontTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
-					FrontContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
-					BackTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
-					BackContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
-					GridNum = 1
-				/>
-				<FlipCard
-					FrontTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
-					FrontContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
-					BackTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
-					BackContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
-					GridNum = 3
-				/>
-			</section>
-		
-			<section class="hidden2">
-				<FlipCard
-					FrontTitle = "This crisis of transparency has helped undermine Canadian trust in their government."
-					FrontContent = "Every time a new government takes office, they pledge transparency, yet once elected, this promise often fades. Instead of progress, there's a pattern of backtracking, leaving citizens disillusioned with unfulfilled expectations."
-					BackTitle = "This crisis of transparency has helped undermine Canadian trust in their government."
-					BackContent = "Every time a new government takes office, they pledge transparency, yet once elected, this promise often fades. Instead of progress, there's a pattern of backtracking, leaving citizens disillusioned with unfulfilled expectations."
-					GridNum = 1
-				/>
-				<FlipCard
-					FrontTitle = "This crisis of transparency has helped undermine Canadian trust in their government."
-					FrontContent = "Every time a new government takes office, they pledge transparency, yet once elected, this promise often fades. Instead of progress, there's a pattern of backtracking, leaving citizens disillusioned with unfulfilled expectations."
-					BackTitle = "This crisis of transparency has helped undermine Canadian trust in their government."
-					BackContent = "Every time a new government takes office, they pledge transparency, yet once elected, this promise often fades. Instead of progress, there's a pattern of backtracking, leaving citizens disillusioned with unfulfilled expectations."
-					GridNum = 3
-				/>
-			</section>
-		
-			<section class="hidden">
-				<FlipCard
-					BackContent = "https://www.parl.ca/DocumentViewer/en/39-1/bill/C-2/royal-assent"
-
-					GridNum = 1
-				>
-					<div slot="front-slot">
-						<iframe class="card-vid"
-							src="https://www.youtube.com/embed/R3M8Auy7nJs">
-						</iframe>
-					</slot>
-				</FlipCard>
-				<FlipCard
-					FrontTitle = "This crisis of transparency has helped undermine Canadian trust in their government."
-					FrontContent = "Every time a new government takes office, they pledge transparency, yet once elected, this promise often fades. Instead of progress, there's a pattern of backtracking, leaving citizens disillusioned with unfulfilled expectations."
-					BackTitle = "This crisis of transparency has helped undermine Canadian trust in their government."
-					BackContent = "Every time a new government takes office, they pledge transparency, yet once elected, this promise often fades. Instead of progress, there's a pattern of backtracking, leaving citizens disillusioned with unfulfilled expectations."
-					GridNum = 3
-				/>
-			</section>
+			<br>
+			<br>
 		</div>
 
 		<section class="mainImg3" style="background-color: #96a2ba">
@@ -136,60 +45,9 @@ const mossGreen = '#adc473';
 			<br>
 		</section>
 
-		<div class="section3" style="background-image: linear-gradient(#adc473,#0a0149);">
-			<section class="hidden">
-				<FlipCard
-					FrontTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
-					FrontContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
-					BackTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
-					BackContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
-					GridNum = 1
-				/>
-				<FlipCard
-					FrontTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
-					FrontContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
-					BackTitle = "Access to information is a cornerstone of democracy, but Canada’s system has broken down."
-					BackContent = "A systemic breakdown in the availability of vital government information tears at accountability frameworks and threatens the very fabric of our democratic society."
-					GridNum = 3
-				/>
-			</section>
-		
-			<section class="hidden2">
-				<FlipCard
-					FrontTitle = "This crisis of transparency has helped undermine Canadian trust in their government."
-					FrontContent = "Every time a new government takes office, they pledge transparency, yet once elected, this promise often fades. Instead of progress, there's a pattern of backtracking, leaving citizens disillusioned with unfulfilled expectations."
-					BackTitle = "This crisis of transparency has helped undermine Canadian trust in their government."
-					BackContent = "Every time a new government takes office, they pledge transparency, yet once elected, this promise often fades. Instead of progress, there's a pattern of backtracking, leaving citizens disillusioned with unfulfilled expectations."
-					GridNum = 1
-				/>
-				<FlipCard
-					FrontTitle = "This crisis of transparency has helped undermine Canadian trust in their government."
-					FrontContent = "Every time a new government takes office, they pledge transparency, yet once elected, this promise often fades. Instead of progress, there's a pattern of backtracking, leaving citizens disillusioned with unfulfilled expectations."
-					BackTitle = "This crisis of transparency has helped undermine Canadian trust in their government."
-					BackContent = "Every time a new government takes office, they pledge transparency, yet once elected, this promise often fades. Instead of progress, there's a pattern of backtracking, leaving citizens disillusioned with unfulfilled expectations."
-					GridNum = 3
-				/>
-			</section>
-		
-			<section class="hidden">
-				<FlipCard
-					BackContent = "https://www.parl.ca/DocumentViewer/en/39-1/bill/C-2/royal-assent"
-					GridNum = 1
-				>
-					<div slot="front-slot">
-						<iframe class="card-vid"
-							src="https://www.youtube.com/embed/R3M8Auy7nJs">
-						</iframe>
-					</slot>
-				</FlipCard>
-				<FlipCard
-					FrontTitle = "This crisis of transparency has helped undermine Canadian trust in their government."
-					FrontContent = "Every time a new government takes office, they pledge transparency, yet once elected, this promise often fades. Instead of progress, there's a pattern of backtracking, leaving citizens disillusioned with unfulfilled expectations."
-					BackTitle = "This crisis of transparency has helped undermine Canadian trust in their government."
-					BackContent = "Every time a new government takes office, they pledge transparency, yet once elected, this promise often fades. Instead of progress, there's a pattern of backtracking, leaving citizens disillusioned with unfulfilled expectations."
-					GridNum = 3
-				/>
-			</section>
+		<div class="section3" style="background-image: linear-gradient(#adc473,#f7fcec);">
+			<br>
+			<br>
 		</div>
 	</div>
 </MainLayout>
