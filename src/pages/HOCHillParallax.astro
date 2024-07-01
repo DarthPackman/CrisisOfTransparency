@@ -1,0 +1,77 @@
+---
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import mainbuilding from './src/imgs/Phill/Parliment Hill - HOC.png';
+import lclouds from './src/imgs/Phill/Parliment Hill - Light Cloud.png';
+import dclouds from './src/imgs/Phill/Parliment Hill - Dark Cloud.png';
+import hill from './src/imgs/Phill/Parliment Hill - Hill.png';
+import sky from './src/imgs/Phill/Parliment Hill - Sky.png';
+import water from './src/imgs/Phill/Parliment Hill - Water.png';
+
+---
+
+<div>
+    <Parallax pages={6}>
+        <ParallaxLayer offset={0}
+        speed={1}
+        factor={2}
+        style={{
+            backgroundImage: `url(${sky})`,
+            backgroundSize:'cover',
+        }}>
+            
+        </ParallaxLayer>
+    
+        <ParallaxLayer offset={0}
+        speed={1}
+        factor={2}
+        style={{
+            backgroundImage: `url(${dclouds})`,
+            backgroundSize:'cover',
+        }}>
+            
+        </ParallaxLayer> 
+
+        <ParallaxLayer offset={0}
+        speed={1}
+        factor={2}
+        style={{
+            backgroundImage: `url(${lclouds})`,
+            backgroundSize:'cover',
+        }}>
+            
+        </ParallaxLayer>  
+
+        <ParallaxLayer offset={0}
+        speed={1}
+        factor={2}
+        style={{
+            backgroundImage: `url(${mainbuilding})`,
+            backgroundSize:'cover',
+        }}>
+            
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={0}
+        speed={1}
+        factor={2}
+        style={{
+            backgroundImage: `url(${hill})`,
+            backgroundSize:'cover',
+        }}>
+            
+        </ParallaxLayer>  
+
+        <ParallaxLayer offset={0}
+        speed={1}
+        factor={2}
+        style={{
+            backgroundImage: `url(${water})`,
+            backgroundSize:'cover',
+        }}>
+            
+        </ParallaxLayer>
+    
+    
+    </Parallax>
+
+</div>
