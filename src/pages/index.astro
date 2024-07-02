@@ -57,7 +57,8 @@ const greenWhite = 'f7fcec';
 			<br>
 		</div>
 
-		<section class="banner2" style="background-color: #daeafa">
+		<section class="banner2 video" style="background-color: #daeafa">
+			<h1 style="color: black;">VIDEO SECTION</h1>
 			<br>
 			<br>
 		</section>
@@ -84,8 +85,15 @@ const greenWhite = 'f7fcec';
 </MainLayout>
 
 <script is:inline>
+	
 	setTimeout(function(){document.querySelector('.content').classList.add("showBody");}, 1000);
 	
+	//This gets the audio element in ordcer to play, pause and set volume
+	const audio = document.getElementById('background-music');
+	audio.volume = 0.05;
+	// audio.play();
+	
+	//Observer for the text boxes, they slide in when they reach it in the html
 	var observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
 		if(entry.isIntersecting) {
@@ -95,18 +103,33 @@ const greenWhite = 'f7fcec';
         }
     });
 	});
-
-	var hiddenElementsIndex = document.querySelectorAll('.hidden');
+	
+	let hiddenElementsIndex = document.querySelectorAll('.hidden');
 	hiddenElementsIndex.forEach((el) => observer.observe(el));
-	var hiddenElementsIndex2 = document.querySelectorAll('.hidden2');
+	let hiddenElementsIndex2 = document.querySelectorAll('.hidden2');
 	hiddenElementsIndex2.forEach((el) => observer.observe(el));
+
+	//Observer for the videos, they will pause the music once they reach and play once they leave the video block
+	var videoObserver = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			if(entry.isIntersecting) {
+				audio.pause();
+				entry.target.classList.add('show');
+			} else {
+				// entry.target.classList.remove('show');
+				audio.play();
+			}
+		});
+	});
+
+	const videos = document.querySelectorAll('.video');
+	videos.forEach((el) => videoObserver.observe(el));
 
 
 	
-	const audio = document.getElementById('background-music');
-	audio.volume = 0.05;
-	audio.play();
-	audio.pause();
+	
+	
+	// audio.pause();
 	// audio.play();
 
 </script>
