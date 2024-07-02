@@ -41,8 +41,8 @@
 		height: 100vh;
         scroll-snap-align: start;
         /*column-gap: 100px;*/
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
 		background-color: rgba(0,0,0,0);
 	}
 
@@ -103,6 +103,23 @@
 		background-image: linear-gradient(#0a0149, #daeafa);
 	}
 	
+	#unmuteButton
+	{
+		max-height: 2vh;
+		max-width: 2vh;
+		background-color: rgba(0,0,0,0);
+		border-color: rgba(0,0,0,0);
+	}
+	
+	#unmuteIcon
+	{
+		max-height: 2vh;
+		max-width: 2vh;
+		background-color: rgba(0,0,0,0);
+		border-color: rgba(0,0,0,0);
+		filter: contrast(160%);
+	}
+	
 	/*This are all the text styles that should be used*/
 	
 	h1 /* Title */
@@ -149,7 +166,22 @@
 		text-align: center;
 		font-size: 2vh;
 	}
-	
+
+	/* On screens that are 1000x wide or less... */
+	@media only screen and (max-width: 1000px) {
+
+		html, body
+		{
+			overflow-x: hidden;
+		}
+
+		section {
+			padding: 0;
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+
+		
+	}
 
 
 	

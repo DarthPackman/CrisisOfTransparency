@@ -19,6 +19,32 @@ const greenWhite = 'f7fcec';
 
 <MainLayout title={title}>
 	<div class="content">
+		<section class="banner1 hidden" style="background-image: linear-gradient(#0a0149,#daeafa);">
+			<button id="unmuteButton"><img id="unmuteIcon" alt="Mute/Unmute" src="/Speaker.png"/></button>
+			<br>
+			<span>
+				<Typewriter client:visible/>  <!-- First Version of Typewriter -->
+				<Typewriter2 client:visible/>  <!-- Second Version of Typewriter -->
+				
+			</span>
+			<div>
+				<h1>This is a title</h1>
+				<h2>This is a subtitle</h2>
+				<h3>This is a Header</h3>
+				<h4>Dramatic Text </h4>
+				<h5>This is normal text</h5>
+				<audio id = "music" src = "../Music/Music.mp3">
+					<p>Hola</p>
+				</audio>
+			</div>
+			<br>
+		</section>
+		<div class="section1 hidden"  style="background-image: linear-gradient(#02000f,#dae0e8);">
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
 		<div class="section1" style="background-image: linear-gradient(#02000f,#dae0e8);">
 			<section>
 				<Video videoPath="src/vids/Vid1.mp4">
@@ -42,7 +68,8 @@ const greenWhite = 'f7fcec';
 			<br>
 		</div>
 
-		<section class="banner2" style="background-color: #daeafa">
+		<section class="banner2 video" style="background-color: #daeafa">
+			<h1 style="color: black;">VIDEO SECTION</h1>
 			<br>
 			<br>
 		</section>
@@ -69,8 +96,15 @@ const greenWhite = 'f7fcec';
 </MainLayout>
 
 <script is:inline>
+	
 	setTimeout(function(){document.querySelector('.content').classList.add("showBody");}, 1000);
 	
+	//This gets the audio element in ordcer to play, pause and set volume
+	const audio = document.getElementById('background-music');
+	audio.volume = 0.05;
+	// audio.play();
+	
+	//Observer for the text boxes, they slide in when they reach it in the html
 	var observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
 		if(entry.isIntersecting) {
@@ -80,19 +114,40 @@ const greenWhite = 'f7fcec';
         }
     });
 	});
-
-	var hiddenElementsIndex = document.querySelectorAll('.hidden');
+	
+	let hiddenElementsIndex = document.querySelectorAll('.hidden');
 	hiddenElementsIndex.forEach((el) => observer.observe(el));
-	var hiddenElementsIndex2 = document.querySelectorAll('.hidden2');
+	let hiddenElementsIndex2 = document.querySelectorAll('.hidden2');
 	hiddenElementsIndex2.forEach((el) => observer.observe(el));
 
+	//Observer for the videos, they will pause the music once they reach and play once they leave the video block
+	var videoObserver = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			if(entry.isIntersecting) {
+				audio.pause();
+				entry.target.classList.add('show');
+			} else {
+				// entry.target.classList.remove('show');
+				audio.play();
+			}
+		});
+	});
 
+	const videos = document.querySelectorAll('.video');
+	videos.forEach((el) => videoObserver.observe(el));
+
+
+	unmuteButton.addEventListener('click', function() {
+		if(audio.muted === false)
+		{
+			audio.muted = true;
+		}
+		else
+		{
+			audio.muted = false;
+		}
+	});
 	
-	const audio = document.getElementById('background-music');
-	audio.volume = 0.05;
-	audio.play();
-	audio.pause();
-	// audio.play();
 
 </script>
 
