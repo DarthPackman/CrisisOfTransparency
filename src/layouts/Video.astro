@@ -1,8 +1,8 @@
 ---
-const {video} = Astro.props;
+const {videoPath} = Astro.props;
 import "./Video.css";
 ---
 
 <video controls autoplay muted>
-    <source src='{video}' type="video/mp4">
+    <source src={videoPath} type="video/mp4">
 </video>
