@@ -6,16 +6,12 @@ const Typewriter = () => {
         <TypeAnimation
             style={{ whiteSpace: 'pre-line', height: '195px', display: 'block' }}
             sequence={[
-                `Line one\nLine Two\nLine Three\nLine Four\nLine Five
-    
-Line Seven`, // actual line-break inside string literal also gets animated in new line, but ensure there are no leading spaces
+                `Line one\nLine Two\nLine Three\nLine Four\nLine Five \nLine Seven`, 
                 1000,
-                '',
+                'Line one\nLine Three\nLine Four \nLine Seven',
             ]}
             repeat={Infinity}
         />
-        
-        
     );
 };
 
