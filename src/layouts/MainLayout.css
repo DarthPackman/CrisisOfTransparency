@@ -105,6 +105,7 @@
 	
 	#unmuteButton
 	{
+		position: fixed;
 		max-height: 2vh;
 		max-width: 2vh;
 		background-color: rgba(0,0,0,0);

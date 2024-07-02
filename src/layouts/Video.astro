@@ -3,6 +3,6 @@ const {videoPath} = Astro.props;
 import "./Video.css";
 ---
 
-<video autoplay muted loop>
+<video class="video" autoplay muted loop>
     <source src={videoPath} type="video/mp4">
 </video>
