@@ -1,3 +1,24 @@
 ---
+const {type, text, color} = Astro.props;
+const { isTitle, isSubtitle, isHeader, isDramatic, isNormal } = Astro.props;
+const { isBlackBg, isRedBg, isBlueBg } = Astro.props;
+const { isLeft, isMid, isRight } = Astro.props;
+const { isTop, isCenter, isBot, isTopToBot } = Astro.props;
 import "./Text.css";
 ---
+
+<div class:list={
+    [   'TextContainer',
+        { BlackBg: isBlackBg },  { RedBg: isRedBg },  { BlueBg: isBlueBg },
+        { Left: isLeft }, { Mid: isMid }, { Right: isRight },
+        { Top: isTop }, { Center: isCenter }, { Bottom: isBot },
+        { TopToBottom: isTopToBot },
+    ]}>
+        <h1 class:list={
+            [
+                'TextStyle', { Title: isTitle }, { Subtitle: isSubtitle }, { Header: isHeader },
+                { Dramatic: isDramatic }, { Normal: isNormal }]}>
+            {text}<!-- This is where the text goes-->
+        </h1>
+    
+</div>

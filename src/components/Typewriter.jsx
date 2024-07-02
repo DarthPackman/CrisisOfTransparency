@@ -1,17 +1,17 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
-const Typewriter = () => {
+const Typewriter = ({text, text2}) => {
     return (
         <TypeAnimation
             sequence={[
-                'We produce food for Mice',
-                1000,
-                '',
+                text,
+                10000,
+                text2,
                 1000
             ]}
-            speed={50}
-            deletionSpeed={90}
+            speed={30}
+            deletionSpeed={40}
             style={{ fontSize: '2em' }}
             repeat={Infinity}
         />
