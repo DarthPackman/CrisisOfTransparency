@@ -19,21 +19,26 @@ const greenWhite = 'f7fcec';
 
 <MainLayout title={title}>
 	<div class="content">
-
-		<section class="section" style="background-color: blue">
+		<section class="banner1 hidden" style="background-image: linear-gradient(#0a0149,#daeafa);">
+			<br>
 			<span>
-				<Typewriter client:visible/>  <!-- Use the React component -->
-				<Typewriter2 client:visible/>  <!-- Use the React component -->
+				<Typewriter client:visible/>  <!-- First Version of Typewriter -->
+				<Typewriter2 client:visible/>  <!-- Second Version of Typewriter -->
 				
 			</span>
-			
-			
-			
-			<!--<div class="typewriter ">-->
-			<!--<h4 class="writeContent">Hello lorem ipsum lorem ipsum lorem ipsum</h4>-->
-			<!--</div>-->
+			<div>
+				<h1>This is a title</h1>
+				<h2>This is a subtitle</h2>
+				<h3>This is a Header</h3>
+				<h4>Dramatic Text </h4>
+				<h5>This is normal text</h5>
+				<audio id = "music" src = "../Music/Music.mp3">
+					<p>Hola</p>
+				</audio>
+			</div>
+			<br>
 		</section>
-		<div class="section1" style="background-image: linear-gradient(#02000f,#dae0e8);">
+		<div class="section1 hidden"  style="background-image: linear-gradient(#02000f,#dae0e8);">
 			<br>
 			<br>
 			<br>
@@ -45,7 +50,7 @@ const greenWhite = 'f7fcec';
 			<br>
 		</section>
 		
-		<div class="section1" style="background-image: linear-gradient(#0a0149,#daeafa);">
+		<div class="section1">
 			<br>
 			<br>
 			<br>
@@ -78,39 +83,33 @@ const greenWhite = 'f7fcec';
 	</div>
 </MainLayout>
 
-<script defer>
+<script is:inline>
 	setTimeout(function(){document.querySelector('.content').classList.add("showBody");}, 1000);
-	// setTimeout(function(){document.querySelector('.writeContent').classList.add("textToType");}, 5000);
-	setTimeout(function(){document.querySelector('html').classList.add("snap");}, 2000);
 	
 	var observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-		if (entry.isIntersecting && entry.target.classList.contains("final")) {
-			console.log("final")
-			document.querySelector('.content').classList.add("fadeOut");
-			setTimeout(function(){window.location.href = "ParliamentHill";}, 1000);
-		}
-        else if(entry.isIntersecting) {
-			console.log("normal")
+		if(entry.isIntersecting) {
             entry.target.classList.add('show');
 		} else {
             entry.target.classList.remove('show');
         }
     });
-});
+	});
 
-var hiddenElementsIndex = document.querySelectorAll('.hidden');
-hiddenElementsIndex.forEach((el) => observer.observe(el));
-var hiddenElementsIndex2 = document.querySelectorAll('.hidden2');
-hiddenElementsIndex2.forEach((el) => observer.observe(el));
-var hiddenElementsIndex3 = document.querySelectorAll('.final');
-hiddenElementsIndex3.forEach((el) => observer.observe(el));
+	var hiddenElementsIndex = document.querySelectorAll('.hidden');
+	hiddenElementsIndex.forEach((el) => observer.observe(el));
+	var hiddenElementsIndex2 = document.querySelectorAll('.hidden2');
+	hiddenElementsIndex2.forEach((el) => observer.observe(el));
+
+
+	
+	const audio = document.getElementById('background-music');
+	audio.volume = 0.05;
+	audio.play();
+	audio.pause();
+	// audio.play();
+
 </script>
 
-<style>
-	.gradient
-	{
-		background-image: linear-gradient(#0a0149, #daeafa);
-	}
-</style>
+
 

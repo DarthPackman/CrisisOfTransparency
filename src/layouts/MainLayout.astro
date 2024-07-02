@@ -17,6 +17,7 @@ import "./Typewritrer.css";
 	</head>
 	<body>
 		<div>
+			<audio id="background-music" src="/Music.mp3" loop></audio>
 			<slot>
 			</slot>
 		</div>
@@ -78,6 +79,10 @@ import "./Typewritrer.css";
 		padding-left: 55rem;
 		position: fixed;
 	}
+	 audio {
+		 display: none;
+	 }
+
 </style>
 
 
