@@ -6,10 +6,10 @@ interface ParallaxContentProps {
     videos: string[];
 }
 
-const ParallaxContent: React.FC<ParallaxContentProps> = ({ videos}) => {
+const ParallaxContent: React.FC<ParallaxContentProps> = ({videos}) => {
     return (
         <Parallax pages={17}>
-            <ParallaxLayer offset={0} speed={0.5} factor={1}>
+            <ParallaxLayer offset={0} speed={0.5} factor={1} sticky={{ start: 1, end: 3 }}>
                 <Video videoPath={new URL(videos[0], import.meta.url).href}/>
             </ParallaxLayer>
             <ParallaxLayer offset={0} speed={0.8} factor={1}>
