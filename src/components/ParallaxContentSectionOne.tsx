@@ -75,7 +75,7 @@ const ParallaxContent: React.FC<ParallaxContentProps> = ({videos, texts, imgs}) 
                 <Img img={imgs[3]}/>
             </ParallaxLayer>
             <ParallaxLayer offset={20} speed={1} factor={1}>
-                <Text text={texts[10]}/>
+                <Text text={texts[11]}/>
             </ParallaxLayer>
         </Parallax>
     );
