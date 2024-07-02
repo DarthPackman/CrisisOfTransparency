@@ -5,6 +5,8 @@ import Img from "../layouts/Img.astro";
 import Text from "../layouts/Text.astro";
 import Typewriter from "../components/Typewriter.jsx"; 
 import Typewriter2 from "../components/Typewriterv2.jsx"; 
+import ParallaxContent from "../components/ParallaxContent";
+import ParallaxContentSectionOne from "../components/ParallaxContentSectionOne";
 
 const title = 'Crisis Of Transparency';
 const blueBlack = '#010007';
@@ -15,6 +17,10 @@ const slateGray = '#96a2ba';
 const lightGray = 'DDDCE2';
 const mossGreen = '#adc473';
 const greenWhite = 'f7fcec';
+const videoPaths = [
+	'src/vids/Vid1.mp4',
+	'src/vids/Vid2.mp4'
+]
 ---
 
 <MainLayout title={title}>
@@ -23,14 +29,11 @@ const greenWhite = 'f7fcec';
 			<img id="unmuteIcon" alt="Mute/Unmute" src="/Speaker.png"/>
 		</button>
 		<div class="section1" style="background-image: linear-gradient(#02000f,#dae0e8);">
-			<section>
-				<Video videoPath="src/vids/Vid1.mp4">
-				</Video>
-			</section>
-			<section>
-				<Video videoPath="src/vids/Vid2.mp4">
-				</Video>
-			</section>
+			<span>
+				<ParallaxContentSectionOne
+					videos={videoPaths}
+				/>
+			</span>
 		</div>
 
 		<section class="banner1" style="background-color: #dae0e8"> 
@@ -72,7 +75,6 @@ const greenWhite = 'f7fcec';
 </MainLayout>
 
 <script is:inline>
-	
 	setTimeout(function(){document.querySelector('.content').classList.add("showBody");}, 1000);
 	
 	//This gets the audio element in ordcer to play, pause and set volume
@@ -112,7 +114,6 @@ const greenWhite = 'f7fcec';
 	const videos = document.querySelectorAll('.video');
 	videos.forEach((el) => videoObserver.observe(el));
 
-
 	unmuteButton.addEventListener('click', function() {
 		if(audio.muted === false)
 		{
@@ -123,8 +124,6 @@ const greenWhite = 'f7fcec';
 			audio.muted = false;
 		}
 	});
-	
-
 </script>
 
 

@@ -7,8 +7,6 @@ import hill from '../imgs/Phill/Parliment Hill - Hill.png';
 import sky from '../imgs/Phill/Parliment Hill - Sky.png?url';
 import water from '../imgs/Phill/Parliment Hill - Water.png';
 
-
-
 export default function ParallaxContent() {
   return (
     <div style={{ backgroundImage:`url(${new URL(sky, import.meta.url).href})`, width:'100vw', height: '100vh' }}>
