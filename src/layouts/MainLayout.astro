@@ -1,6 +1,7 @@
 ---
 const { title} = Astro.props;
 import "./MainLayout.css";
+import "./Typewritrer.css";
 ---
 
 <!doctype html>
@@ -16,6 +17,7 @@ import "./MainLayout.css";
 	</head>
 	<body>
 		<div>
+			<audio id="background-music" src="/Music.mp3" loop></audio>
 			<slot>
 			</slot>
 		</div>
@@ -77,4 +79,10 @@ import "./MainLayout.css";
 		padding-left: 55rem;
 		position: fixed;
 	}
+	 audio {
+		 display: none;
+	 }
+
 </style>
+
+
