@@ -7,6 +7,11 @@ import Typewriter from "../components/Typewriter.jsx";
 import ParallaxContent from "../components/ParallaxContent";
 import ParallaxContentSectionOne from "../components/ParallaxContentSectionOne";
 
+//Import Videos
+import video1 from '../vids/Vid1.mp4';
+import video2 from '../vids/Vid2.mp4';
+import video3 from '../vids/Vid3.mp4';
+
 const title = 'Crisis Of Transparency';
 const blueBlack = '#010007';
 const grayWhite= 'dae0e8';
@@ -17,9 +22,9 @@ const lightGray = 'DDDCE2';
 const mossGreen = '#adc473';
 const greenWhite = 'f7fcec';
 const sectionOneVids = [
-	'../vids/Vid1.mp4',
-	'../vids/Vid2.mp4',
-	'../vids/Vid3.mp4'
+	new URL(video1, import.meta.url).href,
+	new URL(video2, import.meta.url).href,
+	new URL(video3, import.meta.url).href,
 ]
 const sectionOneTexts = [
 	'This week is “Right to Know” Week in Canada and around the world.',

@@ -14,7 +14,7 @@ const ParallaxContent: React.FC<ParallaxContentProps> = ({videos, texts, imgs}) 
     return (
         <Parallax pages={20}>
             <ParallaxLayer offset={0} speed={1} factor={1} sticky={{ start: 0, end: 3 }}>
-                <Video videoPath={new URL(videos[0], import.meta.url).href}/>
+                <Video videoPath={videos[0]}/>
             </ParallaxLayer>
             <ParallaxLayer offset={1} speed={1} factor={1}>
                 <Text text={texts[0]}/>
@@ -26,7 +26,7 @@ const ParallaxContent: React.FC<ParallaxContentProps> = ({videos, texts, imgs}) 
                 <Text text={texts[2]}/>
             </ParallaxLayer>
             <ParallaxLayer offset={4} speed={1} factor={1} sticky={{ start: 4, end: 6 }}>
-                <Video videoPath={new URL(videos[1], import.meta.url).href}/>
+                <Video videoPath={videos[1]}/>
             </ParallaxLayer>
             <ParallaxLayer offset={5} speed={1} factor={1}>
                 <Text text={texts[3]}/>
@@ -62,7 +62,7 @@ const ParallaxContent: React.FC<ParallaxContentProps> = ({videos, texts, imgs}) 
                 <Text text={texts[9]}/>
             </ParallaxLayer>
             <ParallaxLayer offset={16} speed={1} factor={1} sticky={{ start: 16, end: 18 }}>
-                <Video videoPath={new URL(videos[2], import.meta.url).href}/>
+                <Video videoPath={videos[2]}/>
             </ParallaxLayer>
             <ParallaxLayer offset={17} speed={1} factor={1}>
                 <Text text={texts[9]}/>
