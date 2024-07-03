@@ -78,6 +78,7 @@ const ParallaxContent: React.FC<ParallaxContentProps> = ({videos, texts, imgs}) 
                 <Text text={texts[11]}/>
             </ParallaxLayer>
         </Parallax>
+
     );
 }
 
