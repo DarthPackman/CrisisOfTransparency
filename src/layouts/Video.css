@@ -1,9 +1,16 @@
 /* Mobile styles */
 .VidContainer {
-    
+    box-sizing: border-box;
+    display: flex;
+    margin: 1vh;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .VidCenter {
-
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-50%);
 }
 
 /* Tablet styles */
