@@ -1,10 +1,13 @@
 import React from 'react';
+import './Video.css'
 
-const Video = ({ videoPath }) => {
+const Video = ({ videoPath, alignment }) => {
     return (
-        <video className="video" autoPlay muted loop>
-            <source src={videoPath} type="video/mp4" />
-        </video>
+        <div className={`VidContainer ${alignment}`} >
+            <video className="video" autoPlay muted loop>
+                <source src={videoPath} type="video/mp4" />
+            </video>
+        </div>
     )
 };
 

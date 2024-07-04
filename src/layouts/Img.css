@@ -1,4 +1,26 @@
 /* Mobile styles */
+.ImgContainer
+{
+    box-sizing: border-box;
+    display: flex;
+    margin: 1vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ImgCenterTop
+{
+    position: absolute;
+    left: 50%;
+    Top: 10%;
+    transform: translateX(-50%);
+}
+.ImgCenterBottom
+{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+}
 
 
 /* Tablet styles */

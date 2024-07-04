@@ -108,11 +108,19 @@
     grid-row: 1/4;
 }
 
-.CenterBottom
+.TextCenterBottom
 {
     position: absolute;
     left: 50%;
     bottom: 10%;
+    transform: translateX(-50%);
+}
+
+.TextCenter
+{
+    position: absolute;
+    left: 50%;
+    bottom: 45%;
     transform: translateX(-50%);
 }
 
