@@ -89,7 +89,7 @@ export default function ParallaxContent() {
         </ParallaxLayer>
 
         <ParallaxLayer  sticky={{ start: 26.25, end: 30 }}>
-            <Video videoPath={sectionOneVids[2]} alignment='Center'/>
+            <Video videoPath={sectionOneVids[2]} alignment='VidCenter'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 27, end: 28 }}>
             <Text text={sectionOneTexts[10]} background='BlackBg' alignment='TextCenterBottom'/>
