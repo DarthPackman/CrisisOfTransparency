@@ -108,18 +108,20 @@
     grid-row: 1/4;
 }
 
+.CenterBottom
+{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+}
+
 /* Tablet styles */
 @media (min-width: 481px) 
 {
-body {
-    font-size: 16px;
-    padding: 20px;
-}}
+}
 
 /* Desktop styles */
 @media (min-width: 769px) 
 {
-body {
-    font-size: 18px;
-    padding: 30px;
-}}
+}

@@ -16,11 +16,8 @@ import '@fontsource/aldrich';
 		<title>{title}</title>
 	</head>
 	<body>
-		<div>
-			<audio id="background-music" src="/Music.mp3" autoplay muted loop></audio>
-			<slot>
-			</slot>
-		</div>
+		<audio id="background-music" src="/Music.mp3" autoplay muted loop></audio>
+		<slot></slot>
 	</body>
 </html>
 
@@ -35,6 +32,11 @@ import '@fontsource/aldrich';
 			rgb(var(--accent-light)) 30%,
 			white 60%
 		);
+	}
+	body
+	{
+		padding:0px;
+		margin:0px;
 	}
 	h1
 	{

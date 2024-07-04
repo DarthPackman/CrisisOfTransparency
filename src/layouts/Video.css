@@ -1,26 +1,13 @@
 /* Mobile styles */
-body 
-{
-    font-size: 14px;
-    padding: 10px;
-}
+
 
 /* Tablet styles */
 @media (min-width: 481px) 
 {
-body 
-{
-    font-size: 16px;
-    padding: 20px;
-}
+
 }
 
 /* Desktop styles */
 @media (min-width: 769px) 
 {
-body 
-{
-    font-size: 18px;
-    padding: 30px;
-}
 }

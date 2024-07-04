@@ -1,44 +1,12 @@
 /* Mobile styles */
-body 
-{
-    font-size: 14px;
-    padding: 10px;
-}
+
 
 /* Tablet styles */
 @media (min-width: 481px) 
 {
-body {
-    font-size: 16px;
-    padding: 20px;
-}}
+}
 
 /* Desktop styles */
 @media (min-width: 769px) 
 {
-body {
-    font-size: 18px;
-    padding: 30px;
-}}
-
-.banner1
-{
-    background-image: url("https://i.imgur.com/wW0XdWK.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-.banner2
-{
-    background-image: url("https://i.imgur.com/T2LMZ4j.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.banner3
-{
-    background-image: url("https://i.imgur.com/PGriNAG.png");
-    background-repeat: no-repeat;
-    background-size: cover;
 }

@@ -30,76 +30,81 @@ const sectionOneImgs = [
     '/sectionOne/slide16a.png',
     '/sectionOne/slide16b.png'
 ];
-
 export default function ParallaxContent() {
   return (
-    <div style={{ backgroundImage:'background-image: linear-gradient(#02000f,#dae0e8)', width:'100vw', height: '100vh' }}>
-        <Parallax pages={20}>
-            <ParallaxLayer offset={1} speed={1} factor={1} style={{ zIndex: 10 }}>
-                <Text text={sectionOneTexts[0]}/>
-            </ParallaxLayer>
-            <ParallaxLayer offset={2} speed={1} factor={1} style={{ zIndex: 10 }}>
-                <Text text={sectionOneTexts[1]}/>
-            </ParallaxLayer>
-            <ParallaxLayer offset={3} speed={1} factor={1} style={{ zIndex: 10 }}>
-                <Text text={sectionOneTexts[2]}/>
-            </ParallaxLayer>
-            <ParallaxLayer offset={0} speed={1} factor={1} sticky={{ start: 0, end: 3.75 }} style={{ zIndex: 5 }}>
-                <Video videoPath={sectionOneVids[0]}/>
-            </ParallaxLayer>
-            <ParallaxLayer offset={4} speed={1} factor={1} sticky={{ start: 4, end: 6.5 }} style={{ zIndex: 5 }}>
-                <Video videoPath={sectionOneVids[1]}/>
-            </ParallaxLayer>
-            <ParallaxLayer offset={5} speed={1} factor={1} style={{ zIndex: 10 }}>
-                <Text text={sectionOneTexts[3]}/>
-            </ParallaxLayer>
-            <ParallaxLayer offset={6} speed={1} factor={1} style={{ zIndex: 10 }}>
-                <Text text={sectionOneTexts[4]}/>
-            </ParallaxLayer>
-            <ParallaxLayer offset={7} speed={1} factor={0.5} sticky={{ start: 7, end: 8.5 }} style={{ zIndex: 5 }}>
-                <Img img={sectionOneImgs[0]}/>
-            </ParallaxLayer>
-            <ParallaxLayer offset={8} speed={1} factor={0.5} style={{ zIndex: 10 }}>
-                <Text text={sectionOneTexts[5]}/>
-            </ParallaxLayer>
-            <ParallaxLayer offset={9} speed={1} factor={1} style={{ zIndex: 10 }}>
-                <Text text={sectionOneTexts[6]}/>
-            </ParallaxLayer>
-            <ParallaxLayer offset={10} speed={1} factor={0.5} sticky={{ start: 10, end: 12.5 }} style={{ zIndex: 5 }}>
-                <p>GRAPH</p>
-            </ParallaxLayer>
-            <ParallaxLayer offset={11} speed={1} factor={0.5} style={{ zIndex: 10 }}>
-                <Text text={sectionOneTexts[7]}/>
-            </ParallaxLayer>
-            <ParallaxLayer offset={12} speed={1} factor={0.5} sticky={{ start: 12, end: 13.5 }} style={{ zIndex: 5 }}>
-                <p>GRAPH</p>
-            </ParallaxLayer>
-            <ParallaxLayer offset={13} speed={1} factor={0.5} style={{ zIndex: 10 }}>
-                <Text text={sectionOneTexts[8]}/>
-            </ParallaxLayer>
-            <ParallaxLayer offset={14} speed={1} factor={0.5} sticky={{ start: 14, end: 15.5 }} style={{ zIndex: 5 }}>
-                <Img img={sectionOneImgs[1]}/>
-            </ParallaxLayer>
-            <ParallaxLayer offset={15} speed={1} factor={0.5} style={{ zIndex: 10 }}>
-                <Text text={sectionOneTexts[9]}/>
-            </ParallaxLayer>
-            <ParallaxLayer offset={16} speed={1} factor={1} sticky={{ start: 16, end: 18.5 }} style={{ zIndex: 5 }}>
-                <Video videoPath={sectionOneVids[2]}/>
-            </ParallaxLayer>
-            <ParallaxLayer offset={17} speed={1} factor={1} style={{ zIndex: 10 }}>
-                <Text text={sectionOneTexts[9]}/>
-            </ParallaxLayer>
-            <ParallaxLayer offset={18} speed={1} factor={1} style={{ zIndex: 10 }}>
-                <Text text={sectionOneTexts[10]}/>
-            </ParallaxLayer>
-            <ParallaxLayer offset={19} speed={1} factor={1} sticky={{ start: 19, end: 20.5 }} style={{ zIndex: 5 }}>
-                <Img img={sectionOneImgs[2]}/>
-                <Img img={sectionOneImgs[3]}/>
-            </ParallaxLayer>
-            <ParallaxLayer offset={20} speed={1} factor={1} style={{ zIndex: 10 }}>
-                <Text text={sectionOneTexts[11]}/>
-            </ParallaxLayer>
-        </Parallax>
-    </div>
+    <Parallax pages={30} innerStyle={{backgroundImage: 'linear-gradient(#02000f,#dae0e8)'}}>
+        <ParallaxLayer sticky={{ start: 0, end: 6 }}>
+            <Video videoPath={sectionOneVids[0]}/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 1, end: 2 }}>
+            <Text text={sectionOneTexts[0]} background='BlackBg' alignment='CenterBottom'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 3, end: 4 }}>
+            <Text text={sectionOneTexts[1]} background='BlackBg' alignment='CenterBottom'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 5, end: 6 }}>
+            <Text text={sectionOneTexts[2]} background='BlackBg' alignment='CenterBottom'/>
+        </ParallaxLayer>
+        
+        <ParallaxLayer sticky={{ start: 7, end: 11 }}>
+            <Video videoPath={sectionOneVids[1]}/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 8, end: 9 }}>
+            <Text text={sectionOneTexts[3]} background='BlackBg' alignment='CenterBottom'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 10, end: 11 }}>
+            <Text text={sectionOneTexts[4]} background='BlackBg' alignment='CenterBottom'/>
+        </ParallaxLayer>
+
+        <ParallaxLayer sticky={{ start: 12, end: 14 }}>
+            <Img img={sectionOneImgs[0]}/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 13, end: 14 }}>
+            <Text text={sectionOneTexts[5]} background='BlackBg' alignment='CenterBottom'/>
+        </ParallaxLayer>
+
+        <ParallaxLayer sticky={{ start: 15, end: 16 }}>
+            <Text text={sectionOneTexts[6]} background='BlackBg' alignment='CenterBottom'/>
+        </ParallaxLayer>
+
+        <ParallaxLayer sticky={{ start: 17, end: 18 }}>
+            <p>GRAPH</p>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 17, end: 18 }}>
+            <Text text={sectionOneTexts[7]} background='BlackBg' alignment='CenterBottom'/>
+        </ParallaxLayer>
+
+        <ParallaxLayer sticky={{ start: 19, end: 20 }}>
+            <p>GRAPH</p>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 19, end: 20 }}>
+            <Text text={sectionOneTexts[8]} background='BlackBg' alignment='CenterBottom'/>
+        </ParallaxLayer>
+
+        <ParallaxLayer sticky={{ start: 21, end: 22 }}>
+            <Img img={sectionOneImgs[1]}/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 21, end: 22 }} >
+            <Text text={sectionOneTexts[9]} background='BlackBg' alignment='CenterBottom'/>
+        </ParallaxLayer>
+
+        <ParallaxLayer  sticky={{ start: 23, end: 27 }}>
+            <Video videoPath={sectionOneVids[2]}/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 24, end: 25 }}>
+            <Text text={sectionOneTexts[10]} background='BlackBg' alignment='CenterBottom'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 26, end: 27 }}>
+            <Text text={sectionOneTexts[11]} background='BlackBg' alignment='CenterBottom'/>
+        </ParallaxLayer>
+
+        <ParallaxLayer sticky={{ start: 28, end: 30 }}>
+            <Img img={sectionOneImgs[2]}/>
+            <Img img={sectionOneImgs[3]}/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 29, end: 30 }}>
+            <Text text={sectionOneTexts[12]} background='BlackBg' alignment='CenterBottom'/>
+        </ParallaxLayer>
+    </Parallax>
   );
 }
