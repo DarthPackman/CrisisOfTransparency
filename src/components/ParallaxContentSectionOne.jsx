@@ -28,7 +28,9 @@ const sectionOneImgs = [
     '/sectionOne/slide8.png',
     '/sectionOne/slide12.png',
     '/sectionOne/slide16a.png',
-    '/sectionOne/slide16b.png'
+    '/sectionOne/slide16b.png',
+    '/sectionOne/slide10.png',
+    '/sectionOne/slide11.png'
 ];
 export default function ParallaxContent() {
   return (
@@ -68,14 +70,14 @@ export default function ParallaxContent() {
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{ start: 17.25, end: 19 }}>
-            <p>GRAPH</p>
+            <Img img={sectionOneImgs[4]} alignment='ImgCenterTop'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 18, end: 19 }}>
             <Text text={sectionOneTexts[7]} background='BlackBg' alignment='TextCenterBottom'/>
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{ start: 20.25, end: 22 }}>
-            <p>GRAPH</p>
+            <Img img={sectionOneImgs[5]} alignment='ImgCenterTop'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 21, end: 22 }}>
             <Text text={sectionOneTexts[8]} background='BlackBg' alignment='TextCenterBottom'/>
