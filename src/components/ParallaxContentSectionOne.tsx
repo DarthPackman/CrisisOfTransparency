@@ -1,7 +1,7 @@
 import React from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Video from '../layouts/Video';
-import Text from '../layouts/Text';
+import Text from '../layouts/Text'
 import Img from '../layouts/Img';
 
 interface ParallaxContentProps {
