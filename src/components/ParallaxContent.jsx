@@ -11,7 +11,6 @@ export default function ParallaxContent() {
   return (
     <div style={{ backgroundImage:`url(${new URL(sky, import.meta.url).href})`, width:'100vw', height: '100vh' }}>
       <Parallax pages={2}>
-
         <ParallaxLayer offset={0} speed={0.5} factor={1}>
           <div style={{
             backgroundImage: `url(${new URL(lclouds, import.meta.url).href})`,

@@ -1,12 +1,14 @@
 import React from 'react';
-import './Video.css';
+import { Player } from 'video-react';
 
 const Video = ({ videoPath }) => {
     return (
-        <video className="video" autoPlay muted loop>
-            <source src={videoPath} type="video/mp4" />
+        <video>
+            <source
+                src={videoPath}
+                type="video/mp4"/>
         </video>
-    );
+    )
 };
 
 export default Video;

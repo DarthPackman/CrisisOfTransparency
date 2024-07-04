@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^3.6.0",
+    "@astrojs/ts-plugin": "^1.8.0",
     "@fontsource/aldrich": "^5.0.19",
     "@react-spring/parallax": "^9.7.3",
     "@types/react": "^18.3.3",
@@ -21,6 +22,8 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-spring": "^9.7.3",
-    "react-type-animation": "^3.2.0"
+    "react-type-animation": "^3.2.0",
+    "react-video": "^1.5.3",
+    "video-react": "^0.16.0"
   }
 }
