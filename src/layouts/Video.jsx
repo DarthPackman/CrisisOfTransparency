@@ -1,12 +1,9 @@
 import React from 'react';
-import { Player } from 'video-react';
 
 const Video = ({ videoPath }) => {
     return (
-        <video>
-            <source
-                src={videoPath}
-                type="video/mp4"/>
+        <video className="video" autoPlay muted loop>
+            <source src={videoPath} type="video/mp4" />
         </video>
     )
 };
