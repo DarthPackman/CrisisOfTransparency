@@ -139,13 +139,13 @@ return (
             speed={0}
             style={{backgroundImage: 'linear-gradient(#d8e1ef,#d8e1ef)'}}
         />
-        <ParallaxLayer offset={34.5} speed={0.35}>
+        <ParallaxLayer offset={34.5} speed={0.30}>
             <Img img={bannerOneImgs[1]} alignment='ImgCenter'/>
         </ParallaxLayer>
         <ParallaxLayer offset={34.5} speed={0.4}>
             <Img img={bannerOneImgs[2]} alignment='ImgCenter'/>
         </ParallaxLayer>
-        <ParallaxLayer offset={34} speed={0.15}>
+        <ParallaxLayer offset={34} speed={0.1}>
             <Img img={bannerOneImgs[3]} alignment='ImgHardTop'/>
         </ParallaxLayer>
         <ParallaxLayer offset={34.65} speed={0.5}>
