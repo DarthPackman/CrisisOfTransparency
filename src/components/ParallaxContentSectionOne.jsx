@@ -19,11 +19,13 @@ const sectionOneTexts = [
     'And the faltering system has wrought havoc on Canadian journalism, contributing to distrust and a plague of misinformation and disinformation fueled by the government itself.',
     'How did this happen?'
 ];
+
 const sectionOneVids = [
     '/vids/Vid1.mp4',
     '/vids/Vid2.mp4',
     '/vids/Vid3.mp4'
 ]
+
 const sectionOneImgs = [
     '/sectionOne/slide8.png',
     '/sectionOne/slide12.png',
@@ -32,6 +34,7 @@ const sectionOneImgs = [
     '/sectionOne/slide10.png',
     '/sectionOne/slide11.png'
 ];
+
 export default function ParallaxContent() {
   return (
     <Parallax pages={33} innerStyle={{backgroundImage: 'linear-gradient(#02000f,#dae0e8)'}}>
