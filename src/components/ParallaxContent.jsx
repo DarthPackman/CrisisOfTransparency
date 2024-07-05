@@ -174,6 +174,9 @@ return (
             speed={0}
             style={{backgroundImage: 'linear-gradient(#0a0149,#DDDCE2)'}}
         />
+        {/* <ParallaxLayer sticky={{ start: 38, end: 39 }}>
+            <Text text={sectionTwoTexts[0]} background='BlackBg' alignment='TextCenter'/>
+        </ParallaxLayer> */}
 
     </Parallax>
 );}
