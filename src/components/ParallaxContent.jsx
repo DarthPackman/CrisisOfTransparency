@@ -142,13 +142,13 @@ return (
         <ParallaxLayer offset={34.5} speed={0.35}>
             <Img img={bannerOneImgs[1]} alignment='ImgCenter'/>
         </ParallaxLayer>
-        <ParallaxLayer offset={34.5} speed={0.5}>
+        <ParallaxLayer offset={34.5} speed={0.4}>
             <Img img={bannerOneImgs[2]} alignment='ImgCenter'/>
         </ParallaxLayer>
         <ParallaxLayer offset={34} speed={0.15}>
             <Img img={bannerOneImgs[3]} alignment='ImgHardTop'/>
         </ParallaxLayer>
-        <ParallaxLayer offset={34.6} speed={0.6}>
+        <ParallaxLayer offset={34.65} speed={0.5}>
             <Img img={bannerOneImgs[4]} alignment='ImgCenterBottom'/>
         </ParallaxLayer>
 
