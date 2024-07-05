@@ -157,13 +157,13 @@ return (
         <ParallaxLayer offset={34.65} speed={0.5}>
             <Img img={bannerOneImgs[4]} alignment='ImgCenterBottom'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 34, end: 35 }}>
+        <ParallaxLayer sticky={{ start: 33, end: 33.5 }}>
             <Text text={bannerOneTexts[0]} background='BlackBg' alignment='TextCenter'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 34, end: 35 }}>
+        <ParallaxLayer sticky={{ start: 33, end: 33.5 }}>
             <Text text={bannerOneTexts[1]} background='BlackBg' alignment='TextCenterBottom'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 35, end: 36 }}>
+        <ParallaxLayer sticky={{ start: 34, end: 34.5 }}>
             <Text text={bannerOneTexts[2]} background='BlackBg' alignment='TextCenterBottom'/>
         </ParallaxLayer>
 
