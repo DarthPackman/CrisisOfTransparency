@@ -169,7 +169,7 @@ return (
 
         {/* SECTION TWO */}
         <ParallaxLayer 
-            offset={36} 
+            offset={35} 
             factor={35} 
             speed={0}
             style={{backgroundImage: 'linear-gradient(#0a0149,#DDDCE2)'}}
