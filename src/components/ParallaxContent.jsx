@@ -163,7 +163,7 @@ return (
         <ParallaxLayer sticky={{ start: 34, end: 34.5 }}>
             <Text text={bannerOneTexts[1]} background='BlackBg' alignment='TextCenterBottom'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 34.75, end: 34 }}>
+        <ParallaxLayer sticky={{ start: 34.75, end: 35 }}>
             <Text text={bannerOneTexts[2]} background='BlackBg' alignment='TextCenterBottom'/>
         </ParallaxLayer>
 
