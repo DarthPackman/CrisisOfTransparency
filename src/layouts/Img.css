@@ -21,6 +21,20 @@
     bottom: 10%;
     transform: translateX(-50%);
 }
+.ImgCenter
+{
+    position: absolute;
+    left: 50%;
+    bottom: 35%;
+    transform: translateX(-50%);
+}
+.ImgHardTop
+{
+    position: absolute;
+    left: 50%;
+    Top: 0%;
+    transform: translateX(-50%);
+}
 
 
 /* Tablet styles */

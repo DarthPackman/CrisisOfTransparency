@@ -1,9 +1,3 @@
-import React from 'react';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import Video from '../layouts/Video';
-import Text from '../layouts/Text';
-import Img from '../layouts/Img';
-
 const sectionOneTexts = [
     'This week is “Right to Know” Week in Canada and around the world.',
     'Access to information is a cornerstone of Canadian democracy, keeping governments accountable, encouraging citizen participation, and giving Canadians access to the information their taxes pay for.',
@@ -19,11 +13,13 @@ const sectionOneTexts = [
     'And the faltering system has wrought havoc on Canadian journalism, contributing to distrust and a plague of misinformation and disinformation fueled by the government itself.',
     'How did this happen?'
 ];
+
 const sectionOneVids = [
     '/vids/Vid1.mp4',
     '/vids/Vid2.mp4',
     '/vids/Vid3.mp4'
 ]
+
 const sectionOneImgs = [
     '/sectionOne/slide8.png',
     '/sectionOne/slide12.png',
@@ -32,10 +28,31 @@ const sectionOneImgs = [
     '/sectionOne/slide10.png',
     '/sectionOne/slide11.png'
 ];
+
+const bannerOneImgs = [
+    '/bannerOne/HOCHill-Layer1.png',
+    '/bannerOne/HOCHill-Layer2.png',
+    '/bannerOne/HOCHill-Layer3.png',
+    '/bannerOne/HOCHill-Layer4.png',
+    '/bannerOne/HOCHill-Layer5.png'
+];
+
+import React from 'react';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import Video from '../layouts/Video';
+import Text from '../layouts/Text';
+import Img from '../layouts/Img';
+
 export default function ParallaxContent() {
-  return (
-    <Parallax pages={33} innerStyle={{backgroundImage: 'linear-gradient(#02000f,#dae0e8)'}}>
-        <ParallaxLayer offset={0} factor={3} speed={0}/>
+return (
+    <Parallax pages={100}>
+        {/* SECTION ONE */}
+        <ParallaxLayer 
+            offset={0} 
+            factor={34} 
+            speed={0}
+            style={{backgroundImage: 'linear-gradient(#02000f,#dae0e8)'}}
+        />
         <ParallaxLayer sticky={{ start: 0, end: 6 }}>
             <Video videoPath={sectionOneVids[0]} alignment='VidCenter'/>
         </ParallaxLayer>
@@ -108,6 +125,40 @@ export default function ParallaxContent() {
         <ParallaxLayer sticky={{ start: 32, end: 33 }}>
             <Text text={sectionOneTexts[12]} background='BlackBg' alignment='TextCenter'/>
         </ParallaxLayer>
+
+        {/* BANNER ONE */}
+        <ParallaxLayer 
+            offset={34} 
+            factor={0.5} 
+            speed={0}
+            style={{backgroundImage: 'linear-gradient(#dae0e8,#dae0e8)'}}
+        />
+        <ParallaxLayer 
+            offset={34.25} 
+            factor={1} 
+            speed={0}
+            style={{backgroundImage: 'linear-gradient(#d8e1ef,#d8e1ef)'}}
+        />
+        <ParallaxLayer offset={34.5} speed={0.5}>
+            <Img img={bannerOneImgs[1]} alignment='ImgCenter'/>
+        </ParallaxLayer>
+        <ParallaxLayer offset={34.5} speed={0.75}>
+            <Img img={bannerOneImgs[2]} alignment='ImgCenter'/>
+        </ParallaxLayer>
+        <ParallaxLayer offset={34} speed={0.1}>
+            <Img img={bannerOneImgs[3]} alignment='ImgHardTop'/>
+        </ParallaxLayer>
+        <ParallaxLayer offset={34.8} speed={0.8}>
+            <Img img={bannerOneImgs[4]} alignment='ImgCenterBottom'/>
+        </ParallaxLayer>
+
+        {/* SECTION TWO */}
+        <ParallaxLayer 
+            offset={35} 
+            factor={35} 
+            speed={0}
+            style={{backgroundImage: 'linear-gradient(#0a0149,#DDDCE2)'}}
+        />
+
     </Parallax>
-  );
-}
+);}
