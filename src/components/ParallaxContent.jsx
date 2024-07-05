@@ -158,12 +158,12 @@ return (
             <Img img={bannerOneImgs[4]} alignment='ImgCenterBottom'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 34.5, end: 36 }}>
-            <Text text={bannerOneTexts[0]} background='BlackBg' alignment='TextCenterBottom'/>
+            <Text text={bannerOneTexts[0]} background='BlackBg' alignment='TextCenter'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 34.5, end: 36 }}>
             <Text text={bannerOneTexts[1]} background='BlackBg' alignment='TextCenterBottom'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 36.5, end: 37 }}>
+        <ParallaxLayer sticky={{ start: 35.5, end: 37 }}>
             <Text text={bannerOneTexts[2]} background='BlackBg' alignment='TextCenterBottom'/>
         </ParallaxLayer>
 
