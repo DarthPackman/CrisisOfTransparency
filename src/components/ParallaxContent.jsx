@@ -164,7 +164,7 @@ return (
             <Text text={bannerOneTexts[1]} background='BlackBg' alignment='TextCenterBottom'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 36, end: 37 }}>
-            <Text text={bannerOneTexts[2]} background='BlackBg' alignment='TextCenterBottom'/>
+            <Text text={bannerOneTexts[2]} background='BlackBg' alignment='TextCenter'/>
         </ParallaxLayer>
 
         {/* SECTION TWO */}
