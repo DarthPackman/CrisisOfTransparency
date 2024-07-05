@@ -37,6 +37,12 @@ const bannerOneImgs = [
     '/bannerOne/HOCHill-Layer5.png'
 ];
 
+const bannerOneTexts = [
+    'Crisis of Transparency',
+    'A Report on The Dire State of Canada’s Access to Information System',
+    'How did we arrive at this juncture? The answer partly rests in how the system was created...'
+]
+
 import React from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Video from '../layouts/Video';
@@ -145,11 +151,20 @@ return (
         <ParallaxLayer offset={34.5} speed={0.4}>
             <Img img={bannerOneImgs[2]} alignment='ImgCenter'/>
         </ParallaxLayer>
-        <ParallaxLayer offset={34} speed={0.1}>
+        <ParallaxLayer offset={34} speed={0.05}>
             <Img img={bannerOneImgs[3]} alignment='ImgHardTop'/>
         </ParallaxLayer>
         <ParallaxLayer offset={34.65} speed={0.5}>
             <Img img={bannerOneImgs[4]} alignment='ImgCenterBottom'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 34.5, end: 36 }}>
+            <Text text={bannerOneTexts[0]} background='BlackBg' alignment='TextCenterBottom'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 34.5, end: 36 }}>
+            <Text text={bannerOneTexts[1]} background='BlackBg' alignment='TextCenterBottom'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 36.5, end: 37 }}>
+            <Text text={bannerOneTexts[2]} background='BlackBg' alignment='TextCenterBottom'/>
         </ParallaxLayer>
 
         {/* SECTION TWO */}
