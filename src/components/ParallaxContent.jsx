@@ -73,7 +73,7 @@ const sectionTwoTexts = [
     'For now, it has fallen on civil society actors to try and fixed the system.'
 ]
 
-sectionTwoVids = [
+const sectionTwoVids = [
     '/vids/Vid4.mp4',
     '/vids/Vid5.mp4',
     '/vids/Vid6.mp4',
@@ -240,8 +240,12 @@ return (
         <ParallaxLayer sticky={{ start: 38, end: 39 }}>
             <Text text={sectionTwoTexts[0]} background='BlackBg' alignment='TextLeftCenter'/>
         </ParallaxLayer>
-        {/* Flags here */}
         <ParallaxLayer sticky={{ start: 38, end: 39 }}>
+            <Img img={sectionTwoImgs[0]} alignment='ImgRightTop'/>
+            <Img img={sectionTwoImgs[1]} alignment='ImgRightTopCenter'/>
+            <Img img={sectionTwoImgs[2]} alignment='ImgRightBotCenter'/>
+            <Img img={sectionTwoImgs[3]} alignment='ImgRightBotCenter'/>
+            <Img img={sectionTwoImgs[4]} alignment='ImgRightBottom'/>
             <Text text={sectionTwoTexts[1]} background='BlackBg' alignment='TextRightTop'/>
             <Text text={sectionTwoTexts[2]} background='BlackBg' alignment='TextRightTopCenter'/>
             <Text text={sectionTwoTexts[3]} background='BlackBg' alignment='TextRightBotCenter'/>
@@ -251,8 +255,11 @@ return (
         <ParallaxLayer sticky={{ start: 40, end: 41 }}>
             <Text text={sectionTwoTexts[5]} background='BlackBg' alignment='TextLeftCenter'/>
         </ParallaxLayer>
-        {/* Flags here */}
         <ParallaxLayer sticky={{ start: 40, end: 41 }}>
+            <Img img={sectionTwoImgs[5]} alignment='ImgRightTop'/>
+            <Img img={sectionTwoImgs[6]} alignment='ImgRightTopCenter'/>
+            <Img img={sectionTwoImgs[7]} alignment='ImgRightBotCenter'/>
+            <Img img={sectionTwoImgs[8]} alignment='ImgRightBottom'/>
             <Text text={sectionTwoTexts[6]} background='BlackBg' alignment='TextRightTop'/>
             <Text text={sectionTwoTexts[7]} background='BlackBg' alignment='TextRightTopCenter'/>
             <Text text={sectionTwoTexts[8]} background='BlackBg' alignment='TextRightBotCenter'/>
@@ -330,9 +337,9 @@ return (
             <Text text={sectionTwoTexts[26]} background='BlackBg' alignment='TextCenterTop'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 78, end: 79 }}> 
-            <Img img={sectionOneImgs[9]} alignment='ImgCenterMid'/>
-            <Img img={sectionOneImgs[10]} alignment='ImgLeftBottom'/>
-            <Img img={sectionOneImgs[11]} alignment='ImgRightBottom'/>
+            <Img img={sectionTwoImgs[9]} alignment='ImgCenterMid'/>
+            <Img img={sectionTwoImgs[10]} alignment='ImgLeftBottom'/>
+            <Img img={sectionTwoImgs[11]} alignment='ImgRightBottom'/>
         </ParallaxLayer>
 
     </Parallax>

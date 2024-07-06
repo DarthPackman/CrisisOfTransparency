@@ -43,7 +43,35 @@
     transform: translateX(0);
 }
 
-.ImRightBottom {
+.ImgLeftBottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateX(0);
+}
+
+.ImgRightTop {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(0);
+}
+
+.ImgRightTopCenter {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ImgRightBotCenter {
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.ImgRightBottom {
     position: absolute;
     right: 0;
     bottom: 0;
