@@ -97,11 +97,15 @@ const sectionTwoImgs = [
     '/sectionTwo/OpenByDefault.png'
 ];
 
+
+
 import React from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Video from '../layouts/Video';
 import Text from '../layouts/Text';
 import Img from '../layouts/Img';
+
+
 
 export default function ParallaxContent() {
 return (
@@ -220,6 +224,8 @@ return (
         <ParallaxLayer sticky={{ start: 36, end: 37 }}>
             <Text text={bannerOneTexts[2]} background='BlackBg' alignment='TextCenter'/>
         </ParallaxLayer>
+
+
 
         {/* SECTION TWO */}
         <ParallaxLayer 
