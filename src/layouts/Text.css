@@ -108,20 +108,66 @@
     grid-row: 1/4;
 }
 
-.TextCenterBottom
-{
-    position: absolute;
-    left: 50%;
-    bottom: 10%;
-    transform: translateX(-50%);
-}
-
-.TextCenter
-{
+.TextCenter {
     position: absolute;
     left: 50%;
     bottom: 45%;
     transform: translateX(-50%);
+    text-align: center;
+}
+
+.TextCenterBottom {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.TextLeftCenter {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+.TextRightTop {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+}
+
+.TextRightTopCenter {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+}
+
+.TextRightBotCenter {
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+    text-align: right;
+}
+
+.TextRightBot {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+}
+
+.TextCenterTop {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    text-align: center;
 }
 
 /* Tablet styles */

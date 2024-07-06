@@ -1,16 +1,34 @@
 /* Mobile styles */
-.VidContainer {
+.VidContainer 
+{
     box-sizing: border-box;
     display: flex;
     margin: 1vh;
     align-items: center;
     flex-wrap: wrap;
 }
+
 .VidCenter {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
+
+.VidRightTop {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(0);
+}
+
+.VidRightBottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateX(0);
+}
+
 
 /* Tablet styles */
 @media (min-width: 481px) 

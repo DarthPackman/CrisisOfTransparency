@@ -7,27 +7,49 @@
     align-items: center;
     flex-wrap: wrap;
 }
-.ImgCenterTop
-{
-    position: absolute;
-    left: 50%;
-    Top: 10%;
-    transform: translateX(-50%);
-}
-.ImgCenterBottom
-{
-    position: absolute;
-    left: 50%;
-    bottom: 10%;
-    transform: translateX(-50%);
-}
-.ImgCenter
-{
+
+.ImgCenter {
     position: absolute;
     left: 50%;
     bottom: 35%;
     transform: translateX(-50%);
 }
+
+.ImgCenterTop {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+}
+
+.ImgCenterMid {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ImgCenterBottom {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+}
+
+.ImgLeftBottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateX(0);
+}
+
+.ImRightBottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateX(0);
+}
+
 .ImgHardTop
 {
     position: absolute;
