@@ -97,6 +97,19 @@ const sectionTwoImgs = [
     '/sectionTwo/OpenByDefault.png'
 ];
 
+const bannerTwoImgs = [
+    '/bannerTwo/HOC-Layer1.png',
+    '/bannerTwo/HOC-Layer2.png',
+    '/bannerTwo/HOC-Layer3.png',
+    '/bannerTwo/HOC-Layer3.5.png',
+    '/bannerTwo/HOC-Layer4.png',
+    '/bannerTwo/HOC-Layer5.png'
+];
+
+const bannerTwoTexts = [
+    'Parliament has left the task of fixing things to civil society, as no political party feels it has an incentive to create systems for more disclosure.',
+    'As recent history shows, every time a new government takes office, they pledge transparency. Once elected, such promises quickly fade. Instead of progress, there’s a consistent pattern of backtracking, leaving citizens disillusioned.'
+]
 
 
 import React from 'react';
@@ -230,7 +243,7 @@ return (
         {/* SECTION TWO */}
         <ParallaxLayer 
             offset={35} 
-            factor={35} 
+            factor={40} 
             speed={0}
             style={{backgroundImage: 'linear-gradient(#0a0149,#DDDCE2)'}}
         />
@@ -312,7 +325,7 @@ return (
             <Text text={sectionTwoTexts[19]} background='BlackBg' alignment='TextCenterBottom'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 66, end: 67 }}>
-            <Text text={sectionTwoTexts[20]} background='BlackBg' alignment='TextCenterBottom'/>
+            <Text text={sectionTwoTexts[20]} background='BlackBg' alignment='TextCenterTop'/>
             <Text text={sectionTwoTexts[21]} background='BlackBg' alignment='TextCenterBottom'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 68, end: 69 }}>
@@ -341,6 +354,42 @@ return (
             <Img img={sectionTwoImgs[10]} alignment='ImgLeftBottom'/>
             <Img img={sectionTwoImgs[11]} alignment='ImgRightBottom'/>
         </ParallaxLayer>
+
+
+
+        {/* BANNER TWO */}
+        <ParallaxLayer 
+            offset={80} 
+            factor={0.5} 
+            speed={0}
+            style={{backgroundImage: 'linear-gradient(#dae0e8,#dae0e8)'}}
+        />
+        <ParallaxLayer 
+            offset={81} 
+            factor={4} 
+            speed={0}
+            style={{backgroundImage: 'linear-gradient(#d8e1ef,#d8e1ef)'}}
+        />
+        <ParallaxLayer offset={80.5} speed={0.1}>
+            <Img img={bannerTwoImgs[1]} alignment='ImgCenter'/>
+        </ParallaxLayer>
+        <ParallaxLayer offset={80.8} speed={0.2}>
+            <Img img={bannerTwoImgs[4]} alignment='ImgCenterBottom'/>
+        </ParallaxLayer>
+        <ParallaxLayer offset={80} speed={0.05}>
+            <Img img={bannerTwoImgs[2]} alignment='ImgHardTop'/>
+            <Img img={bannerTwoImgs[3]} alignment='ImgHardTop'/>
+        </ParallaxLayer>
+        <ParallaxLayer offset={80.5} speed={0.4}>
+            <Img img={bannerTwoImgs[5]} alignment='ImgCenter'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 80, end: 81 }}>
+            <Text text={bannerTwoTexts[0]} background='BlackBg' alignment='TextCenter'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 82, end: 83 }}>
+            <Text text={bannerTwoTexts[1]} background='BlackBg' alignment='TextCenterBottom'/>
+        </ParallaxLayer>
+
 
     </Parallax>
 );}
