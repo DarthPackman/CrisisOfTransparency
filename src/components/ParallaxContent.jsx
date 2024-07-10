@@ -122,12 +122,17 @@ const sectionThreeTexts=[`In 2006, Stephen Harper was elected on a promise of gr
                         `After his election in 2015,  Prime Minister Justin Trudeau included language about government being “open by default” in all his mandate letters to cabinet ministers.`,
                         `By 2024, that language was removed from the letters.`];
 
-const sectionThreeImgs=[];
+const sectionThreeVids=['/sectionThree/vids/HarperConservative.mp4',
+                        '/sectionThree/vids/TrudeauTransparency.mp4'];
 
-const sectionThreeVids=[];
 
-
-const bannerThreeTexts=[
+const bannerThreeTexts=[`In June 2022, we discovered that copies of previously released requests were being intentionally destroyed.`,
+                        `We launched an urgent intervention to stop this document destruction.`,
+                        `More must be done to change the system.`,
+                        `There is no shortage of recommendations from experts`,
+                        `In 2015, the Information Commissioner outlined 85 proposed reforms aimed at modernizing and enhancing the statute.`,
+                        `The June 2016 Report by the Standing Committee on Access to Information, Privacy and Ethics addressed several of these proposals, recommending extensive reforms to the Access to Information Act. Its report in June 2023 further detailed a comprehensive list of reforms and suggested changes.`,
+                        `Here are some key ones.`,
 ];
 
 const bannerThreeImgs=[];
@@ -415,6 +420,23 @@ return (
             <Text text={bannerTwoTexts[1]} background='BlackBg' alignment='TextCenterBottom'/>
         </ParallaxLayer>
 
+        {/* SECTION THREE */}
+
+        <ParallaxLayer 
+            offset={83} 
+            factor={0} 
+            speed={1}
+            style={{backgroundImage: 'linear-gradient(#0a0149,#DDDCE2)'}}
+        />
+
+
+        {/* BANNER THREE */}
+        <ParallaxLayer 
+            offset={86} 
+            factor={0.5} 
+            speed={0}
+            style={{backgroundImage: 'linear-gradient(#dae0e8,#dae0e8)'}}
+        />
 
     </Parallax>
 );}
