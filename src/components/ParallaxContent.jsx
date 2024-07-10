@@ -111,6 +111,31 @@ const bannerTwoTexts = [
     'As recent history shows, every time a new government takes office, they pledge transparency. Once elected, such promises quickly fade. Instead of progress, there’s a consistent pattern of backtracking, leaving citizens disillusioned.'
 ]
 
+const sectionThreeTexts=[`In 2006, Stephen Harper was elected on a promise of greater transparency after the Sponsorship Scandal plagued the preceding government.  His campaign platform promised vast changes to the access to information system. His first bill was entitled the Federal Accountability Act.`,
+                        `Justin Trudeau burst onto the scene promising radical transparency.  His first private member’s bill, the Transparency Act, promised a new era of radical transparency to build trust with citizens.`,
+                        `In 2015, the Liberal Party under Trudeau  elected with promises of creating a transparent government.`,
+                        `Liberal Party of Canada Federal Election Platform 2015`,
+                        `We will make government information more accessible.`,
+                        `Government data and information should be open by default, in formats that are modern and easy to use.`,
+                        `We will ensure that Access to Information applies to the Prime Minister’s and Ministers’ Offices.`,
+                        `None of these promises received meaningful implementation.`,
+                        `After his election in 2015,  Prime Minister Justin Trudeau included language about government being “open by default” in all his mandate letters to cabinet ministers.`,
+                        `By 2024, that language was removed from the letters.`];
+
+const sectionThreeImgs=[];
+
+const sectionThreeVids=[];
+
+
+const bannerThreeTexts=[
+];
+
+const bannerThreeImgs=[];
+
+
+
+
+
 
 import React from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
