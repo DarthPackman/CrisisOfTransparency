@@ -122,8 +122,16 @@ const sectionThreeTexts=[`In 2006, Stephen Harper was elected on a promise of gr
                         `After his election in 2015,  Prime Minister Justin Trudeau included language about government being “open by default” in all his mandate letters to cabinet ministers.`,
                         `By 2024, that language was removed from the letters.`];
 
-const sectionThreeVids=['/sectionThree/vids/HarperConservative.mp4',
-                        '/sectionThree/vids/TrudeauTransparency.mp4'];
+const sectionThreeTextPlatform = [`Conservative Party of Canada Federal Election Platform 2006`,
+                                `A Conservative government will:`,
+                                `Implement the Information Commissioner’s recommendations for reform of the Access to Information Act.`,
+                                `Subject the exclusion of Cabinet confidences to review by the Information Commissioner.`,
+                                `Oblige public officials to create the records necessary to document their actions and decisions.`,
+                                `Provide a general public interest override for all exemptions, so that the public interest is put before the secrecy of the government.`
+];
+
+const sectionThreeVids=['sectionThree/vids/Vid10.mp4',
+                        '/sectionThree/vids/Vid11.mp4'];
 
 
 const bannerThreeTexts=[`In June 2022, we discovered that copies of previously released requests were being intentionally destroyed.`,
@@ -421,13 +429,24 @@ return (
         </ParallaxLayer>
 
         {/* SECTION THREE */}
-
         <ParallaxLayer 
-            offset={83} 
-            factor={0} 
-            speed={1}
-            style={{backgroundImage: 'linear-gradient(#0a0149,#DDDCE2)'}}
+            offset={84} 
+            factor={6} 
+            speed={0}
+            style={{backgroundImage: 'linear-gradient(#02000f,#dae0e8)'}}
         />
+        <ParallaxLayer sticky={{ start: 84, end: 90 }}>
+            <Video videoPath={sectionThreeVids[0]} alignment='VidCenter'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 85, end: 86 }}>
+            <Text text={sectionThreeTexts[0]} background='BlackBg' alignment='TextCenterBottom'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 85, end: 86 }}>
+            <Text text={sectionThreeTexts[1]} background='BlackBg' alignment='TextCenterBottom'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 87, end: 88 }}>
+            <Text text={sectionThreeTextPlatform[1]} background='BlackBg' alignment='TextCenterBottom'/>
+        </ParallaxLayer>
 
 
         {/* BANNER THREE */}
