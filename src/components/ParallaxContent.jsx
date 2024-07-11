@@ -122,12 +122,17 @@ const sectionThreeTexts=[`In 2006, Stephen Harper was elected on a promise of gr
                         `After his election in 2015,  Prime Minister Justin Trudeau included language about government being “open by default” in all his mandate letters to cabinet ministers.`,
                         `By 2024, that language was removed from the letters.`];
 
-const sectionThreeTextPlatform = [`Conservative Party of Canada Federal Election Platform 2006`,
+const sectionThreeTextPlatform2006 = [`Conservative Party of Canada Federal Election Platform 2006`,
                                 `A Conservative government will:`,
                                 `Implement the Information Commissioner’s recommendations for reform of the Access to Information Act.`,
                                 `Subject the exclusion of Cabinet confidences to review by the Information Commissioner.`,
                                 `Oblige public officials to create the records necessary to document their actions and decisions.`,
-                                `Provide a general public interest override for all exemptions, so that the public interest is put before the secrecy of the government.`
+                                `Provide a general public interest override for all exemptions, so that the public interest is put before the secrecy of the government.`];
+
+const sectionThreeTextPlatform2015 = [`Liberal Party of Canada Federal Election Platform 2015`,
+                                      `We will make government information more accessible. `,
+                                      `Government data and information should be open by default, in formats that are modern and easy to use.`,
+                                      `We will ensure that Access to Information applies to the Prime Minister’s and Ministers’ Offices.`
 ];
 
 const sectionThreeVids=['sectionThree/vids/Vid10.mp4',
@@ -431,7 +436,7 @@ return (
         {/* SECTION THREE */}
         <ParallaxLayer 
             offset={84} 
-            factor={6} 
+            factor={15} 
             speed={0}
             style={{backgroundImage: 'linear-gradient(#02000f,#dae0e8)'}}
         />
@@ -441,21 +446,67 @@ return (
         <ParallaxLayer sticky={{ start: 85, end: 86 }}>
             <Text text={sectionThreeTexts[0]} background='BlackBg' alignment='TextCenterBottom'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 85, end: 86 }}>
+
+        <ParallaxLayer sticky={{ start: 87, end: 88 }}>
+            <Text text={sectionThreeTextPlatform2006[1]} background='BlackBg' alignment='TextCenterBottom'/>
+        </ParallaxLayer>
+
+        <ParallaxLayer sticky={{ start: 89, end: 90 }}>
+            <Text text={sectionThreeTexts[7]} background='BlackBg' alignment='TextCenterBottom'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 91, end: 98 }}>
+            <Video videoPath={sectionThreeVids[1]} alignment='VidCenter'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 92, end: 93 }}>
             <Text text={sectionThreeTexts[1]} background='BlackBg' alignment='TextCenterBottom'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 87, end: 88 }}>
-            <Text text={sectionThreeTextPlatform[1]} background='BlackBg' alignment='TextCenterBottom'/>
+        <ParallaxLayer sticky={{ start: 93, end: 94 }}>
+            <Text text={sectionThreeTexts[2]} background='BlackBg' alignment='TextCenterBottom'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 95, end: 96 }}>
+            <Text text={sectionThreeTextPlatform2015[0]} background='BlackBg' alignment='TextCenterBottom'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 97, end: 98 }}>
+            <Text text={sectionThreeTexts[3]} background='BlackBg' alignment='TextCenter'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 99, end: 100 }}>
+            <Text text={sectionThreeTexts[4]} background='BlackBg' alignment='TextCenter'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 101, end: 102 }}>
+            <Text text={sectionThreeTexts[4]} background='BlackBg' alignment='TextCenter'/>
         </ParallaxLayer>
 
 
         {/* BANNER THREE */}
         <ParallaxLayer 
-            offset={86} 
-            factor={0.5} 
+            offset={103} 
+            factor={16} 
             speed={0}
             style={{backgroundImage: 'linear-gradient(#dae0e8,#dae0e8)'}}
         />
-
+        <ParallaxLayer sticky={{ start: 103, end: 104 }}>
+            <Text text={bannerThreeTexts[0]} background='BlackBg' alignment='TextCenter'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 105, end: 106 }}>
+            <Text text={bannerThreeTexts[1]} background='BlackBg' alignment='TextCenter'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 107, end: 108 }}>
+            Insert Video Here
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 109, end: 110 }}>
+            <Text text={bannerThreeTexts[2]} background='BlackBg' alignment='TextCenter'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 111, end: 112 }}>
+            <Text text={bannerThreeTexts[3]} background='BlackBg' alignment='TextCenter'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 113, end: 114 }}>
+            <Text text={bannerThreeTexts[4]} background='BlackBg' alignment='TextCenter'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 115, end: 116 }}>
+            <Text text={bannerThreeTexts[5]} background='BlackBg' alignment='TextCenter'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 117, end: 118 }}>
+            <Text text={bannerThreeTexts[6]} background='BlackBg' alignment='TextCenter'/>
+        </ParallaxLayer>
     </Parallax>
 );}
