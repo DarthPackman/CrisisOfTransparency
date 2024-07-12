@@ -152,20 +152,19 @@ const bannerThreeImgs=[];
 
 
 
-
-
-
 import React from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Video from '../layouts/Video';
 import Text from '../layouts/Text';
 import Img from '../layouts/Img';
+import BarGraph from '../layouts/BarGraph';
+import LineGraph from '../layouts/LineGraph';
 
 
 
 export default function ParallaxContent() {
 return (
-    <Parallax pages={100}>
+    <Parallax pages={150}>
         {/* SECTION ONE */}
         <ParallaxLayer 
             offset={0} 
@@ -208,14 +207,14 @@ return (
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{ start: 17, end: 19 }}>
-            <Img img={sectionOneImgs[4]} alignment='ImgCenterTop'/>
+            <BarGraph></BarGraph>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 18, end: 19 }}>
-            <Text text={sectionOneTexts[7]} background='BlackBg' alignment='TextCenterBottom'/>
+            <Text text={sectionOneTexts[7]} background='BlackBg' alignment='TextCenter'/>
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{ start: 20, end: 22 }}>
-            <Img img={sectionOneImgs[5]} alignment='ImgCenterTop'/>
+            {/* <LineGraph></LineGraph> */}
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 21, end: 22 }}>
             <Text text={sectionOneTexts[8]} background='BlackBg' alignment='TextCenterBottom'/>
