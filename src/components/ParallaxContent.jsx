@@ -148,8 +148,20 @@ const bannerThreeTexts=[`In June 2022, we discovered that copies of previously r
                         `Here are some key ones.`,
 ];
 
-const bannerThreeImgs=[];
+const recommendationText=[`Recommendation #1`,
+                          `Make the Act apply to cabinet confidences.`,
+                          `Recommendation #2`,
+                          `Expand the Act to the Prime Minister’s and Ministers’ offices.`,
+                          `Recommendation #3`,
+                          `Bolster the protection of the public interest in the legislation.`,
+                          `Recommendation #4`,
+                          `Create a statutory duty to document government decision-making.`];
 
+const creditsText=[`Credits`,
+                    `Direction: Prof. Matt Malone`,
+                    `Development: Gavin Edwards, Carlos Avila, Ian Fuentes`,
+                    `Research Assistance: Luke Conkin, Ashley Destauls`,
+                    `Thanks: Prof. Kevin O’Neil`];
 
 
 import React from 'react';
@@ -507,5 +519,52 @@ return (
         <ParallaxLayer sticky={{ start: 117, end: 118 }}>
             <Text text={bannerThreeTexts[6]} background='BlackBg' alignment='TextCenter'/>
         </ParallaxLayer>
+
+        {/* RECOMMENDATIONS AND CREDITS */}
+
+        <ParallaxLayer sticky={{ start: 119, end: 120 }}>
+            <Text text={recommendationText[0]} background='BlackBg' alignment='TextLeftTop'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 119, end: 120 }}>
+            <Text text={recommendationText[1]} alignment='TextRightTop'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 119, end: 120 }}>
+            <Text text={recommendationText[2]} background='BlackBg' alignment='TextLeftTopCenter'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 119, end: 120 }}>
+            <Text text={recommendationText[3]} alignment='TextRightTopCenter'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 119, end: 120 }}>
+            <Text text={recommendationText[4]} background='BlackBg' alignment='TextLeftBotCenter'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 119, end: 120 }}>
+            <Text text={recommendationText[5]} alignment='TextRightBotCenter'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 119, end: 120 }}>
+            <Text text={recommendationText[6]} background='BlackBg' alignment='TextLeftBot'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 119, end: 120 }}>
+            <Text text={recommendationText[7]} alignment='TextRightBot'/>
+        </ParallaxLayer>
+
+
+        <ParallaxLayer sticky={{ start: 34, end: 35 }}>
+            <Text text={bannerOneTexts[0]} background='BlackBg' alignment='TextCenter'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 34, end: 35 }}>
+            <Text text={bannerOneTexts[1]} background='BlackBg' alignment='TextCenterBottom'/>
+        </ParallaxLayer>
+
+        <ParallaxLayer sticky={{ start: 121, end: 122 }}>
+            <Text text={creditsText[0]} alignment='TextCenter'/>
+            <Text text={creditsText[1]} alignment='TextCenter'/>
+            <Text text={creditsText[2]} alignment='TextCenter'/>
+            <Text text={creditsText[3]} alignment='TextCenter'/>
+            <Text text={creditsText[4]} alignment='TextCenter'/>
+        </ParallaxLayer>
+
+
+
+
     </Parallax>
 );}

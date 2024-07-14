@@ -139,6 +139,13 @@
     text-align: right;
 }
 
+.TextLeftTop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: left;
+}
+
 .TextRightTopCenter {
     position: absolute;
     right: 0;
