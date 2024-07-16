@@ -1,167 +1,185 @@
 const sectionOneTexts = [
-    'This week is “Right to Know” Week in Canada and around the world.',
-    'Access to information is a cornerstone of Canadian democracy, keeping governments accountable, encouraging citizen participation, and giving Canadians access to the information their taxes pay for.',
-    'But the current system is in disarray.',
-    'In May 2023, the Information Commissioner, the independent ombudsman for the system, appeared before Parliament…',
-    '… to criticize the current system and a system that deliberately underfunded her office’s capacity to process complaints by access to information requesters.',
-    'The following year, her budget was cut further.',
-    'Today, the system is in sharp decline.',
-    'Delays are endemic.',
-    'Funding is low.',
-    'Real costs are not being met.',
-    'A systemic breakdown in the availability of vital government information tears at accountability frameworks, accelerating a decline in Canadian trust in government institutions.',
-    'And the faltering system has wrought havoc on Canadian journalism, contributing to distrust and a plague of misinformation and disinformation fueled by the government itself.',
-    'How did this happen?'
+    `This week is “Right to Know” Week in Canada and around the world.`,
+    `Access to information is a cornerstone of Canadian democracy, keeping governments accountable, encouraging citizen participation, and giving Canadians access to the information their taxes pay for.`,
+    `But the current system is in disarray.`,
+    `In May 2023, the Information Commissioner, the independent ombudsman for the system, appeared before Parliament…`,
+    `… to criticize the current system and a system that deliberately underfunded her office’s capacity to process complaints by access to information requesters.`,
+    `The following year, her budget was cut further.`,
+    `Today, the system is in sharp decline.`,
+    `Delays are endemic.`,
+    `Funding is low.`,
+    `Real costs are not being met.`,
+    `A systemic breakdown in the availability of vital government information tears at accountability frameworks, accelerating a decline in Canadian trust in government institutions.`,
+    `And the faltering system has wrought havoc on Canadian journalism, contributing to distrust and a plague of misinformation and disinformation fueled by the government itself.`,
+    `How did this happen?`
 ];
 
 const sectionOneVids = [
-    '/vids/Vid1.mp4',
-    '/vids/Vid2.mp4',
-    '/vids/Vid3.mp4'
+    `/vids/Vid1.mp4`,
+    `/vids/Vid2.mp4`,
+    `/vids/Vid3.mp4`
 ]
 
 const sectionOneImgs = [
-    '/sectionOne/slide8.png',
-    '/sectionOne/slide12.png',
-    '/sectionOne/slide16a.png',
-    '/sectionOne/slide16b.png',
-    '/sectionOne/slide10.png',
-    '/sectionOne/slide11.png'
+    `/sectionOne/slide8.png`,
+    `/sectionOne/slide12.png`,
+    `/sectionOne/slide16a.png`,
+    `/sectionOne/slide16b.png`,
+    `/sectionOne/slide10.png`,
+    `/sectionOne/slide11.png`
 ];
 
 const bannerOneImgs = [
-    '/bannerOne/HOCHill-Layer1.png',
-    '/bannerOne/HOCHill-Layer2.png',
-    '/bannerOne/HOCHill-Layer3.png',
-    '/bannerOne/HOCHill-Layer4.png',
-    '/bannerOne/HOCHill-Layer5.png'
+    `/bannerOne/HOCHill-Layer1.png`,
+    `/bannerOne/HOCHill-Layer2.png`,
+    `/bannerOne/HOCHill-Layer3.png`,
+    `/bannerOne/HOCHill-Layer4.png`,
+    `/bannerOne/HOCHill-Layer5.png`
 ];
 
 const bannerOneTexts = [
-    'Crisis of Transparency',
-    'A Report on The Dire State of Canada’s Access to Information System',
-    'How did we arrive at this juncture? The answer partly rests in how the system was created...'
+    `Crisis of Transparency`,
+    `A Report on The Dire State of Canada’s Access to Information System`,
+    `How did we arrive at this juncture? The answer partly rests in how the system was created...`
 ]
 
 const sectionTwoTexts = [
-    'Starting in the second half of the 20th Century, many countries started passing freedom of information laws.',
-    'Finland 1951',
-    'United States 1966',
-    'Denmark and Norway 1970',
-    'France 1971',
-    'In Canada, the provinces began to do so, too.',
-    'Nova Scotia 1977',
-    'New Brunswick 1977',
-    'Newfoundland and Labrador in 1981',
-    'Quebec in 1982',
-    'Next, it was the federal government’s turn…',
-    'In 1965, NDP MP Barry Mather introduced the first private member’s bill to pass a Canadian freedom of information law.  It failed.',
-    'In 1971, Progressive Conservative MP Ged Baldwin introduced the first comprehensive legislation in a private member’s bill.',
-    'It also failed.',
-    'Despite continued attempts throughout the 1970s to pass a law, there was no success.  But Baldwin continued in his efforts to champion the need for a law.',
-    'A promising bill was introduced in the short-lived government of Joe Clark, but died before the government fell on a confidence motion.',
-    'Finally, under the Trudeau government’s law mandate, Secretary of State and Minister of Communications Francis Fox introduced a bill in the House of Commons.',
-    'Although the bill eventually passed, it did not look promising at first.  After its introduction, the bill languished in committee.',
-    'The bill initially made it possible for the Information Commissioner and the courts to review exemptions for cabinet confidences. At the last minute, Prime Minister Trudeau made a last minute amendment completely excluding them from the reach of the bill.',
-    'Now when the government invokes a cabinet confidence, it is not subject to review even by the courts.  It is the most restrictive type of cabinet secrecy among Westminster-style government counterparts.',
-    'A confidential cabinet memorandum at the time:',
-    'It should be noted that there is a fundamental distinction between, one the one hand, exluding information from the scope of Access and, on the other, exempting it from the right of access. Exempt information is subject to the general regime of the Access to Information legislation in that applicants may request it but have no right it it;',
-    'The bill also excluded the Prime Minister’s Office and the political staff of Ministers’ offices, omitting key parts of government from its reach.',
-    'The omission of cabinet confidences from the bill and the omission of key offices where government power resides was a bruising disappointment. It would undermine the efficacy of the law from its earliest years.',
-    'Finally, on June 28, 1982, the bill passed.  It came into force the following year.',
-    'Despite the legislative requirement to study the law every five years, there has been minimal change to the law since it was passed, even as it has played a vital role in Canadian history over the last forty years…',
-    'For now, it has fallen on civil society actors to try and fixed the system.'
+    `Starting in the second half of the 20th Century, many countries started passing freedom of information laws.`,
+    `Finland 1951`,
+    `United States 1966`,
+    `Denmark and Norway 1970`,
+    `France 1971`,
+    `In Canada, the provinces began to do so, too.`,
+    `Nova Scotia 1977`,
+    `New Brunswick 1977`,
+    `Newfoundland and Labrador in 1981`,
+    `Quebec in 1982`,
+    `Next, it was the federal government’s turn…`,
+    `In 1965, NDP MP Barry Mather introduced the first private member’s bill to pass a Canadian freedom of information law.  It failed.`,
+    `In 1971, Progressive Conservative MP Ged Baldwin introduced the first comprehensive legislation in a private member’s bill.`,
+    `It also failed.`,
+    `Despite continued attempts throughout the 1970s to pass a law, there was no success.  But Baldwin continued in his efforts to champion the need for a law.`,
+    `A promising bill was introduced in the short-lived government of Joe Clark, but died before the government fell on a confidence motion.`,
+    `Finally, under the Trudeau government’s law mandate, Secretary of State and Minister of Communications Francis Fox introduced a bill in the House of Commons.`,
+    `Although the bill eventually passed, it did not look promising at first.  After its introduction, the bill languished in committee.`,
+    `The bill initially made it possible for the Information Commissioner and the courts to review exemptions for cabinet confidences. At the last minute, Prime Minister Trudeau made a last minute amendment completely excluding them from the reach of the bill.`,
+    `Now when the government invokes a cabinet confidence, it is not subject to review even by the courts.  It is the most restrictive type of cabinet secrecy among Westminster-style government counterparts.`,
+    `A confidential cabinet memorandum at the time:`,
+    `It should be noted that there is a fundamental distinction between, one the one hand, exluding information from the scope of Access and, on the other, exempting it from the right of access. Exempt information is subject to the general regime of the Access to Information legislation in that applicants may request it but have no right it it;`,
+    `The bill also excluded the Prime Minister’s Office and the political staff of Ministers’ offices, omitting key parts of government from its reach.`,
+    `The omission of cabinet confidences from the bill and the omission of key offices where government power resides was a bruising disappointment. It would undermine the efficacy of the law from its earliest years.`,
+    `Finally, on June 28, 1982, the bill passed.  It came into force the following year.`,
+    `Despite the legislative requirement to study the law every five years, there has been minimal change to the law since it was passed, even as it has played a vital role in Canadian history over the last forty years…`,
+    `For now, it has fallen on civil society actors to try and fixed the system.`
 ]
 
 const sectionTwoVids = [
-    '/vids/Vid4.mp4',
-    '/vids/Vid5.mp4',
-    '/vids/Vid6.mp4',
-    '/vids/Vid7.mp4',
-    '/vids/Vid8.mp4',
-    '/vids/Vid9.mp4'
+    `/vids/Vid4.mp4`,
+    `/vids/Vid5.mp4`,
+    `/vids/Vid6.mp4`,
+    `/vids/Vid7.mp4`,
+    `/vids/Vid8.mp4`,
+    `/vids/Vid9.mp4`
 ]
 
 const sectionTwoImgs = [
-    '/sectionTwo/Finland.png',
-    '/sectionTwo/Usa.png',
-    '/sectionTwo/Denmark.png',
-    '/sectionTwo/Norway.png',
-    '/sectionTwo/France.png',
-    '/sectionTwo/Nova_Scotia.png',
-    '/sectionTwo/New_Brunswick.png',
-    '/sectionTwo/Newfoundland_and_Labrador.png',
-    '/sectionTwo/Quebec.png',
-    '/sectionTwo/CanadaDeclassified.png',
-    '/sectionTwo/SecretCanada.png',
-    '/sectionTwo/OpenByDefault.png'
+    `/sectionTwo/Finland.png`,
+    `/sectionTwo/Usa.png`,
+    `/sectionTwo/Denmark.png`,
+    `/sectionTwo/Norway.png`,
+    `/sectionTwo/France.png`,
+    `/sectionTwo/Nova_Scotia.png`,
+    `/sectionTwo/New_Brunswick.png`,
+    `/sectionTwo/Newfoundland_and_Labrador.png`,
+    `/sectionTwo/Quebec.png`,
+    `/sectionTwo/CanadaDeclassified.png`,
+    `/sectionTwo/SecretCanada.png`,
+    `/sectionTwo/OpenByDefault.png`
 ];
 
 const bannerTwoImgs = [
-    '/bannerTwo/HOC-Layer1.png',
-    '/bannerTwo/HOC-Layer2.png',
-    '/bannerTwo/HOC-Layer3.png',
-    '/bannerTwo/HOC-Layer3.5.png',
-    '/bannerTwo/HOC-Layer4.png',
-    '/bannerTwo/HOC-Layer5.png'
+    `/bannerTwo/HOC-Layer1.png`,
+    `/bannerTwo/HOC-Layer2.png`,
+    `/bannerTwo/HOC-Layer3.png`,
+    `/bannerTwo/HOC-Layer3.5.png`,
+    `/bannerTwo/HOC-Layer4.png`,
+    `/bannerTwo/HOC-Layer5.png`
 ];
 
 const bannerTwoTexts = [
-    'Parliament has left the task of fixing things to civil society, as no political party feels it has an incentive to create systems for more disclosure.',
-    'As recent history shows, every time a new government takes office, they pledge transparency. Once elected, such promises quickly fade. Instead of progress, there’s a consistent pattern of backtracking, leaving citizens disillusioned.'
+    `Parliament has left the task of fixing things to civil society, as no political party feels it has an incentive to create systems for more disclosure.`,
+    `As recent history shows, every time a new government takes office, they pledge transparency. Once elected, such promises quickly fade. Instead of progress, there’s a consistent pattern of backtracking, leaving citizens disillusioned.`
 ]
 
-const sectionThreeTexts=[`In 2006, Stephen Harper was elected on a promise of greater transparency after the Sponsorship Scandal plagued the preceding government.  His campaign platform promised vast changes to the access to information system. His first bill was entitled the Federal Accountability Act.`,
-                        `Justin Trudeau burst onto the scene promising radical transparency.  His first private member’s bill, the Transparency Act, promised a new era of radical transparency to build trust with citizens.`,
-                        `In 2015, the Liberal Party under Trudeau  elected with promises of creating a transparent government.`,
-                        `Liberal Party of Canada Federal Election Platform 2015`,
-                        `We will make government information more accessible.`,
-                        `Government data and information should be open by default, in formats that are modern and easy to use.`,
-                        `We will ensure that Access to Information applies to the Prime Minister’s and Ministers’ Offices.`,
-                        `None of these promises received meaningful implementation.`,
-                        `After his election in 2015,  Prime Minister Justin Trudeau included language about government being “open by default” in all his mandate letters to cabinet ministers.`,
-                        `By 2024, that language was removed from the letters.`];
-
-const sectionThreeTextPlatform2006 = [`Conservative Party of Canada Federal Election Platform 2006`,
-                                `A Conservative government will:`,
-                                `Implement the Information Commissioner’s recommendations for reform of the Access to Information Act.`,
-                                `Subject the exclusion of Cabinet confidences to review by the Information Commissioner.`,
-                                `Oblige public officials to create the records necessary to document their actions and decisions.`,
-                                `Provide a general public interest override for all exemptions, so that the public interest is put before the secrecy of the government.`];
-
-const sectionThreeTextPlatform2015 = [`Liberal Party of Canada Federal Election Platform 2015`,
-                                      `We will make government information more accessible. `,
-                                      `Government data and information should be open by default, in formats that are modern and easy to use.`,
-                                      `We will ensure that Access to Information applies to the Prime Minister’s and Ministers’ Offices.`
+const sectionThreeTexts = [
+    `In 2006, Stephen Harper was elected on a promise of greater transparency after the Sponsorship Scandal plagued the preceding government.  His campaign platform promised vast changes to the access to information system. His first bill was entitled the Federal Accountability Act.`,
+    `Justin Trudeau burst onto the scene promising radical transparency.  His first private member’s bill, the Transparency Act, promised a new era of radical transparency to build trust with citizens.`,
+    `In 2015, the Liberal Party under Trudeau  elected with promises of creating a transparent government.`,
+    `Liberal Party of Canada Federal Election Platform 2015`,
+    `We will make government information more accessible.`,
+    `Government data and information should be open by default, in formats that are modern and easy to use.`,
+    `We will ensure that Access to Information applies to the Prime Minister’s and Ministers’ Offices.`,
+    `None of these promises received meaningful implementation.`,
+    `After his election in 2015,  Prime Minister Justin Trudeau included language about government being “open by default” in all his mandate letters to cabinet ministers.`,
+    `By 2024, that language was removed from the letters.`
 ];
 
-const sectionThreeVids=['sectionThree/vids/Vid10.mp4',
-                        '/sectionThree/vids/Vid11.mp4'];
-
-
-const bannerThreeTexts=[`In June 2022, we discovered that copies of previously released requests were being intentionally destroyed.`,
-                        `We launched an urgent intervention to stop this document destruction.`,
-                        `More must be done to change the system.`,
-                        `There is no shortage of recommendations from experts`,
-                        `In 2015, the Information Commissioner outlined 85 proposed reforms aimed at modernizing and enhancing the statute.`,
-                        `The June 2016 Report by the Standing Committee on Access to Information, Privacy and Ethics addressed several of these proposals, recommending extensive reforms to the Access to Information Act. Its report in June 2023 further detailed a comprehensive list of reforms and suggested changes.`,
-                        `Here are some key ones.`,
+const sectionThreeTextPlatform2006 = [
+    `Conservative Party of Canada Federal Election Platform 2006`,
+    `A Conservative government will:`,
+    `Implement the Information Commissioner’s recommendations for reform of the Access to Information Act.`,
+    `Subject the exclusion of Cabinet confidences to review by the Information Commissioner.`,
+    `Oblige public officials to create the records necessary to document their actions and decisions.`,
+    `Provide a general public interest override for all exemptions, so that the public interest is put before the secrecy of the government.`
 ];
 
-const recommendationText=[`Recommendation #1`,
-                          `Make the Act apply to cabinet confidences.`,
-                          `Recommendation #2`,
-                          `Expand the Act to the Prime Minister’s and Ministers’ offices.`,
-                          `Recommendation #3`,
-                          `Bolster the protection of the public interest in the legislation.`,
-                          `Recommendation #4`,
-                          `Create a statutory duty to document government decision-making.`];
+const sectionThreeTextPlatform2015 = [
+    `Liberal Party of Canada Federal Election Platform 2015`,
+    `We will make government information more accessible. `,
+    `Government data and information should be open by default, in formats that are modern and easy to use.`,
+    `We will ensure that Access to Information applies to the Prime Minister’s and Ministers’ Offices.`
+];
 
-const creditsText=[`Credits`,
-                    `Direction: Prof. Matt Malone`,
-                    `Development: Gavin Edwards, Carlos Avila, Ian Fuentes`,
-                    `Research Assistance: Luke Conkin, Ashley Destauls`,
-                    `Thanks: Prof. Kevin O’Neil`];
+const sectionThreeVids = [
+    `/sectionThree/vids/Vid10.mp4`,
+    `/sectionThree/vids/Vid11.mp4`
+];
+
+const bannerThreeImgs = [
+    `/bannerTwo/Inside-Layer1.png`,
+    `/bannerTwo/Inside-Layer2.png`,
+    `/bannerTwo/Inside-Layer3.png`,
+    `/bannerTwo/Inside-Layer4.png`,
+    `/bannerTwo/Inside-Layer5.png`
+];
+
+const bannerThreeTexts = [
+    `In June 2022, we discovered that copies of previously released requests were being intentionally destroyed.`,
+    `We launched an urgent intervention to stop this document destruction.`,
+    `More must be done to change the system.`,
+    `There is no shortage of recommendations from experts`,
+    `In 2015, the Information Commissioner outlined 85 proposed reforms aimed at modernizing and enhancing the statute.`,
+    `The June 2016 Report by the Standing Committee on Access to Information, Privacy and Ethics addressed several of these proposals, recommending extensive reforms to the Access to Information Act. Its report in June 2023 further detailed a comprehensive list of reforms and suggested changes.`,
+    `Here are some key ones.`,
+];
+
+const sectionFourTexts = [
+    `Recommendation #1`,
+    `Make the Act apply to cabinet confidences.`,
+    `Recommendation #2`,
+    `Expand the Act to the Prime Minister’s and Ministers’ offices.`,
+    `Recommendation #3`,
+    `Bolster the protection of the public interest in the legislation.`,
+    `Recommendation #4`,
+    `Create a statutory duty to document government decision-making.`
+];
+
+const creditsText = [
+    `Credits`,
+    `Direction: Prof. Matt Malone`,
+    `Development: Gavin Edwards, Carlos Avila, Ian Fuentes`,
+    `Research Assistance: Luke Conkin, Ashley Destauls`,
+    `Thanks: Prof. Kevin O’Neil`];
 
 
 import React from 'react';
@@ -176,7 +194,7 @@ import LineGraph from '../layouts/LineGraph';
 
 export default function ParallaxContent() {
 return (
-    <Parallax pages={150}>
+    <Parallax pages={125}>
         {/* SECTION ONE */}
         <ParallaxLayer 
             offset={0} 
@@ -489,12 +507,22 @@ return (
 
 
         {/* BANNER THREE */}
+
         <ParallaxLayer 
             offset={103} 
             factor={16} 
             speed={0}
             style={{backgroundImage: 'linear-gradient(#dae0e8,#dae0e8)'}}
         />
+
+        {/* Put Banner 3 Here */}
+
+        <ParallaxLayer sticky={{ start: 80, end: 81 }}>
+            <Text text={bannerTwoTexts[0]} background='BlackBg' alignment='TextCenter'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 82, end: 83 }}>
+            <Text text={bannerTwoTexts[1]} background='BlackBg' alignment='TextCenterBottom'/>
+        </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 103, end: 104 }}>
             <Text text={bannerThreeTexts[0]} background='BlackBg' alignment='TextCenter'/>
         </ParallaxLayer>
@@ -520,51 +548,41 @@ return (
             <Text text={bannerThreeTexts[6]} background='BlackBg' alignment='TextCenter'/>
         </ParallaxLayer>
 
-        {/* RECOMMENDATIONS AND CREDITS */}
+        {/* SECTION FOUR */}
 
-        <ParallaxLayer sticky={{ start: 119, end: 120 }}>
-            <Text text={recommendationText[0]} background='BlackBg' alignment='TextLeftTop'/>
+        <ParallaxLayer sticky={{ start: 119, end: 123 }}>
+            <Text text={sectionFourTexts[0]} background='BlackBg' alignment='TextLeftTop'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 119, end: 120 }}>
-            <Text text={recommendationText[1]} alignment='TextRightTop'/>
+        <ParallaxLayer sticky={{ start: 119, end: 123 }}>
+            <Text text={sectionFourTexts[1]} background='BlackBg' alignment='TextRightTop'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 119, end: 120 }}>
-            <Text text={recommendationText[2]} background='BlackBg' alignment='TextLeftTopCenter'/>
+        <ParallaxLayer sticky={{ start: 120, end: 123 }}>
+            <Text text={sectionFourTexts[2]} background='BlackBg' alignment='TextLeftTopCenter'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 119, end: 120 }}>
-            <Text text={recommendationText[3]} alignment='TextRightTopCenter'/>
+        <ParallaxLayer sticky={{ start: 120, end: 123 }}>
+            <Text text={sectionFourTexts[3]} background='BlackBg' alignment='TextRightTopCenter'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 119, end: 120 }}>
-            <Text text={recommendationText[4]} background='BlackBg' alignment='TextLeftBotCenter'/>
+        <ParallaxLayer sticky={{ start: 121, end: 123 }}>
+            <Text text={sectionFourTexts[4]} background='BlackBg' alignment='TextLeftBotCenter'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 119, end: 120 }}>
-            <Text text={recommendationText[5]} alignment='TextRightBotCenter'/>
+        <ParallaxLayer sticky={{ start: 121, end: 123 }}>
+            <Text text={sectionFourTexts[5]} background='BlackBg' alignment='TextRightBotCenter'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 119, end: 120 }}>
-            <Text text={recommendationText[6]} background='BlackBg' alignment='TextLeftBot'/>
+        <ParallaxLayer sticky={{ start: 122, end: 123 }}>
+            <Text text={sectionFourTexts[6]} background='BlackBg' alignment='TextLeftBot'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 119, end: 120 }}>
-            <Text text={recommendationText[7]} alignment='TextRightBot'/>
-        </ParallaxLayer>
-
-
-        <ParallaxLayer sticky={{ start: 34, end: 35 }}>
-            <Text text={bannerOneTexts[0]} background='BlackBg' alignment='TextCenter'/>
-        </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 34, end: 35 }}>
-            <Text text={bannerOneTexts[1]} background='BlackBg' alignment='TextCenterBottom'/>
+        <ParallaxLayer sticky={{ start: 122, end: 123 }}>
+            <Text text={sectionFourTexts[7]} background='BlackBg' alignment='TextRightBot'/>
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{ start: 121, end: 122 }}>
-            <Text text={creditsText[0]} alignment='TextCenter'/>
-            <Text text={creditsText[1]} alignment='TextCenter'/>
-            <Text text={creditsText[2]} alignment='TextCenter'/>
-            <Text text={creditsText[3]} alignment='TextCenter'/>
-            <Text text={creditsText[4]} alignment='TextCenter'/>
+        {/* CREDITS */}
+
+        <ParallaxLayer sticky={{ start: 124, end: 125}}>
+            <Text text={creditsText[0]} background='BlackBg' alignment='TextCenter'/>
+            <Text text={creditsText[1]} background='BlackBg' alignment='TextCenter'/>
+            <Text text={creditsText[2]} background='BlackBg' alignment='TextCenter'/>
+            <Text text={creditsText[3]} background='BlackBg' alignment='TextCenter'/>
+            <Text text={creditsText[4]} background='BlackBg' alignment='TextCenter'/>
         </ParallaxLayer>
-
-
-
-
     </Parallax>
 );}
