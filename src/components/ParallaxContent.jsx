@@ -65,7 +65,7 @@ const sectionTwoTexts = [
     `The bill initially made it possible for the Information Commissioner and the courts to review exemptions for cabinet confidences. At the last minute, Prime Minister Trudeau made a last minute amendment completely excluding them from the reach of the bill.`,
     `Now when the government invokes a cabinet confidence, it is not subject to review even by the courts.  It is the most restrictive type of cabinet secrecy among Westminster-style government counterparts.`,
     `A confidential cabinet memorandum at the time:`,
-    `It should be noted that there is a fundamental distinction between, one the one hand, exluding information from the scope of Access and, on the other, exempting it from the right of access. Exempt information is subject to the general regime of the Access to Information legislation in that applicants may request it but have no right it it;`,
+    `It should be noted that there is a fundamental distinction between, one the one hand, exluding information from the scope of Access and, on the other, exempting it from the right of access. Exempt information is subject to the general regime of the Access to Information legislation in that applicants may request it but have no right it it.`,
     `The bill also excluded the Prime Minister’s Office and the political staff of Ministers’ offices, omitting key parts of government from its reach.`,
     `The omission of cabinet confidences from the bill and the omission of key offices where government power resides was a bruising disappointment. It would undermine the efficacy of the law from its earliest years.`,
     `Finally, on June 28, 1982, the bill passed.  It came into force the following year.`,
@@ -146,11 +146,11 @@ const sectionThreeVids = [
 ];
 
 const bannerThreeImgs = [
-    `/bannerTwo/Inside-Layer1.png`,
-    `/bannerTwo/Inside-Layer2.png`,
-    `/bannerTwo/Inside-Layer3.png`,
-    `/bannerTwo/Inside-Layer4.png`,
-    `/bannerTwo/Inside-Layer5.png`
+    `/bannerThree/Inside-Layer1.png`,
+    `/bannerThree/Inside-Layer2.png`,
+    `/bannerThree/Inside-Layer3.png`,
+    `/bannerThree/Inside-Layer4.png`,
+    `/bannerThree/Inside-Layer5.png`
 ];
 
 const bannerThreeTexts = [
@@ -189,6 +189,7 @@ import Text from '../layouts/Text';
 import Img from '../layouts/Img';
 import BarGraph from '../layouts/BarGraph';
 import LineGraph from '../layouts/LineGraph';
+import Typewriter from './Typewriter';
 
 
 
@@ -198,7 +199,7 @@ return (
         {/* SECTION ONE */}
         <ParallaxLayer 
             offset={0} 
-            factor={37} 
+            factor={34} 
             speed={0}
             style={{backgroundImage: 'linear-gradient(#02000f,#dae0e8)'}}
         />
@@ -275,7 +276,22 @@ return (
             <Text text={sectionOneTexts[12]} background='BlackBg' alignment='TextCenter'/>
         </ParallaxLayer>
 
+        <ParallaxLayer 
+            offset={34} 
+            factor={1} 
+            speed={0}
+            style={{backgroundImage: 'linear-gradient(#dae0e8,#0a0149)'}}
+        />
+
+        <ParallaxLayer 
+            offset={35} 
+            factor={45} 
+            speed={0}
+            style={{backgroundImage: 'linear-gradient(#0a0149,#daeafa)'}}
+        />
+
         {/* BANNER ONE */}
+
         <ParallaxLayer offset={34.5} speed={0.1}>
             <Img img={bannerOneImgs[1]} alignment='ImgCenter'/>
         </ParallaxLayer>
@@ -298,21 +314,7 @@ return (
             <Text text={bannerOneTexts[2]} background='BlackBg' alignment='TextCenter'/>
         </ParallaxLayer>
 
-        <ParallaxLayer 
-            offset={37} 
-            factor={1} 
-            speed={0}
-            style={{backgroundImage: 'linear-gradient(#dae0e8,#0a0149)'}}
-        />
-
         {/* SECTION TWO */}
-        <ParallaxLayer 
-            offset={38} 
-            factor={45} 
-            speed={0}
-            style={{backgroundImage: 'linear-gradient(#0a0149,#daeafa)'}}
-        />
-
         {/* Put a Timeline thingy here */}
     
         <ParallaxLayer sticky={{ start: 38, end: 39 }}>
@@ -391,7 +393,7 @@ return (
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 66, end: 67 }}>
             <Text text={sectionTwoTexts[20]} background='BlackBg' alignment='TextCenterTop'/>
-            <Text text={sectionTwoTexts[21]} background='BlackBg' alignment='TextCenterBottom'/>
+            <Typewriter text= {sectionTwoTexts[21]}></Typewriter>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 68, end: 69 }}>
             <Text text={sectionTwoTexts[22]} background='BlackBg' alignment='TextCenterBottom'/>
@@ -421,6 +423,19 @@ return (
         </ParallaxLayer>
 
 
+        <ParallaxLayer 
+            offset={80} 
+            factor={1} 
+            speed={0}
+            style={{backgroundImage: 'linear-gradient(#daeafa,#96a2ba)'}}
+        />
+
+        <ParallaxLayer 
+            offset={81} 
+            factor={19} 
+            speed={0}
+            style={{backgroundImage: 'linear-gradient(#96a2ba,#dddce2)'}}
+        />
 
         {/* BANNER TWO */}
         <ParallaxLayer offset={80.5} speed={0.1}>
@@ -443,20 +458,7 @@ return (
             <Text text={bannerTwoTexts[1]} background='BlackBg' alignment='TextCenterBottom'/>
         </ParallaxLayer>
 
-        <ParallaxLayer 
-            offset={83} 
-            factor={43} 
-            speed={0}
-            style={{backgroundImage: 'linear-gradient(#daeafa,#96a2ba)'}}
-        />
-
         {/* SECTION THREE */}
-        <ParallaxLayer 
-            offset={84} 
-            factor={18} 
-            speed={0}
-            style={{backgroundImage: 'linear-gradient(#96a2ba,#dddce2)'}}
-        />
         <ParallaxLayer sticky={{ start: 84, end: 90 }}>
             <Video videoPath={sectionThreeVids[0]} alignment='VidCenter'/>
         </ParallaxLayer>
@@ -494,22 +496,26 @@ return (
         </ParallaxLayer>
 
         <ParallaxLayer 
-            offset={102} 
-            factor={1} 
+            offset={100} 
+            factor={2} 
             speed={0}
             style={{backgroundImage: 'linear-gradient(#dddce2,#adc473)'}}
         />
 
-        {/* BANNER THREE */}
-
-        {/* Put Banner 3 Here */}
-
         <ParallaxLayer 
-            offset={103} 
-            factor={22} 
+            offset={102} 
+            factor={23} 
             speed={0}
             style={{backgroundImage: 'linear-gradient(#adc473,#ffffff)'}}
         />
+
+        {/* BANNER THREE */}
+
+        <ParallaxLayer offset={103} speed={0.1}>
+            <Img img={bannerThreeImgs[1]} alignment='ImgCenter'/>
+        </ParallaxLayer>
+
+        {/* Put Banner 3 Here */}
 
         <ParallaxLayer sticky={{ start: 103, end: 104 }}>
             <Text text={bannerThreeTexts[0]} background='BlackBg' alignment='TextCenter'/>
