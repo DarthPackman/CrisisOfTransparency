@@ -198,7 +198,7 @@ return (
         {/* SECTION ONE */}
         <ParallaxLayer 
             offset={0} 
-            factor={34} 
+            factor={37} 
             speed={0}
             style={{backgroundImage: 'linear-gradient(#02000f,#dae0e8)'}}
         />
@@ -276,18 +276,6 @@ return (
         </ParallaxLayer>
 
         {/* BANNER ONE */}
-        <ParallaxLayer 
-            offset={34} 
-            factor={0.5} 
-            speed={0}
-            style={{backgroundImage: 'linear-gradient(#dae0e8,#dae0e8)'}}
-        />
-        <ParallaxLayer 
-            offset={34.25} 
-            factor={1} 
-            speed={0}
-            style={{backgroundImage: 'linear-gradient(#d8e1ef,#d8e1ef)'}}
-        />
         <ParallaxLayer offset={34.5} speed={0.1}>
             <Img img={bannerOneImgs[1]} alignment='ImgCenter'/>
         </ParallaxLayer>
@@ -310,14 +298,19 @@ return (
             <Text text={bannerOneTexts[2]} background='BlackBg' alignment='TextCenter'/>
         </ParallaxLayer>
 
-
+        <ParallaxLayer 
+            offset={37} 
+            factor={1} 
+            speed={0}
+            style={{backgroundImage: 'linear-gradient(#dae0e8,#0a0149)'}}
+        />
 
         {/* SECTION TWO */}
         <ParallaxLayer 
-            offset={35} 
-            factor={40} 
+            offset={38} 
+            factor={45} 
             speed={0}
-            style={{backgroundImage: 'linear-gradient(#0a0149,#DDDCE2)'}}
+            style={{backgroundImage: 'linear-gradient(#0a0149,#daeafa)'}}
         />
 
         {/* Put a Timeline thingy here */}
@@ -430,18 +423,6 @@ return (
 
 
         {/* BANNER TWO */}
-        <ParallaxLayer 
-            offset={80} 
-            factor={0.5} 
-            speed={0}
-            style={{backgroundImage: 'linear-gradient(#dae0e8,#dae0e8)'}}
-        />
-        <ParallaxLayer 
-            offset={81} 
-            factor={4} 
-            speed={0}
-            style={{backgroundImage: 'linear-gradient(#d8e1ef,#d8e1ef)'}}
-        />
         <ParallaxLayer offset={80.5} speed={0.1}>
             <Img img={bannerTwoImgs[1]} alignment='ImgCenter'/>
         </ParallaxLayer>
@@ -462,12 +443,19 @@ return (
             <Text text={bannerTwoTexts[1]} background='BlackBg' alignment='TextCenterBottom'/>
         </ParallaxLayer>
 
+        <ParallaxLayer 
+            offset={83} 
+            factor={43} 
+            speed={0}
+            style={{backgroundImage: 'linear-gradient(#daeafa,#96a2ba)'}}
+        />
+
         {/* SECTION THREE */}
         <ParallaxLayer 
             offset={84} 
-            factor={15} 
+            factor={18} 
             speed={0}
-            style={{backgroundImage: 'linear-gradient(#02000f,#dae0e8)'}}
+            style={{backgroundImage: 'linear-gradient(#96a2ba,#dddce2)'}}
         />
         <ParallaxLayer sticky={{ start: 84, end: 90 }}>
             <Video videoPath={sectionThreeVids[0]} alignment='VidCenter'/>
@@ -505,24 +493,24 @@ return (
             <Text text={sectionThreeTexts[4]} background='BlackBg' alignment='TextCenter'/>
         </ParallaxLayer>
 
+        <ParallaxLayer 
+            offset={102} 
+            factor={1} 
+            speed={0}
+            style={{backgroundImage: 'linear-gradient(#dddce2,#adc473)'}}
+        />
 
         {/* BANNER THREE */}
 
-        <ParallaxLayer 
-            offset={103} 
-            factor={16} 
-            speed={0}
-            style={{backgroundImage: 'linear-gradient(#dae0e8,#dae0e8)'}}
-        />
-
         {/* Put Banner 3 Here */}
 
-        <ParallaxLayer sticky={{ start: 80, end: 81 }}>
-            <Text text={bannerTwoTexts[0]} background='BlackBg' alignment='TextCenter'/>
-        </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 82, end: 83 }}>
-            <Text text={bannerTwoTexts[1]} background='BlackBg' alignment='TextCenterBottom'/>
-        </ParallaxLayer>
+        <ParallaxLayer 
+            offset={103} 
+            factor={22} 
+            speed={0}
+            style={{backgroundImage: 'linear-gradient(#adc473,#ffffff)'}}
+        />
+
         <ParallaxLayer sticky={{ start: 103, end: 104 }}>
             <Text text={bannerThreeTexts[0]} background='BlackBg' alignment='TextCenter'/>
         </ParallaxLayer>
