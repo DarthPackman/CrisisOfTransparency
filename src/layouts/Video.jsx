@@ -3,8 +3,8 @@ import './Video.css'
 
 const Video = ({ videoPath, alignment }) => {
     return (
-        <div className={`VidContainer ${alignment}`} >
-            <video className="video" autoPlay muted loop>
+        <div className='VidContainer' >
+            <video className={`video ${alignment}`} autoPlay muted loop>
                 <source src={videoPath} type="video/mp4" />
             </video>
         </div>
