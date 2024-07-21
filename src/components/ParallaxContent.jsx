@@ -245,10 +245,10 @@ return (
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{ start: 20, end: 22 }}>
-            {/* <LineGraph></LineGraph> */}
+            <LineGraph></LineGraph>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 21, end: 22 }}>
-            <Text text={sectionOneTexts[8]} background='BlackBg' alignment='Mid Bottom'/>
+            <Text text={sectionOneTexts[8]} background='BlackBg' alignment='Mid Center'/>
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{ start: 23, end: 25 }}>
@@ -545,28 +545,28 @@ return (
         {/* SECTION FOUR */}
 
         <ParallaxLayer sticky={{ start: 119, end: 123 }}>
-            <Text text={recommendationText[0]} background='BlackBg' alignment='Left Top'/>
+            <Text text={sectionFourTexts[0]} background='BlackBg' alignment='Left Top'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 119, end: 123 }}>
-            <Text text={recommendationText[1]} background='BlackBg' alignment='Right Top'/>
+            <Text text={sectionFourTexts[1]} background='BlackBg' alignment='Right Top'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 120, end: 123 }}>
-            <Text text={recommendationText[2]} background='BlackBg' alignment='Left TopCenter2'/>
+            <Text text={sectionFourTexts[2]} background='BlackBg' alignment='Left TopCenter2'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 120, end: 123 }}>
-            <Text text={recommendationText[3]} background='BlackBg' alignment='Right TopCenter2'/>
+            <Text text={sectionFourTexts[3]} background='BlackBg' alignment='Right TopCenter2'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 121, end: 123 }}>
-            <Text text={recommendationText[4]} background='BlackBg' alignment='Left CenterBottom'/>
+            <Text text={sectionFourTexts[4]} background='BlackBg' alignment='Left CenterBottom'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 121, end: 123 }}>
-            <Text text={recommendationText[5]} background='BlackBg' alignment='Right CenterBottom'/>
+            <Text text={sectionFourTexts[5]} background='BlackBg' alignment='Right CenterBottom'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 122, end: 123 }}>
-            <Text text={recommendationText[6]} background='BlackBg' alignment='Left Floor'/>
+            <Text text={sectionFourTexts[6]} background='BlackBg' alignment='Left Floor'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 122, end: 123 }}>
-            <Text text={recommendationText[7]} background='BlackBg' alignment='Right Floor'/>
+            <Text text={sectionFourTexts[7]} background='BlackBg' alignment='Right Floor'/>
         </ParallaxLayer>
 
         {/* CREDITS */}

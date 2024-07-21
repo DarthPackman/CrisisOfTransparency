@@ -8,7 +8,8 @@ import {
   Tooltip,
   Legend,
   LineController,
-  LineElement
+  LineElement,
+  PointElement,  // Ensure PointElement is registered as well
 } from 'chart.js';
 
 ChartJS.register(
@@ -18,20 +19,21 @@ ChartJS.register(
   CategoryScale,
   LinearScale,
   LineElement,
-  LineController
+  LineController,
+  PointElement  // Register PointElement
 );
 
 const AnimatedLineGraph = () => {
   const data = {
-    labels: ['2013-14', '2014-15', '2015-16', '2016-17', '2017-18', '2018-19', '2019-20', '2020-21', '2021-22', '2022-23'],
+    labels: ['2012-13', '2013-14', '2014-15', '2015-16', '2016-17', '2017-18', '2018-19', '2019-20', '2020-21', '2021-22'],
     datasets: [
       {
-        label: 'Open ATI requests that are beyond the legislated timelines',
+        label: 'Costs in Mllions of Institutions Operations',
         borderColor: 'rgba(204, 219, 73, 1)',
-        backgroundColor: 'rgba(204, 219, 73, 0.2)',
-        data: [30, 31, 69, 265, 559, 940, 2353, 4156, 6332, 9920],
+        backgroundColor: 'rgba(204, 219, 73, 1)',
+        data: [56.3, 59.7, 64.3, 61.9, 61.4, 65.6, 68.5, 71.7, 77.7, 83.2],
         fill: true,
-        tension: 0.4 // Adjust tension for smooth curve (0 = straight lines)
+        tension: 0.1 // Adjust tension for smooth curve (0 = straight lines)
       },
     ],
   };
@@ -68,7 +70,7 @@ const AnimatedLineGraph = () => {
       },
       title: {
         display: true,
-        text: 'Breakdown of ATI Requests',
+        text: 'Costs of Administering the System',
         color: 'white', 
       },
     },
