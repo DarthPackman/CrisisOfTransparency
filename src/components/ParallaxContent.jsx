@@ -492,7 +492,7 @@ return (
             <Text text={sectionThreeTexts[4]} background='BlackBg' alignment='Mid Center'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 101, end: 102 }}>
-            <Text text={sectionThreeTexts[4]} background='BlackBg' alignment='Mid Center'/>
+            <Text text={sectionThreeTexts[5]} background='BlackBg' alignment='Mid Center'/>
         </ParallaxLayer>
 
         <ParallaxLayer 
