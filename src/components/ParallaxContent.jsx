@@ -1,3 +1,11 @@
+const source = [
+    `Video: The 6ix`,
+    `Source: The 6ix`,
+    `Video: Parlvu`,
+    `Source: ParlVu`,
+    `Video: SFU Morris J. Wosk Center for Dialogue`
+]
+
 const sectionOneTexts = [
     `This week is “Right to Know” Week in Canada and around the world.`,
     `Access to information is a cornerstone of Canadian democracy, keeping governments accountable, encouraging citizen participation, and giving Canadians access to the information their taxes pay for.`,
@@ -154,8 +162,6 @@ const bannerThreeImgs = [
 ];
 
 const bannerThreeTexts = [
-    `In June 2022, we discovered that copies of previously released requests were being intentionally destroyed.`,
-    `We launched an urgent intervention to stop this document destruction.`,
     `More must be done to change the system.`,
     `There is no shortage of recommendations from experts`,
     `In 2015, the Information Commissioner outlined 85 proposed reforms aimed at modernizing and enhancing the statute.`,
@@ -208,12 +214,14 @@ return (
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 1, end: 2 }}>
             <Text text={sectionOneTexts[0]} background='BlackBg' alignment='Mid Bottom'/>
+            <Text text={source[0]} background='BlackBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 3, end: 4 }}>
             <Text text={sectionOneTexts[1]} background='BlackBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 5, end: 6 }}>
             <Text text={sectionOneTexts[2]} background='BlackBg' alignment='Mid Bottom'/>
+            <Text text={source[1]} background='BlackBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
         
         <ParallaxLayer sticky={{ start: 7, end: 11 }}>
@@ -221,9 +229,11 @@ return (
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 8, end: 9 }}>
             <Text text={sectionOneTexts[3]} background='BlackBg' alignment='Mid Bottom'/>
+            <Text text={source[2]} background='BlackBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 10, end: 11 }}>
             <Text text={sectionOneTexts[4]} background='BlackBg' alignment='Mid Bottom'/>
+            <Text text={source[3]} background='BlackBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{ start: 12, end: 14 }}> 
@@ -263,6 +273,7 @@ return (
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 27, end: 28 }}>
             <Text text={sectionOneTexts[10]} background='BlackBg' alignment='Mid Bottom'/>
+            <Text text={source[4]} background='BlackBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 29, end: 30 }}>
             <Text text={sectionOneTexts[11]} background='BlackBg' alignment='Mid Bottom'/>
@@ -504,7 +515,7 @@ return (
 
         <ParallaxLayer 
             offset={102} 
-            factor={23} 
+            factor={21} 
             speed={0}
             style={{backgroundImage: 'linear-gradient(#adc473,#ffffff)'}}
         />
@@ -524,54 +535,45 @@ return (
             <Text text={bannerThreeTexts[1]} background='BlackBg' alignment='Mid Center'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 107, end: 108 }}>
-            Insert Video Here
-        </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 109, end: 110 }}>
             <Text text={bannerThreeTexts[2]} background='BlackBg' alignment='Mid Center'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 111, end: 112 }}>
+        <ParallaxLayer sticky={{ start: 109, end: 110 }}>
             <Text text={bannerThreeTexts[3]} background='BlackBg' alignment='Mid Center'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 113, end: 114 }}>
+        <ParallaxLayer sticky={{ start: 111, end: 112 }}>
             <Text text={bannerThreeTexts[4]} background='BlackBg' alignment='Mid Center'/>
-        </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 115, end: 116 }}>
-            <Text text={bannerThreeTexts[5]} background='BlackBg' alignment='Mid Center'/>
-        </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 117, end: 118 }}>
-            <Text text={bannerThreeTexts[6]} background='BlackBg' alignment='Mid Center'/>
         </ParallaxLayer>
 
         {/* SECTION FOUR */}
 
-        <ParallaxLayer sticky={{ start: 119, end: 123 }}>
+        <ParallaxLayer sticky={{ start: 113, end: 121 }}>
             <Text text={sectionFourTexts[0]} background='BlackBg' alignment='Left Top'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 119, end: 123 }}>
+        <ParallaxLayer sticky={{ start: 114, end: 121 }}>
             <Text text={sectionFourTexts[1]} background='BlackBg' alignment='Right Top'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 120, end: 123 }}>
+        <ParallaxLayer sticky={{ start: 115, end: 121 }}>
             <Text text={sectionFourTexts[2]} background='BlackBg' alignment='Left TopCenter2'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 120, end: 123 }}>
+        <ParallaxLayer sticky={{ start: 116, end: 121 }}>
             <Text text={sectionFourTexts[3]} background='BlackBg' alignment='Right TopCenter2'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 121, end: 123 }}>
+        <ParallaxLayer sticky={{ start: 117, end: 121 }}>
             <Text text={sectionFourTexts[4]} background='BlackBg' alignment='Left CenterBottom'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 121, end: 123 }}>
+        <ParallaxLayer sticky={{ start: 118, end: 121 }}>
             <Text text={sectionFourTexts[5]} background='BlackBg' alignment='Right CenterBottom'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 122, end: 123 }}>
+        <ParallaxLayer sticky={{ start: 119, end: 121 }}>
             <Text text={sectionFourTexts[6]} background='BlackBg' alignment='Left Floor'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 122, end: 123 }}>
+        <ParallaxLayer sticky={{ start: 120, end: 121 }}>
             <Text text={sectionFourTexts[7]} background='BlackBg' alignment='Right Floor'/>
         </ParallaxLayer>
 
         {/* CREDITS */}
 
-        <ParallaxLayer sticky={{ start: 124, end: 125}}>
+        <ParallaxLayer sticky={{ start: 122, end: 123}}>
             <Text text={creditsText[0]} background='BlackBg' alignment='Mid Center'/>
             <Text text={creditsText[1]} background='BlackBg' alignment='Mid Center'/>
             <Text text={creditsText[2]} background='BlackBg' alignment='Mid Center'/>
