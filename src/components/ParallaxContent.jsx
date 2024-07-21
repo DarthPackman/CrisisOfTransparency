@@ -1,9 +1,17 @@
 const source = [
-    `Video: The 6ix`,
     `Source: The 6ix`,
-    `Video: Parlvu`,
     `Source: ParlVu`,
-    `Video: SFU Morris J. Wosk Center for Dialogue`
+    `Source: The Globe and Mail`,
+    `Source: TBS`,
+    `Source: SFU Morris J. Wosk Centre for Dialogue`,
+    `Sources: CBC & The Globe and Mail`,
+    `Source: CPAC`,
+    `Source: TVO`,
+    `Source: CPAC`,
+    `Sources: VoiceofBC and Canuck Politics`,
+    `Source: Canuck Politics`,
+    `Source: CPAC`,
+    `Source: PMO`
 ]
 
 const sectionOneTexts = [
@@ -121,13 +129,9 @@ const bannerTwoTexts = [
 
 const sectionThreeTexts = [
     `In 2006, Stephen Harper was elected on a promise of greater transparency after the Sponsorship Scandal plagued the preceding government.  His campaign platform promised vast changes to the access to information system. His first bill was entitled the Federal Accountability Act.`,
+    `None of these promises received meaningful implementation.`,
     `Justin Trudeau burst onto the scene promising radical transparency.  His first private member’s bill, the Transparency Act, promised a new era of radical transparency to build trust with citizens.`,
     `In 2015, the Liberal Party under Trudeau  elected with promises of creating a transparent government.`,
-    `Liberal Party of Canada Federal Election Platform 2015`,
-    `We will make government information more accessible.`,
-    `Government data and information should be open by default, in formats that are modern and easy to use.`,
-    `We will ensure that Access to Information applies to the Prime Minister’s and Ministers’ Offices.`,
-    `None of these promises received meaningful implementation.`,
     `After his election in 2015,  Prime Minister Justin Trudeau included language about government being “open by default” in all his mandate letters to cabinet ministers.`,
     `By 2024, that language was removed from the letters.`
 ];
@@ -151,6 +155,11 @@ const sectionThreeTextPlatform2015 = [
 const sectionThreeVids = [
     `/sectionThree/vids/Vid10.mp4`,
     `/sectionThree/vids/Vid11.mp4`
+];
+
+const sectionThreeImgs = [
+    `/sectionThree/S3I1.png`,
+    `/sectionThree/S3I2.png`,
 ];
 
 const bannerThreeImgs = [
@@ -211,33 +220,32 @@ return (
         />
         <ParallaxLayer sticky={{ start: 0, end: 6 }}>
             <Video videoPath={sectionOneVids[0]} alignment='VideoCenter'/>
+            <Text text={source[0]} background='BlackBg' alignment='Source'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 1, end: 2 }}>
             <Text text={sectionOneTexts[0]} background='BlackBg' alignment='Mid Bottom'/>
-            <Text text={source[0]} background='BlackBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 3, end: 4 }}>
             <Text text={sectionOneTexts[1]} background='BlackBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 5, end: 6 }}>
             <Text text={sectionOneTexts[2]} background='BlackBg' alignment='Mid Bottom'/>
-            <Text text={source[1]} background='BlackBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
         
         <ParallaxLayer sticky={{ start: 7, end: 11 }}>
             <Video videoPath={sectionOneVids[1]} alignment='VideoCenter'/>
+            <Text text={source[1]} background='BlackBg' alignment='Source'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 8, end: 9 }}>
             <Text text={sectionOneTexts[3]} background='BlackBg' alignment='Mid Bottom'/>
-            <Text text={source[2]} background='BlackBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 10, end: 11 }}>
             <Text text={sectionOneTexts[4]} background='BlackBg' alignment='Mid Bottom'/>
-            <Text text={source[3]} background='BlackBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{ start: 12, end: 14 }}> 
             <Img img={sectionOneImgs[0]} alignment='ImgCenterTop'/>
+            <Text text={source[2]} background='BlackBg' alignment='Source'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 13, end: 14 }}>
             <Text text={sectionOneTexts[5]} background='BlackBg' alignment='Mid Bottom'/>
@@ -249,6 +257,7 @@ return (
 
         <ParallaxLayer sticky={{ start: 17, end: 19 }}>
             <BarGraph></BarGraph>
+            <Text text={source[3]} background='BlackBg' alignment='Source'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 18, end: 19 }}>
             <Text text={sectionOneTexts[7]} background='BlackBg' alignment='Mid Center'/>
@@ -256,6 +265,7 @@ return (
 
         <ParallaxLayer sticky={{ start: 20, end: 22 }}>
             <LineGraph></LineGraph>
+            <Text text={source[3]} background='BlackBg' alignment='Source'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 21, end: 22 }}>
             <Text text={sectionOneTexts[8]} background='BlackBg' alignment='Mid Center'/>
@@ -263,6 +273,7 @@ return (
 
         <ParallaxLayer sticky={{ start: 23, end: 25 }}>
             <Img img={sectionOneImgs[1]} alignment='ImgCenterTop'/>
+            <Text text={source[3]} background='BlackBg' alignment='Source'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 24, end: 25 }} >
             <Text text={sectionOneTexts[9]} background='BlackBg' alignment='Mid Bottom'/>
@@ -270,10 +281,10 @@ return (
 
         <ParallaxLayer  sticky={{ start: 26, end: 30 }}>
             <Video videoPath={sectionOneVids[2]} alignment='VideoCenter'/>
+            <Text text={source[4]} background='BlackBg' alignment='Source'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 27, end: 28 }}>
             <Text text={sectionOneTexts[10]} background='BlackBg' alignment='Mid Bottom'/>
-            <Text text={source[4]} background='BlackBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 29, end: 30 }}>
             <Text text={sectionOneTexts[11]} background='BlackBg' alignment='Mid Bottom'/>
@@ -282,6 +293,7 @@ return (
         <ParallaxLayer sticky={{ start: 31, end: 33 }}>
             <Img img={sectionOneImgs[2]} alignment='ImgCenterTop'/>
             <Img img={sectionOneImgs[3]} alignment='ImgCenterBottom'/>
+            <Text text={source[5]} background='BlackBg' alignment='Source'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 32, end: 33 }}>
             <Text text={sectionOneTexts[12]} background='BlackBg' alignment='Mid Center'/>
@@ -359,6 +371,7 @@ return (
 
         <ParallaxLayer sticky={{ start: 42, end: 46 }}>
             <Video videoPath={sectionTwoVids[0]} alignment='VideoCenter'/>
+            <Text text={source[6]} background='BlackBg' alignment='Source'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 43, end: 44 }}>
             <Text text={sectionTwoTexts[10]} background='BlackBg' alignment='Mid Bottom'/>
@@ -369,6 +382,7 @@ return (
 
         <ParallaxLayer sticky={{ start: 47, end: 55 }}>
             <Video videoPath={sectionTwoVids[1]} alignment='VideoCenter'/>
+            <Text text={source[7]} background='BlackBg' alignment='Source'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 48, end: 49 }}>
             <Text text={sectionTwoTexts[12]} background='BlackBg' alignment='Mid Bottom'/>
@@ -385,6 +399,7 @@ return (
 
         <ParallaxLayer sticky={{ start: 56, end: 58 }}>
             <Video videoPath={sectionTwoVids[2]} alignment='VideoCenter'/>
+            <Text text={source[8]} background='BlackBg' alignment='Source'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 57, end: 58 }}>
             <Text text={sectionTwoTexts[16]} background='BlackBg' alignment='Mid Bottom'/>
@@ -392,6 +407,7 @@ return (
 
         <ParallaxLayer sticky={{ start: 59, end: 73 }}>
             <Video videoPath={sectionTwoVids[3]} alignment='VideoCenter'/>
+            <Text text={source[8]} background='BlackBg' alignment='Source'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 60, end: 61 }}>
             <Text text={sectionTwoTexts[17]} background='BlackBg' alignment='Mid Bottom'/>
@@ -419,6 +435,7 @@ return (
         <ParallaxLayer sticky={{ start: 74, end: 76 }}>
             <Video videoPath={sectionTwoVids[4]} alignment='VideoTop'/>
             <Video videoPath={sectionTwoVids[5]} alignment='VideoBottom'/>
+            <Text text={source[9]} background='BlackBg' alignment='Source'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 75, end: 76 }}>
             <Text text={sectionTwoTexts[25]} background='BlackBg' alignment='Left Center'/>
@@ -470,40 +487,51 @@ return (
         </ParallaxLayer>
 
         {/* SECTION THREE */}
-        <ParallaxLayer sticky={{ start: 84, end: 90 }}>
+        <ParallaxLayer sticky={{ start: 84, end: 89 }}>
             <Video videoPath={sectionThreeVids[0]} alignment='VideoCenter'/>
+            <Text text={source[10]} background='BlackBg' alignment='Source'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 85, end: 86 }}>
             <Text text={sectionThreeTexts[0]} background='BlackBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
-
         <ParallaxLayer sticky={{ start: 87, end: 88 }}>
+            <Text text={sectionThreeTextPlatform2006[0]} background='BlackBg' alignment='Mid Bottom'/>
             <Text text={sectionThreeTextPlatform2006[1]} background='BlackBg' alignment='Mid Bottom'/>
+            <Text text={sectionThreeTextPlatform2006[2]} background='BlackBg' alignment='Mid Bottom'/>
+            <Text text={sectionThreeTextPlatform2006[3]} background='BlackBg' alignment='Mid Bottom'/>
+            <Text text={sectionThreeTextPlatform2006[4]} background='BlackBg' alignment='Mid Bottom'/>
+            <Text text={sectionThreeTextPlatform2006[5]} background='BlackBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
-
         <ParallaxLayer sticky={{ start: 89, end: 90 }}>
-            <Text text={sectionThreeTexts[7]} background='BlackBg' alignment='Mid Bottom'/>
-        </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 91, end: 98 }}>
-            <Video videoPath={sectionThreeVids[1]} alignment='VideoCenter'/>
-        </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 92, end: 93 }}>
             <Text text={sectionThreeTexts[1]} background='BlackBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 93, end: 94 }}>
+
+        <ParallaxLayer sticky={{ start: 91, end: 97 }}>
+            <Video videoPath={sectionThreeVids[1]} alignment='VideoCenter'/>
+            <Text text={source[11]} background='BlackBg' alignment='Source'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 92, end: 93 }}>
             <Text text={sectionThreeTexts[2]} background='BlackBg' alignment='Mid Bottom'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 93, end: 94 }}>
+            <Text text={sectionThreeTexts[3]} background='BlackBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 95, end: 96 }}>
             <Text text={sectionThreeTextPlatform2015[0]} background='BlackBg' alignment='Mid Bottom'/>
+            <Text text={sectionThreeTextPlatform2015[1]} background='BlackBg' alignment='Mid Bottom'/>
+            <Text text={sectionThreeTextPlatform2015[2]} background='BlackBg' alignment='Mid Bottom'/>
+            <Text text={sectionThreeTextPlatform2015[3]} background='BlackBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 97, end: 98 }}>
-            <Text text={sectionThreeTexts[3]} background='BlackBg' alignment='Mid Center'/>
+            <Text text={sectionThreeTexts[1]} background='BlackBg' alignment='Mid Center'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 99, end: 100 }}>
             <Text text={sectionThreeTexts[4]} background='BlackBg' alignment='Mid Center'/>
+            <Img img={sectionThreeImgs[0]} alignment='ImgCenter'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 101, end: 102 }}>
             <Text text={sectionThreeTexts[5]} background='BlackBg' alignment='Mid Center'/>
+            <Img img={sectionThreeImgs[1]} alignment='ImgCenter'/>
         </ParallaxLayer>
 
         <ParallaxLayer 
