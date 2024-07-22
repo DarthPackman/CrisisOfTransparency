@@ -12,6 +12,19 @@
     word-wrap: break-word; /* Add compatibility for older browsers */
     white-space: normal; /* Allow text to wrap to multiple lines */
 }
+
+.TypeBox
+{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding:1vh;
+    text-align: center;
+    background-color: white;
+    color: black;
+    overflow-wrap: break-word; /* Allow breaking words to prevent overflow */
+    word-wrap: break-word; /* Add compatibility for older browsers */
+    white-space: normal; /* Allow text to wrap to multiple lines */
+}
 .Title /* Title */
 {
     font-size: 4vh;
@@ -199,7 +212,7 @@
 
 .TextCenterTop {
     position: absolute;
-    left: 50%;
+    left: 20%;
     top: 10%;
     transform: translateX(-50%);
     text-align: center;
@@ -207,10 +220,16 @@
 
 .Source {
     position: absolute;
-    left: 10%;
-    bottom: 10%;
-    transform: translateX(-50%);
-    text-align: center;
+    left: 1%;
+    bottom: 0%;
+    z-index: 3;
+}
+
+.Source2 {
+    position: absolute;
+    left: 1%;
+    top: 0%;
+    z-index: 3;
 }
 
 
@@ -219,7 +238,7 @@
 {
     .TextStyle
     {
-        font-size: 2vh;
+        font-size: 1.75vh;
         padding:0vh;
         text-align: center;
         flex: 1;
@@ -230,7 +249,7 @@
     }
     .Title /* Title */
     {
-        font-size: 2vh;
+        font-size: 1.75vh;
         font-weight: bolder;
     }
 
@@ -243,20 +262,20 @@
 
     .Header /* Header */
     {
-        font-size: 1.75vh;
+        font-size: 1.50vh;
         font-style: italic;
         font-weight: bold;
     }
 
     .Dramatic /* Dramatic Text */
     {
-        font-size: 1.25vh;
+        font-size: 1vh;
         font-style: italic;
     }
 
     .Normal /* Normal Text */
     {
-        font-size: 1vh;
+        font-size: 0.5vh;
     }
     
     .Mid
@@ -268,9 +287,10 @@
     {
         grid-row: 5;
     }
+
+    .Source {
+        position: absolute;
+        left: 1%;
+    }
 }
 
-/* Desktop styles */
-@media (max-width: 769px) 
-{
-}

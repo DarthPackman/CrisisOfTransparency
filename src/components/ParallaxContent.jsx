@@ -205,7 +205,8 @@ import Img from '../layouts/Img';
 import BarGraph from '../layouts/BarGraph';
 import LineGraph from '../layouts/LineGraph';
 import Typewriter from './Typewriter';
-
+import '../layouts/Video.css';
+import '../layouts/Text.css';
 
 
 export default function ParallaxContent() {
@@ -220,7 +221,7 @@ return (
         />
         <ParallaxLayer sticky={{ start: 0, end: 6 }}>
             <Video videoPath={sectionOneVids[0]} alignment='VideoCenter'/>
-            <Text text={source[0]} background='BlackBg' alignment='Source'/>
+            <Text text={source[0]} alignment='Source' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 1, end: 2 }}>
             <Text text={sectionOneTexts[0]} background='BlackBg' alignment='Mid Bottom'/>
@@ -234,7 +235,7 @@ return (
         
         <ParallaxLayer sticky={{ start: 7, end: 11 }}>
             <Video videoPath={sectionOneVids[1]} alignment='VideoCenter'/>
-            <Text text={source[1]} background='BlackBg' alignment='Source'/>
+            <Text text={source[1]} alignment='Source2' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 8, end: 9 }}>
             <Text text={sectionOneTexts[3]} background='BlackBg' alignment='Mid Bottom'/>
@@ -245,7 +246,7 @@ return (
 
         <ParallaxLayer sticky={{ start: 12, end: 14 }}> 
             <Img img={sectionOneImgs[0]} alignment='ImgCenterTop'/>
-            <Text text={source[2]} background='BlackBg' alignment='Source'/>
+            <Text text={source[2]} alignment='Source' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 13, end: 14 }}>
             <Text text={sectionOneTexts[5]} background='BlackBg' alignment='Mid Bottom'/>
@@ -257,7 +258,7 @@ return (
 
         <ParallaxLayer sticky={{ start: 17, end: 19 }}>
             <BarGraph></BarGraph>
-            <Text text={source[3]} background='BlackBg' alignment='Source'/>
+            <Text text={source[3]} alignment='Source2' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 18, end: 19 }}>
             <Text text={sectionOneTexts[7]} background='BlackBg' alignment='Mid Center'/>
@@ -265,7 +266,7 @@ return (
 
         <ParallaxLayer sticky={{ start: 20, end: 22 }}>
             <LineGraph></LineGraph>
-            <Text text={source[3]} background='BlackBg' alignment='Source'/>
+            <Text text={source[3]} alignment='Source2' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 21, end: 22 }}>
             <Text text={sectionOneTexts[8]} background='BlackBg' alignment='Mid Center'/>
@@ -273,7 +274,7 @@ return (
 
         <ParallaxLayer sticky={{ start: 23, end: 25 }}>
             <Img img={sectionOneImgs[1]} alignment='ImgCenterTop'/>
-            <Text text={source[3]} background='BlackBg' alignment='Source'/>
+            <Text text={source[3]} alignment='Source' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 24, end: 25 }} >
             <Text text={sectionOneTexts[9]} background='BlackBg' alignment='Mid Bottom'/>
@@ -281,7 +282,7 @@ return (
 
         <ParallaxLayer  sticky={{ start: 26, end: 30 }}>
             <Video videoPath={sectionOneVids[2]} alignment='VideoCenter'/>
-            <Text text={source[4]} background='BlackBg' alignment='Source'/>
+            <Text text={source[4]} alignment='Source' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 27, end: 28 }}>
             <Text text={sectionOneTexts[10]} background='BlackBg' alignment='Mid Bottom'/>
@@ -293,7 +294,7 @@ return (
         <ParallaxLayer sticky={{ start: 31, end: 33 }}>
             <Img img={sectionOneImgs[2]} alignment='ImgCenterTop'/>
             <Img img={sectionOneImgs[3]} alignment='ImgCenterBottom'/>
-            <Text text={source[5]} background='BlackBg' alignment='Source'/>
+            <Text text={source[5]} alignment='Source' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 32, end: 33 }}>
             <Text text={sectionOneTexts[12]} background='BlackBg' alignment='Mid Center'/>
@@ -371,7 +372,7 @@ return (
 
         <ParallaxLayer sticky={{ start: 42, end: 46 }}>
             <Video videoPath={sectionTwoVids[0]} alignment='VideoCenter'/>
-            <Text text={source[6]} background='BlackBg' alignment='Source'/>
+            <Text text={source[6]} alignment='Source' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 43, end: 44 }}>
             <Text text={sectionTwoTexts[10]} background='BlackBg' alignment='Mid Bottom'/>
@@ -382,7 +383,7 @@ return (
 
         <ParallaxLayer sticky={{ start: 47, end: 55 }}>
             <Video videoPath={sectionTwoVids[1]} alignment='VideoCenter'/>
-            <Text text={source[7]} background='BlackBg' alignment='Source'/>
+            <Text text={source[7]} alignment='Source' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 48, end: 49 }}>
             <Text text={sectionTwoTexts[12]} background='BlackBg' alignment='Mid Bottom'/>
@@ -399,7 +400,7 @@ return (
 
         <ParallaxLayer sticky={{ start: 56, end: 58 }}>
             <Video videoPath={sectionTwoVids[2]} alignment='VideoCenter'/>
-            <Text text={source[8]} background='BlackBg' alignment='Source'/>
+            <Text text={source[8]} alignment='Source' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 57, end: 58 }}>
             <Text text={sectionTwoTexts[16]} background='BlackBg' alignment='Mid Bottom'/>
@@ -407,7 +408,7 @@ return (
 
         <ParallaxLayer sticky={{ start: 59, end: 73 }}>
             <Video videoPath={sectionTwoVids[3]} alignment='VideoCenter'/>
-            <Text text={source[8]} background='BlackBg' alignment='Source'/>
+            <Text text={source[8]} alignment='Source' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 60, end: 61 }}>
             <Text text={sectionTwoTexts[17]} background='BlackBg' alignment='Mid Bottom'/>
@@ -419,8 +420,12 @@ return (
             <Text text={sectionTwoTexts[19]} background='BlackBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 66, end: 67 }}>
-            <Text text={sectionTwoTexts[20]} background='BlackBg' alignment='Top Center'/>
-            <Typewriter text= {sectionTwoTexts[21]}></Typewriter>
+            <Text text={sectionTwoTexts[20]} background='BlackBg' alignment='Mid Top'/>
+            <div className={'TypeBox Top'}>
+                <span >
+                    <Typewriter text= {sectionTwoTexts[21]} text2={''}></Typewriter>
+                </span>
+            </div>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 68, end: 69 }}>
             <Text text={sectionTwoTexts[22]} background='BlackBg' alignment='Mid Bottom'/>
@@ -433,12 +438,14 @@ return (
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{ start: 74, end: 76 }}>
-            <Video videoPath={sectionTwoVids[4]} alignment='VideoTop'/>
-            <Video videoPath={sectionTwoVids[5]} alignment='VideoBottom'/>
-            <Text text={source[9]} background='BlackBg' alignment='Source'/>
+            <div className={'VidContainer2'}>
+                <Video videoPath={sectionTwoVids[4]} alignment='VideoTop'/>
+                <Video videoPath={sectionTwoVids[5]} alignment='VideoBottom'/>
+            </div>
+            <Text text={source[9]} alignment='Source' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 75, end: 76 }}>
-            <Text text={sectionTwoTexts[25]} background='BlackBg' alignment='Left Center'/>
+            <Text text={sectionTwoTexts[25]} background='BlackBg' alignment='Mid Center'/>
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{ start: 77, end: 79 }}>
@@ -489,7 +496,7 @@ return (
         {/* SECTION THREE */}
         <ParallaxLayer sticky={{ start: 84, end: 89 }}>
             <Video videoPath={sectionThreeVids[0]} alignment='VideoCenter'/>
-            <Text text={source[10]} background='BlackBg' alignment='Source'/>
+            <Text text={source[10]} alignment='Source' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 85, end: 86 }}>
             <Text text={sectionThreeTexts[0]} background='BlackBg' alignment='Mid Bottom'/>
@@ -508,7 +515,7 @@ return (
 
         <ParallaxLayer sticky={{ start: 91, end: 97 }}>
             <Video videoPath={sectionThreeVids[1]} alignment='VideoCenter'/>
-            <Text text={source[11]} background='BlackBg' alignment='Source'/>
+            <Text text={source[11]} alignment='Source' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 92, end: 93 }}>
             <Text text={sectionThreeTexts[2]} background='BlackBg' alignment='Mid Bottom'/>
@@ -610,3 +617,4 @@ return (
         </ParallaxLayer>
     </Parallax>
 );}
+

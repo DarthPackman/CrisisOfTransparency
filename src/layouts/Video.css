@@ -3,8 +3,17 @@
 {
     box-sizing: border-box;
     display: flex;
+    flex: 100%;
+}
+
+.VidContainer2
+{
+    box-sizing: border-box;
+    display: flex;
     flex-wrap: wrap;
     flex: 100%;
+    justify-content: space-around;
+    height: 100%;
 }
 
 .VidCenter {
@@ -66,27 +75,29 @@
 
 .VideoCenter
 {
-    margin: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
     vertical-align: middle;
     align-self: center;
     width: 100%;
+    z-index: 1;
 }
 
 .VideoTop
 {
-    margin: 1%;
-    margin-top: 2%;
+    margin: auto;
     vertical-align: middle;
     align-self: center;
-    width: 50%;
+    width: 30%;
 }
 
 .VideoBottom
 {
-    margin: 1%;
+    display: flex;
+    margin: auto;
     vertical-align: middle;
     align-self: center;
-    width: 50%;
+    width: 30%;
 }
 
 
@@ -99,6 +110,22 @@
         vertical-align: middle;
         align-self: center;
         width: 100%;
+    }
+    .VideoTop
+    {
+        margin: auto;
+        vertical-align: middle;
+        align-self: center;
+        width: 75%;
+    }
+
+    .VideoBottom
+    {
+        display: flex;
+        margin: auto;
+        vertical-align: middle;
+        align-self: center;
+        width: 75%;
     }
 }
 
