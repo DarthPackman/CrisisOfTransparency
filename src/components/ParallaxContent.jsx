@@ -205,9 +205,6 @@ import Img from '../layouts/Img';
 import BarGraph from '../layouts/BarGraph';
 import LineGraph from '../layouts/LineGraph';
 import Typewriter from './Typewriter';
-import '../layouts/Video.css';
-import '../layouts/Text.css';
-
 
 export default function ParallaxContent() {
 return (
