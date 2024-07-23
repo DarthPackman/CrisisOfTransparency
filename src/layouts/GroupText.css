@@ -76,22 +76,31 @@
     flex-wrap: wrap; /* Ensure flex items can wrap */
 }
 
-.BlackBg
+.WhiteBg
 {
+    color: black;
     margin: 1vh;
-    background-color: rgba(0,0,0, 0.5) ;
+    background-color: rgb(255, 255, 255) ;
+    border: 1px solid black; 
+    box-shadow: 5px 5px; 
 }
 
 .RedBg
 {
+    color: white;
     margin: 1vh;
-    background-color: rgb(232, 136, 136);
+    background-color: rgb(255, 75, 75);
+    border: 1px solid black; 
+    box-shadow: 10px 10px; 
 }
 
 .BlueBg
 {
+    color: white;
     margin: 1vh;
-    background-color: rgb(132, 139, 213);
+    background-color: rgb(75, 75, 255);
+    border: 1px solid black; 
+    box-shadow: 10px 10px; 
 }
 
 .Left
