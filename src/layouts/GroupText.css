@@ -84,14 +84,12 @@
 
 .RedBg
 {
-    color: black;
     margin: 1vh;
     background-color: rgb(232, 136, 136);
 }
 
 .BlueBg
 {
-    color: black;
     margin: 1vh;
     background-color: rgb(132, 139, 213);
 }
@@ -295,4 +293,3 @@
         left: 1%;
     }
 }
-

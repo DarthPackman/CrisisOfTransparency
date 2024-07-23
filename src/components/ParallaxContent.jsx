@@ -37,26 +37,18 @@ const sectionOneVids = [
 ]
 
 const sectionOneImgs = [
-    `/sectionOne/slide8.png`,
     `/sectionOne/slide12.png`,
     `/sectionOne/slide16a.png`,
-    `/sectionOne/slide16b.png`,
-    `/sectionOne/slide10.png`,
-    `/sectionOne/slide11.png`
+    `/sectionOne/slide16b.png`
 ];
 
-const bannerOneImgs = [
-    `/bannerOne/HOCHill-Layer1.png`,
-    `/bannerOne/HOCHill-Layer2.png`,
-    `/bannerOne/HOCHill-Layer3.png`,
-    `/bannerOne/HOCHill-Layer4.png`,
-    `/bannerOne/HOCHill-Layer5.png`
-];
+const bannerOneImg = [
+    `/ParHill.png`
+]
 
 const bannerOneTexts = [
     `Crisis of Transparency`,
-    `A Report on The Dire State of Canada’s Access to Information System`,
-    `How did we arrive at this juncture? The answer partly rests in how the system was created...`
+    `A Report on The Dire State of Canada’s Access to Information System`
 ]
 
 const sectionTwoTexts = [
@@ -113,14 +105,9 @@ const sectionTwoImgs = [
     `/sectionTwo/OpenByDefault.png`
 ];
 
-const bannerTwoImgs = [
-    `/bannerTwo/HOC-Layer1.png`,
-    `/bannerTwo/HOC-Layer2.png`,
-    `/bannerTwo/HOC-Layer3.png`,
-    `/bannerTwo/HOC-Layer3.5.png`,
-    `/bannerTwo/HOC-Layer4.png`,
-    `/bannerTwo/HOC-Layer5.png`
-];
+const bannerTwoImg = [
+    `/OutsideHOC.png`
+]
 
 const bannerTwoTexts = [
     `Parliament has left the task of fixing things to civil society, as no political party feels it has an incentive to create systems for more disclosure.`,
@@ -137,24 +124,27 @@ const sectionThreeTexts = [
 ];
 
 const sectionThreeTextPlatform2006 = [
-    `Conservative Party of Canada Federal Election Platform 2006`,
-    `A Conservative government will:`,
-    `Implement the Information Commissioner’s recommendations for reform of the Access to Information Act.`,
-    `Subject the exclusion of Cabinet confidences to review by the Information Commissioner.`,
-    `Oblige public officials to create the records necessary to document their actions and decisions.`,
-    `Provide a general public interest override for all exemptions, so that the public interest is put before the secrecy of the government.`
+    "Conservative Party of Canada Federal Election Platform 2006",
+    "A Conservative government will:",
+    "Implement the Information Commissioner’s recommendations for reform of the Access to Information Act.",
+    "Subject the exclusion of Cabinet confidences to review by the Information Commissioner.",
+    "Oblige public officials to create the records necessary to document their actions and decisions.",
+    "Provide a general public interest override for all exemptions, so that the public interest is put before the secrecy of the government."
 ];
+
 
 const sectionThreeTextPlatform2015 = [
-    `Liberal Party of Canada Federal Election Platform 2015`,
-    `We will make government information more accessible. `,
-    `Government data and information should be open by default, in formats that are modern and easy to use.`,
-    `We will ensure that Access to Information applies to the Prime Minister’s and Ministers’ Offices.`
+    "Liberal Party of Canada Federal Election Platform 2015",
+    "A Liberal government will:",
+    "Make government information more accessible.",
+    "Make government data and information open by default, in formats that are modern and easy to use.",
+    "Ensure that Access to Information applies to the Prime Minister’s and Ministers’ Offices."
 ];
 
+
 const sectionThreeVids = [
-    `/sectionThree/vids/Vid10.mp4`,
-    `/sectionThree/vids/Vid11.mp4`
+    `/vids/Vid10.mp4`,
+    `/vids/Vid11.mp4`
 ];
 
 const sectionThreeImgs = [
@@ -162,13 +152,9 @@ const sectionThreeImgs = [
     `/sectionThree/S3I2.png`,
 ];
 
-const bannerThreeImgs = [
-    `/bannerThree/Inside-Layer1.png`,
-    `/bannerThree/Inside-Layer2.png`,
-    `/bannerThree/Inside-Layer3.png`,
-    `/bannerThree/Inside-Layer4.png`,
-    `/bannerThree/Inside-Layer5.png`
-];
+const bannerThreeImg = [
+    `/InsideHOC.png`
+] 
 
 const bannerThreeTexts = [
     `More must be done to change the system.`,
@@ -190,16 +176,19 @@ const sectionFourTexts = [
 ];
 
 const creditsText = [
-    `Credits`,
-    `Direction: Prof. Matt Malone`,
-    `Development: Gavin Edwards, Carlos Avila, Ian Fuentes`,
-    `Research Assistance: Luke Conkin, Ashley Destauls`,
-    `Thanks: Prof. Kevin O’Neil`];
+    'Credits',
+    'Direction: Prof. Matt Malone',
+    'Development: Gavin Edwards, Carlos Avila, Ian Fuentes',
+    'Research Assistance: Luke Conkin, Ashley Destauls',
+    'Thanks: Prof. Kevin O’Neil'
+];
+
 
 
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Video from '../layouts/Video';
 import Text from '../layouts/Text';
+import GroupText from '../layouts/GroupText';
 import Img from '../layouts/Img';
 import BarGraph from '../layouts/BarGraph';
 import LineGraph from '../layouts/LineGraph';
@@ -207,7 +196,7 @@ import Typewriter from './Typewriter';
 
 export default function ParallaxContent() {
 return (
-    <Parallax pages={125}>
+    <Parallax pages={123}>
         {/* SECTION ONE */}
         <ParallaxLayer 
             offset={0} 
@@ -229,7 +218,7 @@ return (
             <Text text={sectionOneTexts[2]} background='BlackBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
         
-        <ParallaxLayer sticky={{ start: 7, end: 11 }}>
+        <ParallaxLayer sticky={{ start: 7, end: 13 }}>
             <Video videoPath={sectionOneVids[1]} alignment='VideoCenter'/>
             <Text text={source[1]} alignment='Source2' type='Dramatic'/>
         </ParallaxLayer>
@@ -239,12 +228,7 @@ return (
         <ParallaxLayer sticky={{ start: 10, end: 11 }}>
             <Text text={sectionOneTexts[4]} background='BlackBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
-
-        <ParallaxLayer sticky={{ start: 12, end: 14 }}> 
-            <Img img={sectionOneImgs[0]} alignment='ImgCenterTop'/>
-            <Text text={source[2]} alignment='Source' type='Dramatic'/>
-        </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 13, end: 14 }}>
+        <ParallaxLayer sticky={{ start: 12, end: 13  }}>
             <Text text={sectionOneTexts[5]} background='BlackBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
 
@@ -269,7 +253,7 @@ return (
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{ start: 23, end: 25 }}>
-            <Img img={sectionOneImgs[1]} alignment='ImgCenterTop'/>
+            <Img img={sectionOneImgs[0]} alignment='ImgCenterTop'/>
             <Text text={source[3]} alignment='Source' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 24, end: 25 }} >
@@ -288,57 +272,44 @@ return (
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{ start: 31, end: 33 }}>
-            <Img img={sectionOneImgs[2]} alignment='ImgCenterTop'/>
-            <Img img={sectionOneImgs[3]} alignment='ImgCenterBottom'/>
+            <Img img={sectionOneImgs[1]} alignment='ImgCenterTop'/>
+            <Img img={sectionOneImgs[2]} alignment='ImgCenterBottom'/>
             <Text text={source[5]} alignment='Source' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 32, end: 33 }}>
             <Text text={sectionOneTexts[12]} background='BlackBg' alignment='Mid Center'/>
         </ParallaxLayer>
 
+        {/* BANNER ONE */}
         <ParallaxLayer 
             offset={34} 
-            factor={1} 
+            factor={2} 
             speed={0}
             style={{backgroundImage: 'linear-gradient(#dae0e8,#0a0149)'}}
         />
+        <ParallaxLayer sticky={{ start: 34, end: 36 }}>
+            <Img img={bannerOneImg[0]} alignment='ImgCenterMid'/>  
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 34, end: 36 }}>
+            <Text text={bannerOneTexts[0]} background='BlackBg' alignment='Mid Center'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{ start: 35, end: 36 }}>
+            <Text text={bannerOneTexts[1]} background='BlackBg' alignment='Mid Bottom'/>
+        </ParallaxLayer>
+
+        {/* SECTION TWO */}
 
         <ParallaxLayer 
-            offset={35} 
-            factor={45} 
+            offset={37} 
+            factor={43} 
             speed={0}
             style={{backgroundImage: 'linear-gradient(#0a0149,#daeafa)'}}
         />
 
-        {/* BANNER ONE */}
-
-        <ParallaxLayer offset={34.5} speed={0.1}>
-            <Img img={bannerOneImgs[1]} alignment='ImgCenter'/>
-        </ParallaxLayer>
-        <ParallaxLayer offset={34.5} speed={0.2}>
-            <Img img={bannerOneImgs[2]} alignment='ImgCenter'/>
-        </ParallaxLayer>
-        <ParallaxLayer offset={34} speed={0.05}>
-            <Img img={bannerOneImgs[3]} alignment='ImgHardTop'/>
-        </ParallaxLayer>
-        <ParallaxLayer offset={34.65} speed={0.3}>
-            <Img img={bannerOneImgs[4]} alignment='ImgCenterBottom'/>
-        </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 34, end: 35 }}>
-            <Text text={bannerOneTexts[0]} background='BlackBg' alignment='Mid Center'/>
-        </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 34, end: 35 }}>
-            <Text text={bannerOneTexts[1]} background='BlackBg' alignment='Mid Bottom'/>
-        </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 36, end: 37 }}>
-            <Text text={bannerOneTexts[2]} background='BlackBg' alignment='Mid Center'/>
-        </ParallaxLayer>
-
-        {/* SECTION TWO */}
         {/* Put a Timeline thingy here */}
     
         <ParallaxLayer sticky={{ start: 38, end: 39 }}>
-            <Text text={sectionTwoTexts[0]} background='BlackBg' alignment='Left Top'/>
+            <Text text={sectionTwoTexts[0]} background='BlackBg' alignment='Left Center'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 38, end: 39 }}>
             <Img img={sectionTwoImgs[0]} alignment='ImgRightTop'/>
@@ -347,7 +318,7 @@ return (
             <Img img={sectionTwoImgs[3]} alignment='ImgRightBotCenter'/>
             <Img img={sectionTwoImgs[4]} alignment='ImgRightBottom'/>
             <Text text={sectionTwoTexts[1]} background='BlackBg' alignment='Right Top'/>
-            <Text text={sectionTwoTexts[2]} background='BlackBg' alignment='Right Top'/>
+            <Text text={sectionTwoTexts[2]} background='BlackBg' alignment='Right Top Center'/>
             <Text text={sectionTwoTexts[3]} background='BlackBg' alignment='Right Bottom Center'/>
             <Text text={sectionTwoTexts[4]} background='BlackBg' alignment='Right Bottom'/>
         </ParallaxLayer>
@@ -417,11 +388,7 @@ return (
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 66, end: 67 }}>
             <Text text={sectionTwoTexts[20]} background='BlackBg' alignment='Mid Top'/>
-            <div className={'TypeBox Top'}>
-                <span >
-                    <Typewriter text= {sectionTwoTexts[21]} text2={''}></Typewriter>
-                </span>
-            </div>
+            <Typewriter text={sectionTwoTexts[21]} text2={''} alignment='centerBottom' container={'oldTimey'}/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 68, end: 69 }}>
             <Text text={sectionTwoTexts[22]} background='BlackBg' alignment='Mid Bottom'/>
@@ -445,7 +412,7 @@ return (
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{ start: 77, end: 79 }}>
-            <Text text={sectionTwoTexts[26]} background='BlackBg' alignment='Mid Center'/>
+            <Text text={sectionTwoTexts[26]} background='BlackBg' alignment='Mid '/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 78, end: 79 }}> 
             <Img img={sectionTwoImgs[9]} alignment='ImgCenterMid'/>
@@ -453,112 +420,86 @@ return (
             <Img img={sectionTwoImgs[11]} alignment='ImgRightBottom'/>
         </ParallaxLayer>
 
-
+        {/* BANNER TWO */}
         <ParallaxLayer 
             offset={80} 
-            factor={1} 
+            factor={3} 
             speed={0}
             style={{backgroundImage: 'linear-gradient(#daeafa,#96a2ba)'}}
         />
-
-        <ParallaxLayer 
-            offset={81} 
-            factor={19} 
-            speed={0}
-            style={{backgroundImage: 'linear-gradient(#96a2ba,#dddce2)'}}
-        />
-
-        {/* BANNER TWO */}
-        <ParallaxLayer offset={80.5} speed={0.1}>
-            <Img img={bannerTwoImgs[1]} alignment='ImgCenter'/>
+        <ParallaxLayer sticky={{ start: 80, end: 82 }}>
+            <Img img={bannerTwoImg[0]} alignment='ImgCenterMid'/>  
         </ParallaxLayer>
-        <ParallaxLayer offset={80.8} speed={0.2}>
-            <Img img={bannerTwoImgs[4]} alignment='ImgCenterBottom'/>
+        <ParallaxLayer sticky={{ start: 81, end: 82 }}>
+            <Text text={bannerTwoTexts[0]} background='BlackBg' alignment='Mid Top'/>
         </ParallaxLayer>
-        <ParallaxLayer offset={80} speed={0.05}>
-            <Img img={bannerTwoImgs[2]} alignment='ImgHardTop'/>
-            <Img img={bannerTwoImgs[3]} alignment='ImgHardTop'/>
-        </ParallaxLayer>
-        <ParallaxLayer offset={80.5} speed={0.4}>
-            <Img img={bannerTwoImgs[5]} alignment='ImgCenter'/>
-        </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 80, end: 81 }}>
-            <Text text={bannerTwoTexts[0]} background='BlackBg' alignment='Mid Center'/>
-        </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 82, end: 83 }}>
-            <Text text={bannerTwoTexts[1]} background='BlackBg' alignment='Mid Bottom'/>
+        <ParallaxLayer sticky={{ start: 83, end: 84 }}>
+            <Text text={bannerTwoTexts[1]} background='BlackBg' alignment='Mid Center'/>
         </ParallaxLayer>
 
         {/* SECTION THREE */}
-        <ParallaxLayer sticky={{ start: 84, end: 89 }}>
+        <ParallaxLayer 
+            offset={83} 
+            factor={20} 
+            speed={0}
+            style={{backgroundImage: 'linear-gradient(#96a2ba,#dddce2)'}}
+        />
+        <ParallaxLayer sticky={{ start: 85, end: 86 }}>
             <Video videoPath={sectionThreeVids[0]} alignment='VideoCenter'/>
             <Text text={source[10]} alignment='Source' type='Dramatic'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 85, end: 86 }}>
+        <ParallaxLayer sticky={{ start: 85.5, end: 86 }}>
             <Text text={sectionThreeTexts[0]} background='BlackBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 87, end: 88 }}>
-            <Text text={sectionThreeTextPlatform2006[0]} background='BlackBg' alignment='Mid Bottom'/>
-            <Text text={sectionThreeTextPlatform2006[1]} background='BlackBg' alignment='Mid Bottom'/>
-            <Text text={sectionThreeTextPlatform2006[2]} background='BlackBg' alignment='Mid Bottom'/>
-            <Text text={sectionThreeTextPlatform2006[3]} background='BlackBg' alignment='Mid Bottom'/>
-            <Text text={sectionThreeTextPlatform2006[4]} background='BlackBg' alignment='Mid Bottom'/>
-            <Text text={sectionThreeTextPlatform2006[5]} background='BlackBg' alignment='Mid Bottom'/>
+
+        <ParallaxLayer
+            style={{backgroundImage: 'linear-gradient(#FFFFFF,#FFFFFF)'}}
+            sticky={{ start: 87, end: 88 }}>
+            <GroupText text={sectionThreeTextPlatform2006} background='RedBg' alignment='Mid Center'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 89, end: 90 }}>
-            <Text text={sectionThreeTexts[1]} background='BlackBg' alignment='Mid Bottom'/>
+            <Text text={sectionThreeTexts[1]} background='BlackBg' alignment='Mid Center'/>
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{ start: 91, end: 97 }}>
+        <ParallaxLayer sticky={{ start: 91, end: 94 }}>
             <Video videoPath={sectionThreeVids[1]} alignment='VideoCenter'/>
             <Text text={source[11]} alignment='Source' type='Dramatic'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 92, end: 93 }}>
+        <ParallaxLayer sticky={{ start: 91.5, end: 92 }}>
             <Text text={sectionThreeTexts[2]} background='BlackBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 93, end: 94 }}>
             <Text text={sectionThreeTexts[3]} background='BlackBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 95, end: 96 }}>
-            <Text text={sectionThreeTextPlatform2015[0]} background='BlackBg' alignment='Mid Bottom'/>
-            <Text text={sectionThreeTextPlatform2015[1]} background='BlackBg' alignment='Mid Bottom'/>
-            <Text text={sectionThreeTextPlatform2015[2]} background='BlackBg' alignment='Mid Bottom'/>
-            <Text text={sectionThreeTextPlatform2015[3]} background='BlackBg' alignment='Mid Bottom'/>
+
+        <ParallaxLayer 
+            style={{backgroundImage: 'linear-gradient(#FFFFFF,#FFFFFF)'}}
+            sticky={{ start: 95, end: 96 }}>
+            <GroupText text={sectionThreeTextPlatform2015} background='BlueBg' alignment='Mid Center'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 97, end: 98 }}>
             <Text text={sectionThreeTexts[1]} background='BlackBg' alignment='Mid Center'/>
         </ParallaxLayer>
+
         <ParallaxLayer sticky={{ start: 99, end: 100 }}>
-            <Text text={sectionThreeTexts[4]} background='BlackBg' alignment='Mid Center'/>
-            <Img img={sectionThreeImgs[0]} alignment='ImgCenter'/>
+            <Text text={sectionThreeTexts[4]} background='BlackBg' alignment='Left Center'/>
+            <Img img={sectionThreeImgs[0]} alignment='ImgRightTopCenter'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 101, end: 102 }}>
-            <Text text={sectionThreeTexts[5]} background='BlackBg' alignment='Mid Center'/>
-            <Img img={sectionThreeImgs[1]} alignment='ImgCenter'/>
+            <Text text={sectionThreeTexts[5]} background='BlackBg' alignment='Left Center'/>
+            <Img img={sectionThreeImgs[1]} alignment='ImgRightTopCenter'/>
         </ParallaxLayer>
 
+        {/* BANNER THREE */}
         <ParallaxLayer 
-            offset={100} 
-            factor={2} 
+            offset={103} 
+            factor={10} 
             speed={0}
             style={{backgroundImage: 'linear-gradient(#dddce2,#adc473)'}}
         />
-
-        <ParallaxLayer 
-            offset={102} 
-            factor={21} 
-            speed={0}
-            style={{backgroundImage: 'linear-gradient(#adc473,#ffffff)'}}
-        />
-
-        {/* BANNER THREE */}
-
-        <ParallaxLayer offset={103} speed={0.1}>
-            <Img img={bannerThreeImgs[1]} alignment='ImgCenter'/>
+        <ParallaxLayer sticky={{ start: 103, end: 112 }}>
+            <Img img={bannerThreeImg[0]} alignment='ImgCenterMid'/>  
         </ParallaxLayer>
-
-        {/* Put Banner 3 Here */}
-
         <ParallaxLayer sticky={{ start: 103, end: 104 }}>
             <Text text={bannerThreeTexts[0]} background='BlackBg' alignment='Mid Center'/>
         </ParallaxLayer>
@@ -576,7 +517,12 @@ return (
         </ParallaxLayer>
 
         {/* SECTION FOUR */}
-
+        <ParallaxLayer 
+            offset={113} 
+            factor={9} 
+            speed={0}
+            style={{backgroundImage: 'linear-gradient(#adc473,#ffffff)'}}
+        />
         <ParallaxLayer sticky={{ start: 113, end: 121 }}>
             <Text text={sectionFourTexts[0]} background='BlackBg' alignment='Left Top'/>
         </ParallaxLayer>
@@ -603,13 +549,8 @@ return (
         </ParallaxLayer>
 
         {/* CREDITS */}
-
         <ParallaxLayer sticky={{ start: 122, end: 123}}>
-            <Text text={creditsText[0]} background='BlackBg' alignment='Mid Center'/>
-            <Text text={creditsText[1]} background='BlackBg' alignment='Mid Center'/>
-            <Text text={creditsText[2]} background='BlackBg' alignment='Mid Center'/>
-            <Text text={creditsText[3]} background='BlackBg' alignment='Mid Center'/>
-            <Text text={creditsText[4]} background='BlackBg' alignment='Mid Center'/>
+            <GroupText text={creditsText} background='BlackBg' alignment='Mid Center'/>
         </ParallaxLayer>
     </Parallax>
 );}
