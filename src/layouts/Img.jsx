@@ -1,4 +1,3 @@
-import React from 'react';
 import './Img.css';
 
 const Img = ({ img, alignment }) => {

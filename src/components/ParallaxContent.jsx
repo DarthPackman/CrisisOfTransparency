@@ -197,7 +197,6 @@ const creditsText = [
     `Thanks: Prof. Kevin O’Neil`];
 
 
-import React from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Video from '../layouts/Video';
 import Text from '../layouts/Text';

@@ -1,4 +1,3 @@
-import React from 'react';
 import './Text.css';
 
 const Text = ({ text, background, alignment, type }) => {
