@@ -235,8 +235,8 @@
 
 .Source2 {
     position: absolute;
-    left: 1%;
-    top: 0%;
+    left: 0.5%;
+    top: 0;
     z-index: 3;
 }
 

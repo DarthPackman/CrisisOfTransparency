@@ -1,4 +1,6 @@
-import { Bar } from 'react-chartjs-2'; //npm i react-chartjs-2 chart.js
+import React, { useState } from 'react';
+import { Bar } from 'react-chartjs-2';
+import { useInView } from 'react-intersection-observer';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -11,16 +13,24 @@ import {
 } from 'chart.js';
 
 ChartJS.register(
-  Title,
-  Tooltip,
-  Legend,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  BarController
+    Title,
+    Tooltip,
+    Legend,
+    CategoryScale,
+    LinearScale,
+    BarElement,
+    BarController
 );
 
 const BarGraph = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Ensure this is true so it only triggers once when it comes into view
+    rootMargin: '0px',
+    threshold: 0.5
+  });
+
+  const [chartKey, setChartKey] = useState(Date.now());
+
   const data = {
     labels: ['2013-14', '2014-15', '2015-16', '2016-17', '2017-18', '2018-19', '2019-20', '2020-21', '2021-22', '2022-23'],
     datasets: [
@@ -42,7 +52,7 @@ const BarGraph = () => {
           display: true,
         },
         ticks: {
-          color: 'white', 
+          color: 'white',
         },
       },
       x: {
@@ -51,20 +61,20 @@ const BarGraph = () => {
           display: false,
         },
         ticks: {
-          color: 'white', 
+          color: 'white',
         },
       },
     },
     plugins: {
       legend: {
         labels: {
-          color: 'white', 
+          color: 'white',
         },
       },
       title: {
         display: true,
         text: 'Breakdown of ATI Requests',
-        color: 'white', 
+        color: 'white',
       },
     },
     layout: {
@@ -75,14 +85,33 @@ const BarGraph = () => {
         bottom: 10,
       },
     },
+    animation: {
+      duration: 2000, // Animation duration in milliseconds
+    },
   };
 
+  React.useEffect(() => {
+    if (inView) {
+      // Force a re-render by updating the chart key
+      setChartKey(Date.now());
+    }
+  }, [inView]);
+
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100vw', height: '100vh' }}>
-      <div style={{ width: '90%', height: '90vh', maxHeight: '90%' }}>
-        <Bar data={data} options={options} />
+      <div
+          ref={ref}
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            width: '100vw',
+            height: '100vh',
+          }}
+      >
+        <div style={{ width: '90%', height: '90vh', maxHeight: '90%' }}>
+          <Bar key={chartKey} data={data} options={options} />
+        </div>
       </div>
-    </div>
   );
 };
 
