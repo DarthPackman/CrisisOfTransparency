@@ -32,8 +32,8 @@ const sectionOneTexts = [
 
 const sectionOneVids = [
     `/vids/Vid1.mp4`,
-    `/vids/Vid2.mp4`,
-    `/vids/Vid3.mp4`
+    `/vids/Vid2S.webm`,
+    `/vids/Vid3S.webm`
 ]
 
 const sectionOneImgs = [
@@ -82,12 +82,12 @@ const sectionTwoTexts = [
 ]
 
 const sectionTwoVids = [
-    `/vids/Vid4.mp4`,
-    `/vids/Vid5.mp4`,
-    `/vids/Vid6.mp4`,
+    `/vids/Vid4S.webm`,
+    `/vids/Vid5S.webm`,
+    `/vids/Vid6S.webm`,
     `/vids/Vid7.mp4`,
-    `/vids/Vid8.mp4`,
-    `/vids/Vid9.mp4`
+    `/vids/Vid8S.webm`,
+    `/vids/Vid9S.webm`
 ]
 
 const sectionTwoImgs = [
@@ -143,8 +143,8 @@ const sectionThreeTextPlatform2015 = [
 
 
 const sectionThreeVids = [
-    `/vids/Vid10.mp4`,
-    `/vids/Vid11.mp4`
+    `/vids/Vid10S.webm`,
+    `/vids/Vid11S.webm`
 ];
 
 const sectionThreeImgs = [
@@ -345,19 +345,19 @@ return (
 
             <VerticalTimeline.VerticalTimeline class='halfsizeright' layout={'1-column-left'}>
                 <VerticalTimeline.VerticalTimelineElement>
-                <div ><Img img={sectionTwoImgs[5]}/></div>
+                <div ><Img alignment='flagResize' img={sectionTwoImgs[5]}/></div>
                 <h4 className="vertical-timeline-element-title">{sectionTwoTexts[6]}</h4>
                 </VerticalTimeline.VerticalTimelineElement>
                 <VerticalTimeline.VerticalTimelineElement>
-                <div className='flagresize'><Img img={sectionTwoImgs[6]}/></div>
+                <div><Img alignment='flagResize' img={sectionTwoImgs[6]}/></div>
                 <h4 className="vertical-timeline-element-title">{sectionTwoTexts[7]}</h4>
                 </VerticalTimeline.VerticalTimelineElement>
                 <VerticalTimeline.VerticalTimelineElement>
-                <div className='flagresize'><Img img={sectionTwoImgs[7]}/></div>
+                    <Img alignment='flagResize' img={sectionTwoImgs[7]}/>
                 <h4 className="vertical-timeline-element-title">{sectionTwoTexts[8]}</h4>
                 </VerticalTimeline.VerticalTimelineElement>
                 <VerticalTimeline.VerticalTimelineElement>
-                <div className='flagresize'> <Img img={sectionTwoImgs[8]}/></div>
+                 <Img alignment='flagResize' img={sectionTwoImgs[8]}/>
                 <h4 className="vertical-timeline-element-title">{sectionTwoTexts[9]}</h4>
                 </VerticalTimeline.VerticalTimelineElement>
             </VerticalTimeline.VerticalTimeline>

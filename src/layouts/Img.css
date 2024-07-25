@@ -86,6 +86,11 @@
     transform: translateX(-50%);
 }
 
+.flagResize
+{
+    width: 100px;
+}
+
 
 /* Tablet styles */
 @media (min-width: 481px) 
