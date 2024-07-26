@@ -5,15 +5,18 @@
     box-shadow: 5px 5px; 
 }
 
-.halfsizeright{
+.halfSizeRight{
         position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
+        float:right;
+        width: 50%;
 }
 
-.flagresize{
-    height: 100px;
-    max-width: 100px;
+.flagResize
+{
+    max-width: 6vh;
 }
 
+.TimelineTxt{
+    color:black;
+    float:right;
+}
