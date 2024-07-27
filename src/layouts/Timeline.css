@@ -6,9 +6,13 @@
 }
 
 .halfSizeRight{
-        position: absolute;
         float:right;
         width: 50%;
+}
+
+.halfSizeLeft{
+    float:left;
+    width: 50%;
 }
 
 .flagResize
@@ -20,3 +24,16 @@
     color:black;
     float:right;
 }
+
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 

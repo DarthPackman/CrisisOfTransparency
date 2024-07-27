@@ -31,7 +31,7 @@ const sectionOneTexts = [
 ];
 
 const sectionOneVids = [
-    `/vids/Vid1S.mp4`,
+    `/vids/Vid1S.webm`,
     `/vids/Vid2S.webm`,
     `/vids/Vid3S.webm`
 ]
@@ -317,48 +317,62 @@ return (
         {/* Put a Timeline thingy here */}
     
         <ParallaxLayer sticky={{ start: 37, end: 38 }}>
-            {/* <Text text={sectionTwoTexts[0]} background='WhiteBg' alignment='Left Center'/> */}
+            <div class="flex-container">
+                <div class="flex-child">
+                <Text text={sectionTwoTexts[0]} background='WhiteBg' alignment='Mid'/>
+                </div>
 
-            <VerticalTimeline.VerticalTimeline class='halfSizeRight' layout={'1-column-left'}>
-                <VerticalTimeline.VerticalTimelineElement>
-                <img src={sectionTwoImgs[0]} alt='Flag' class='flagResize'></img>
-                <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[1]}</h4>
-                </VerticalTimeline.VerticalTimelineElement>
-                <VerticalTimeline.VerticalTimelineElement>
-                <img src={sectionTwoImgs[1]} alt='Flag' class='flagResize'></img>
-                <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[2]}</h4>
-                </VerticalTimeline.VerticalTimelineElement>
-                <VerticalTimeline.VerticalTimelineElement>
-                <img src={sectionTwoImgs[2]} alt='Flag' class='flagResize'></img>
-                <img src={sectionTwoImgs[3]} alt='Flag' class='flagResize'></img>
-                <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[3]}</h4>
-                </VerticalTimeline.VerticalTimelineElement>
-                <VerticalTimeline.VerticalTimelineElement>
-                <img src={sectionTwoImgs[4]} alt='Flag' class='flagResize'></img>
-                <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[4]}</h4>
-                </VerticalTimeline.VerticalTimelineElement>
-            </VerticalTimeline.VerticalTimeline>
+                <div class="flex-child">
+                <VerticalTimeline.VerticalTimeline layout={'1-column-left'}>
+                    <VerticalTimeline.VerticalTimelineElement>
+                    <img src={sectionTwoImgs[0]} alt='Flag' class='flagResize'></img>
+                    <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[1]}</h4>
+                    </VerticalTimeline.VerticalTimelineElement>
+                    <VerticalTimeline.VerticalTimelineElement>
+                    <img src={sectionTwoImgs[1]} alt='Flag' class='flagResize'></img>
+                    <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[2]}</h4>
+                    </VerticalTimeline.VerticalTimelineElement>
+                    <VerticalTimeline.VerticalTimelineElement>
+                    <img src={sectionTwoImgs[2]} alt='Flag' class='flagResize'></img>
+                    <img src={sectionTwoImgs[3]} alt='Flag' class='flagResize'></img>
+                    <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[3]}</h4>
+                    </VerticalTimeline.VerticalTimelineElement>
+                    <VerticalTimeline.VerticalTimelineElement>
+                    <img src={sectionTwoImgs[4]} alt='Flag' class='flagResize'></img>
+                    <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[4]}</h4>
+                    </VerticalTimeline.VerticalTimelineElement>
+                </VerticalTimeline.VerticalTimeline>
+                </div>
+            </div>
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{ start: 39, end: 40 }}>
-            <VerticalTimeline.VerticalTimeline class='halfSizeRight' layout={'1-column-left'}>
-                <VerticalTimeline.VerticalTimelineElement>
-                    <img src={sectionTwoImgs[5]} alt='Flag' class='flagResize'></img>
-                    <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[6]}</h4>
-                </VerticalTimeline.VerticalTimelineElement>
-                <VerticalTimeline.VerticalTimelineElement>
-                    <img src={sectionTwoImgs[6]} alt='Flag' class='flagResize'></img>
-                    <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[7]}</h4>
-                </VerticalTimeline.VerticalTimelineElement>
-                <VerticalTimeline.VerticalTimelineElement>
-                    <img src={sectionTwoImgs[7]} alt='Flag' class='flagResize'></img>
-                    <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[8]}</h4>
-                </VerticalTimeline.VerticalTimelineElement>
-                <VerticalTimeline.VerticalTimelineElement>
-                    <img src={sectionTwoImgs[8]} alt='Flag' class='flagResize'></img>
-                    <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[9]}</h4>
-                </VerticalTimeline.VerticalTimelineElement>
-            </VerticalTimeline.VerticalTimeline>
+            <div class="flex-container">
+                <div class="flex-child">
+                    <Text text={sectionTwoTexts[5]} background='WhiteBg' alignment='Mid'/>
+                </div>
+
+                <div class="flex-child">
+                <VerticalTimeline.VerticalTimeline layout={'1-column-left'}>
+                    <VerticalTimeline.VerticalTimelineElement>
+                        <img src={sectionTwoImgs[5]} alt='Flag' class='flagResize'></img>
+                        <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[6]}</h4>
+                    </VerticalTimeline.VerticalTimelineElement>
+                    <VerticalTimeline.VerticalTimelineElement>
+                        <img src={sectionTwoImgs[6]} alt='Flag' class='flagResize'></img>
+                        <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[7]}</h4>
+                    </VerticalTimeline.VerticalTimelineElement>
+                    <VerticalTimeline.VerticalTimelineElement>
+                        <img src={sectionTwoImgs[7]} alt='Flag' class='flagResize'></img>
+                        <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[8]}</h4>
+                    </VerticalTimeline.VerticalTimelineElement>
+                    <VerticalTimeline.VerticalTimelineElement>
+                        <img src={sectionTwoImgs[8]} alt='Flag' class='flagResize'></img>
+                        <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[9]}</h4>
+                    </VerticalTimeline.VerticalTimelineElement>
+                </VerticalTimeline.VerticalTimeline>
+                </div>
+            </div>
         </ParallaxLayer>
 
 
