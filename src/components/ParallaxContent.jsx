@@ -523,6 +523,8 @@ return (
 
         <ParallaxLayer sticky={{start: 99, end: 100}}>
             <Text text={sectionThreeTexts[4]} background='WhiteBg' alignment='Left Center'/>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{start: 99, end: 102}}>
             <Img img={sectionThreeImgs[0]} alignment='ImgRightTopCenter'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 101, end: 102}}>
