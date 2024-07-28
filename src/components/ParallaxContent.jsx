@@ -595,4 +595,3 @@ return (
     </Parallax>
 );
 }
-
