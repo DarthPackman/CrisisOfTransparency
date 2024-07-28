@@ -291,7 +291,7 @@ return (
         {/* BANNER ONE */}
         <ParallaxLayer
             offset={34}
-            factor={2}
+            factor={3}
             speed={0}
             style={{backgroundImage: 'linear-gradient(#dae0e8,#0a0149)'}}
         />
@@ -463,7 +463,7 @@ return (
         {/* BANNER TWO */}
         <ParallaxLayer
             offset={80}
-            factor={4}
+            factor={3}
             speed={0}
             style={{backgroundImage: 'linear-gradient(#daeafa,#96a2ba)'}}
         />
