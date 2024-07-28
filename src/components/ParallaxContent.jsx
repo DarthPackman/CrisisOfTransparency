@@ -463,7 +463,7 @@ return (
         {/* BANNER TWO */}
         <ParallaxLayer
             offset={80}
-            factor={3}
+            factor={4}
             speed={0}
             style={{backgroundImage: 'linear-gradient(#daeafa,#96a2ba)'}}
         />
