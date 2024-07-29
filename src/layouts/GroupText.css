@@ -74,6 +74,8 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap; /* Ensure flex items can wrap */
+    margin-left: 2%; /* Adjust the margin as needed */
+    margin-right: 2%; /* Adjust the margin as needed */
 }
 
 .WhiteBg
