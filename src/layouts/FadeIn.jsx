@@ -1,16 +1,4 @@
-import './Text.css';
-
-const Text = ({ text, background, alignment, type }) => {
-    return (
-        <div className={'TextDisplay'}>
-            <div className={`TextContainer ${background} ${alignment} ${type}`} >
-                <h1 className={`TextStyle`}>
-                    {text}
-                </h1>
-            </div>
-        </div>
-    );
-};
+import React from 'react';
 
 function FadeInSection(props) {
     const [isVisible, setVisible] = React.useState(false);
@@ -31,5 +19,4 @@ function FadeInSection(props) {
     );
   }
   
-
-export default Text;
+  export default FadeInSection;

@@ -193,6 +193,7 @@ import Img from '../layouts/Img';
 import BarGraph from '../layouts/BarGraph';
 import LineGraph from '../layouts/LineGraph';
 import Typewriter from './Typewriter';
+import FadeInSection from '../layouts/FadeIn';
 import * as VerticalTimeline from 'react-vertical-timeline-component';
 import '../layouts/Timeline.css';
 import 'react-vertical-timeline-component/style.min.css';
@@ -529,7 +530,9 @@ return (
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 101, end: 102}}>
             <Text text={sectionThreeTexts[5]} background='WhiteBg' alignment='Left Center'/>
-            <Img img={sectionThreeImgs[1]} alignment='ImgRightTopCenter'/>
+            <FadeInSection>
+                <Img img={sectionThreeImgs[1]} alignment='ImgRightTopCenter'/> {/* {*Fading Text*} */}
+            </FadeInSection>
         </ParallaxLayer>
 
         {/* BANNER THREE */}
