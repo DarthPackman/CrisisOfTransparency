@@ -300,7 +300,7 @@ return (
             <Img img={bannerOneImg[0]} alignment='ImgCenterMid'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 34, end: 36}}>
-            <Text text={bannerOneTexts[0]} background='WhiteBg' alignment='Mid Center'/>
+            <Text text={bannerOneTexts[0]} background='WhiteBg' alignment='Mid Center' type='Title'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 35, end: 36}}>
             <Text text={bannerOneTexts[1]} background='WhiteBg' alignment='Mid Bottom'/>
