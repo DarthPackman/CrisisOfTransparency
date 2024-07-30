@@ -10,15 +10,15 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^3.6.0",
-    "@astrojs/ts-plugin": "^1.8.0",
+    "@astrojs/react": "^3.6.1",
+    "@astrojs/ts-plugin": "^1.9.0",
     "@canvasjs/react-charts": "^1.0.2",
     "@fontsource/aldrich": "^5.0.19",
     "@react-spring/parallax": "^9.7.3",
     "@react-spring/web": "^9.7.4",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "astro": "^4.10.3",
+    "astro": "^4.12.3",
     "chart.js": "^4.4.3",
     "dependences": "^0.0.1-security",
     "dependencies": "^0.0.1",

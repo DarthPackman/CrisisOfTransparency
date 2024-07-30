@@ -213,8 +213,8 @@ return (
             style={{backgroundImage: 'linear-gradient(#02000f,#dae0e8)'}}
         />
         <ParallaxLayer sticky={{start: 0, end: 6}}>
-            <InViewVideo id={'Video1'} videoPath={sectionOneVids[0]} alignment='VideoCenter' className={'video'}/>
-            <InViewVideo alignment=''/>
+            <Video id={'Video1'} videoPath={sectionOneVids[0]} alignment='VideoCenter' className={'video'}/>
+            <Video alignment=''/>
             <Text text={source[0]} alignment='Source' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 1, end: 2}}>
@@ -228,7 +228,7 @@ return (
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{start: 7, end: 13}}>
-            <InViewVideo videoPath={sectionOneVids[1]} alignment='VideoCenter'/>
+            <Video videoPath={sectionOneVids[1]} alignment='VideoCenter'/>
             <Text text={source[1]} alignment='Source2' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 8, end: 9}}>
@@ -270,7 +270,7 @@ return (
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{start: 26, end: 30}}>
-            <InViewVideo videoPath={sectionOneVids[2]} alignment='VideoCenter'/>
+            <Video videoPath={sectionOneVids[2]} alignment='VideoCenter'/>
             <Text text={source[4]} alignment='Source' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 27, end: 28}}>
@@ -300,10 +300,10 @@ return (
             <Img img={bannerOneImg[0]} alignment='ImgCenterMid'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 34, end: 36}}>
-            <Text text={bannerOneTexts[0]} background='WhiteBg' alignment='Mid Center' type='Title'/>
+            <Text text={bannerOneTexts[0]} alignment='Mid Center' type='Title'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 35, end: 36}}>
-            <Text text={bannerOneTexts[1]} background='WhiteBg' alignment='Mid Bottom'/>
+            <Typewriter text={bannerOneTexts[1]} alignment='centerBottom' container={'oldTimey'}/>
         </ParallaxLayer>
 
         {/* SECTION TWO */}
@@ -379,7 +379,7 @@ return (
 
 
         <ParallaxLayer sticky={{start: 42, end: 46}}>
-            <InViewVideo videoPath={sectionTwoVids[0]} alignment='VideoCenter'/>
+            <Video videoPath={sectionTwoVids[0]} alignment='VideoCenter'/>
             <Text text={source[6]} alignment='Source' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 43, end: 44}}>
@@ -390,7 +390,7 @@ return (
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{start: 47, end: 55}}>
-            <InViewVideo videoPath={sectionTwoVids[1]} alignment='VideoCenter'/>
+            <Video videoPath={sectionTwoVids[1]} alignment='VideoCenter'/>
             <Text text={source[7]} alignment='Source' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 48, end: 49}}>
@@ -407,7 +407,7 @@ return (
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{start: 56, end: 58}}>
-            <InViewVideo videoPath={sectionTwoVids[2]} alignment='VideoCenter'/>
+            <Video videoPath={sectionTwoVids[2]} alignment='VideoCenter'/>
             <Text text={source[8]} alignment='Source' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 57, end: 58}}>
@@ -415,7 +415,7 @@ return (
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{start: 59, end: 73}}>
-            <InViewVideo videoPath={sectionTwoVids[3]} alignment='VideoCenter'/>
+            <Video videoPath={sectionTwoVids[3]} alignment='VideoCenter'/>
             <Text text={source[8]} alignment='Source' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 60, end: 61}}>
@@ -443,8 +443,8 @@ return (
 
         <ParallaxLayer sticky={{start: 74, end: 76}}>
             <div className={'VidContainer2'}>
-                <InViewVideo videoPath={sectionTwoVids[4]} alignment='VideoTop'/>
-                <InViewVideo videoPath={sectionTwoVids[5]} alignment='VideoBottom'/>
+                <Video videoPath={sectionTwoVids[4]} alignment='VideoTop'/>
+                <Video videoPath={sectionTwoVids[5]} alignment='VideoBottom'/>
             </div>
             <Text text={source[9]} alignment='Source' type='Dramatic'/>
         </ParallaxLayer>
@@ -486,7 +486,7 @@ return (
             style={{backgroundImage: 'linear-gradient(#96a2ba,#dddce2)'}}
         />
         <ParallaxLayer sticky={{start: 85, end: 86}}>
-            <InViewVideo videoPath={sectionThreeVids[0]} alignment='VideoCenter'/>
+            <Video videoPath={sectionThreeVids[0]} alignment='VideoCenter'/>
             <Text text={source[10]} alignment='Source' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 85.5, end: 86}}>
@@ -503,7 +503,7 @@ return (
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{start: 91, end: 94}}>
-            <InViewVideo videoPath={sectionThreeVids[1]} alignment='VideoCenter'/>
+            <Video videoPath={sectionThreeVids[1]} alignment='VideoCenter'/>
             <Text text={source[11]} alignment='Source' type='Dramatic'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 91.5, end: 92}}>

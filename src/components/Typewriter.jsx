@@ -45,8 +45,8 @@ const Typewriter = ({ text, text2, alignment, container }) => {
                     text2,
                     1000,
                 ]}
-                speed={30}
-                deletionSpeed={40}
+                speed={50}
+                deletionSpeed={100}
                 style={{ fontSize: 'inherit', color: 'inherit' }} 
                 repeat={Infinity}
             />
