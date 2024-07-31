@@ -189,16 +189,16 @@ const creditsText = [
 
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import * as VerticalTimeline from 'react-vertical-timeline-component';
-import '../layouts/Timeline.css';
+import '../components/Timeline.css';
 import 'react-vertical-timeline-component/style.min.css';
-import Video from '../layouts/Video';
-import Text from '../layouts/Text';
-import GroupText from '../layouts/GroupText';
-import Img from '../layouts/Img';
-import BarGraph from '../layouts/BarGraph';
-import LineGraph from '../layouts/LineGraph';
-import Typewriter from './Typewriter';
-import FadeInSection from '../layouts/FadeIn';
+import Video from '../components/Video';
+import Text from '../components/Text';
+import GroupText from '../components/GroupText';
+import Img from '../components/Img';
+import BarGraph from '../components/BarGraph';
+import LineGraph from '../components/LineGraph';
+import Typewriter from '../components/Typewriter';
+import FadeInSection from '../components/FadeIn';
 
 export default function ParallaxContent() {
 return (
