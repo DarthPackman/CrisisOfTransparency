@@ -427,7 +427,7 @@ return (
             <Text type={'Normal'} text={sectionTwoTexts[19]} background='WhiteBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 66, end: 67}}>
-            <Text type={'Normal'} text={sectionTwoTexts[20]} background='WhiteBg' alignment='Mid TopCenter'/>
+            <Text type={'Normal'} text={sectionTwoTexts[20]} background='WhiteBg' alignment='Mid TopCenter1'/>
             <Typewriter text={sectionTwoTexts[21]} text2={''} alignment='centerBottom' container={'oldTimey'}/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 68, end: 69}}>
