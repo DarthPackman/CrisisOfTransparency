@@ -1,59 +1,62 @@
-.TextStyle
-{
-    padding:2vh;
+/* General Text Styles */
+.TextStyle {
+    padding: 2vh;
     text-align: center;
     flex: 1;
     min-width: 0;
-    overflow-wrap: break-word; /* Allow breaking words to prevent overflow */
-    word-wrap: break-word; /* Add compatibility for older browsers */
-    white-space: normal; /* Allow text to wrap to multiple lines */
+    overflow-wrap: break-word;
+    word-wrap: break-word; 
+    white-space: normal; 
 }
 
-.TypeBox
-{
-    margin-left: 15%;
-    margin-right: 15%;
-    padding:1vh;
-    text-align: center;
-    background-color: white;
-    color: black;
-    overflow-wrap: break-word; /* Allow breaking words to prevent overflow */
-    word-wrap: break-word; /* Add compatibility for older browsers */
-    white-space: normal; /* Allow text to wrap to multiple lines */
-}
-.Title /* Title */
-{
+.Title {
     font-size: 3vh;
     font-weight: bolder;
 }
 
-.Subtitle /* Subtitle */
-{
+.Subtitle {
     text-align: center;
     font-size: 2vh;
-    /*font-weight: bold;*/
 }
 
-.Header /* Header */
-{
+.Header {
     font-size: 3vh;
     font-style: italic;
     font-weight: bold;
 }
 
-.Dramatic /* Dramatic Text */
-{
+.Dramatic {
     font-size: 1.5vh;
     font-style: italic;
 }
 
-.Normal /* Normal Text */
-{
+.Normal {
     font-size: 1.5vh;
 }
 
-.TextDisplay
-{
+/* Layout Containers */
+.TypeBox {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 1vh;
+    text-align: center;
+    background-color: white;
+    color: black;
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+    white-space: normal; 
+}
+
+.TextContainer {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+    margin-left: 2%; 
+    margin-right: 2%; 
+}
+
+.TextDisplay {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
@@ -63,17 +66,7 @@
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-/*These are the styles for the actual container */
-.TextContainer
-{
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap; /* Ensure flex items can wrap */
-    margin-left: 2%; /* Adjust the margin as needed */
-    margin-right: 2%; /* Adjust the margin as needed */
-}
-
+/* Background Colors */
 .WhiteBg {
     color: black;
     margin: 1vh;
@@ -82,8 +75,7 @@
     box-shadow: 5px 5px; 
 }
 
-.RedBg
-{
+.RedBg {
     color: white;
     margin: 1vh;
     background-color: rgb(255, 75, 75);
@@ -91,8 +83,7 @@
     box-shadow: 10px 10px; 
 }
 
-.BlueBg
-{
+.BlueBg {
     color: white;
     margin: 1vh;
     background-color: rgb(75, 75, 255);
@@ -100,61 +91,52 @@
     box-shadow: 10px 10px; 
 }
 
-.Left
-{
+/* Grid Positioning */
+.Left {
     grid-column: 1/5;
 }
 
-.Mid
-{
+.Mid {
     grid-column: 2/7;
-    
 }
 
-.Right
-{
+.Right {
     grid-column: 4/8;
 }
 
-.Top
-{
+.Top {
     grid-row: 1;
 }
 
-.Center
-{
+.Center {
     grid-row: 4;
 }
 
-.TopCenter1
-{
+.TopCenter1 {
     grid-row: 2;
 }
 
-.TopCenter2
-{
+.TopCenter2 {
     grid-row: 3;
 }
 
-.Bottom
-{
+.Bottom {
     grid-row: 6;
 }
 
-.Floor
-{
+.Floor {
     grid-row: 7;
 }
 
-.CenterBottom{
+.CenterBottom {
     grid-row: 5;
 }
 
-.TopToBottom
-{
+.TopToBottom {
     grid-row: 1/4;
 }
 
+/* Absolute Positioning */
 .TextCenter {
     position: absolute;
     left: 50%;
@@ -238,7 +220,8 @@
     z-index: 3;
 }
 
-.fade-in-section{
+/* Animations/Transitions */
+.fade-in-section {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.6s ease-out, transform 1s ease-out;
@@ -249,61 +232,51 @@
     opacity: 1;
     transform: none;
     visibility: visible;
-  }
+}
 
-
-/* Tablet styles */
-@media (max-width: 800px) 
-{
-    .TextStyle
-    {
+/* Tablet Styles */
+@media (max-width: 800px) {
+    .TextStyle {
         font-size: 1.5vh;
-        padding:0vh;
+        padding: 0vh;
         text-align: center;
         flex: 1;
         min-width: 0;
-        overflow-wrap: break-word; /* Allow breaking words to prevent overflow */
-        word-wrap: break-word; /* Add compatibility for older browsers */
-        white-space: normal; /* Allow text to wrap to multiple lines */
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        white-space: normal; 
     }
-    .Title /* Title */
-    {
+
+    .Title {
         font-size: 2vh;
         font-weight: bolder;
     }
 
-    .Subtitle /* Subtitle */
-    {
+    .Subtitle {
         text-align: center;
         font-size: 1.5vh;
-        /*font-weight: bold;*/
     }
 
-    .Header /* Header */
-    {
+    .Header {
         font-size: 1.50vh;
         font-style: italic;
         font-weight: bold;
     }
 
-    .Dramatic /* Dramatic Text */
-    {
+    .Dramatic {
         font-size: 1vh;
         font-style: italic;
     }
 
-    .Normal /* Normal Text */
-    {
+    .Normal {
         font-size: 0.5vh;
     }
-    
-    .Mid
-    {
+
+    .Mid {
         grid-row: 4;        
     }
 
-    .Bottom
-    {
+    .Bottom {
         grid-row: 5;
     }
 
@@ -312,4 +285,3 @@
         left: 1%;
     }
 }
-

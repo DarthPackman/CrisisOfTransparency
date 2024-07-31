@@ -22,6 +22,7 @@
     "chart.js": "^4.4.3",
     "dependences": "^0.0.1-security",
     "dependencies": "^0.0.1",
+    "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",
@@ -30,6 +31,8 @@
     "react-type-animation": "^3.2.0",
     "react-vertical-timeline-component": "^3.6.0",
     "react-video": "^1.5.3",
+    "styled-components": "^6.1.12",
+    "typewriter-effect": "^2.21.0",
     "video-react": "^0.16.0"
   }
 }
