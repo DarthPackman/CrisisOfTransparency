@@ -102,7 +102,9 @@ All commands are run from the root of the project, from a terminal:
 To install the necessary dependencies for this project, run the following commands:
 
 ## Using npm:
-```npm install @fontsource/aldrich```
+```text
+npm install @fontsource/aldrich
+```
 ```npm install @react-spring/parallax```
 ```npm install react-vertical-timeline-component```
 ```npm install react```
