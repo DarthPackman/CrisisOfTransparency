@@ -120,14 +120,10 @@ tsconfig.json: TypeScript configuration file.
 
 ## ✨ Features
 Component-Based Architecture: The project follows a component-based architecture using Astro, which allows for modular and reusable code.
+
 Tailwind CSS: The project is styled using Tailwind CSS, providing utility-first CSS for rapid UI development.
+
 TypeScript: The project uses TypeScript for type safety and better developer experience.
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
 
 ## 🧞 Commands
 
