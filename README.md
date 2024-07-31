@@ -97,3 +97,23 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 📦 Dependencies
+To install the necessary dependencies for this project, run the following commands:
+
+Using npm:
+```npm install @fontsource/aldrich```
+```npm install @react-spring/parallax```
+```npm install react-vertical-timeline-component```
+```npm install react```
+```npm install react-chartjs-2```
+```npm install react-intersection-observer```
+```npm install react-type-animation```
+Using yarn:
+```yarn add @fontsource/aldrich```
+```yarn add @react-spring/parallax```
+```yarn add react-vertical-timeline-component```
+```yarn add react```
+```yarn add react-chartjs-2```
+```yarn add react-intersection-observer```
+```yarn add react-type-animation```
