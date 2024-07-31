@@ -1,23 +1,12 @@
 /* General Text Styles */
 .Title {
-    font-size: 4vh;
+    font-size: 3vh;
     font-weight: bolder;
 }
 
-.Subtitle {
-    text-align: center;
-    font-size: 2vh;
-}
-
-.Header {
-    font-size: 3vh;
-    font-style: italic;
-    font-weight: bold;
-}
-
 .Dramatic {
-    font-size: 1.5vh;
-    font-style: italic;
+    font-size: 2vh;
+    font-style: bold;
 }
 
 .Normal {
