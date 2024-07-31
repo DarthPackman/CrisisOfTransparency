@@ -71,6 +71,9 @@ const AnimatedLineGraph = () => {
         display: true,
         text: 'Costs of Administering the System',
         color: 'white', 
+        font: {
+          size: 18,
+        },
       },
     },
     animation: {
