@@ -300,7 +300,7 @@ return (
             <Img img={bannerOneImg[0]} alignment='ImgCenterMid'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 34, end: 36}}>
-            <Text type={'Normal'} text={bannerOneTexts[0]} alignment='Mid Center'/>
+            <Text type={'Title'} text={bannerOneTexts[0]} alignment='Mid Center'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 35, end: 36}}>
             <Typewriter text={bannerOneTexts[1]} alignment='centerBottom' container={'oldTimey'}/>

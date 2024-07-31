@@ -1,16 +1,6 @@
 /* General Text Styles */
-.TextStyle {
-    padding: 2vh;
-    text-align: center;
-    flex: 1;
-    min-width: 0;
-    overflow-wrap: break-word;
-    word-wrap: break-word; 
-    white-space: normal; 
-}
-
 .Title {
-    font-size: 3vh;
+    font-size: 4vh;
     font-weight: bolder;
 }
 
