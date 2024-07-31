@@ -105,11 +105,17 @@ Contains page components that define the routes of the application.
 
 Configuration Files
 .gitignore: Specifies files to be ignored by Git.
+
 astro.config.mjs: Astro configuration file.
+
 package-lock.json: Describes the exact version of dependencies installed.
+
 package.json: Lists project dependencies and scripts.
+
 README.md: Project documentation.
+
 tailwind.config.mjs: Tailwind CSS configuration file.
+
 tsconfig.json: TypeScript configuration file.
 
 ## ✨ Features
