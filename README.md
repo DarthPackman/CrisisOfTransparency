@@ -112,7 +112,7 @@ README.md: Project documentation.
 tailwind.config.mjs: Tailwind CSS configuration file.
 tsconfig.json: TypeScript configuration file.
 
-##✨ Features
+## ✨ Features
 Component-Based Architecture: The project follows a component-based architecture using Astro, which allows for modular and reusable code.
 Tailwind CSS: The project is styled using Tailwind CSS, providing utility-first CSS for rapid UI development.
 TypeScript: The project uses TypeScript for type safety and better developer experience.
