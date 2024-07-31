@@ -241,7 +241,7 @@ return (
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{start: 15, end: 16}}>
-            <Text type={'Normal'} text={sectionOneTexts[6]} background='WhiteBg' alignment='Mid Center'/>
+            <Text type={'Dramatic'} text={sectionOneTexts[6]} background='WhiteBg' alignment='Mid Center'/>
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{start: 17, end: 19}}>
