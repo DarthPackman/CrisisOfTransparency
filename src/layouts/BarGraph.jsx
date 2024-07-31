@@ -69,6 +69,9 @@ const BarGraph = () => {
       legend: {
         labels: {
           color: 'white',
+          font: {
+            size: 18, // Change this to the desired font size
+          },
         },
       },
       title: {
