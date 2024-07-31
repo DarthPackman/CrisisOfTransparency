@@ -214,7 +214,7 @@ return (
         />
         <ParallaxLayer sticky={{start: 0, end: 6}}>
             <Video id={'Video1'} videoPath={sectionOneVids[0]} alignment='VideoCenter' className={'video'}/>
-            <Text type={'Dramatic'} text={source[0]} alignment='Source'  />
+            <Text type={'Italic'} text={source[0]} alignment='Source'  />
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 1, end: 2}}>
             <Text type={'Normal'} text={sectionOneTexts[0]} background='WhiteBg' alignment='Mid Bottom' />
@@ -228,7 +228,7 @@ return (
 
         <ParallaxLayer sticky={{start: 7, end: 13}}>
             <Video videoPath={sectionOneVids[1]} alignment='VideoCenter'/>
-            <Text type={'Dramatic'} text={source[1]} alignment='Source2'/>
+            <Text type={'Italic'} text={source[1]} alignment='Source2'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 8, end: 9}}>
             <Text type={'Normal'} text={sectionOneTexts[3]} background='WhiteBg' alignment='Mid Bottom'/>
@@ -241,12 +241,12 @@ return (
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{start: 15, end: 16}}>
-            <Text type={'Dramatic'} text={sectionOneTexts[6]} background='WhiteBg' alignment='Mid Center'/>
+            <Text type={'Bold'} text={sectionOneTexts[6]} background='WhiteBg' alignment='Mid Center'/>
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{start: 17, end: 19}}>
             <BarGraph></BarGraph>
-            <Text type={'Dramatic'} text={source[3]} alignment='Source2'  />
+            <Text type={'Italic'} text={source[3]} alignment='Source2'  />
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 18, end: 19}}>
             <Text type={'Normal'} text={sectionOneTexts[7]} background='WhiteBg' alignment='Mid Center'/>
@@ -254,7 +254,7 @@ return (
 
         <ParallaxLayer sticky={{start: 20, end: 22}}>
             <LineGraph></LineGraph>
-            <Text type={'Dramatic'} text={source[3]} alignment='Source2'  />
+            <Text type={'Italic'} text={source[3]} alignment='Source2'  />
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 21, end: 22}}>
             <Text type={'Normal'} text={sectionOneTexts[8]} background='WhiteBg' alignment='Mid Center'/>
@@ -262,7 +262,7 @@ return (
 
         <ParallaxLayer sticky={{start: 23, end: 25}}>
             <Img img={sectionOneImgs[0]} alignment='ImgCenterTop'/>
-            <Text type={'Dramatic'} text={source[3]} alignment='Source'  />
+            <Text type={'Italic'} text={source[3]} alignment='Source'  />
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 24, end: 25}}>
             <Text type={'Normal'} text={sectionOneTexts[9]} background='WhiteBg' alignment='Mid Bottom'/>
@@ -270,7 +270,7 @@ return (
 
         <ParallaxLayer sticky={{start: 26, end: 30}}>
             <Video videoPath={sectionOneVids[2]} alignment='VideoCenter'/>
-            <Text type={'Dramatic'} text={source[4]} alignment='Source'  />
+            <Text type={'Italic'} text={source[4]} alignment='Source'  />
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 27, end: 28}}>
             <Text type={'Normal'} text={sectionOneTexts[10]} background='WhiteBg' alignment='Mid Bottom'/>
@@ -282,7 +282,7 @@ return (
         <ParallaxLayer sticky={{start: 31, end: 33}}>
             <Img img={sectionOneImgs[1]} alignment='ImgCenterTop'/>
             <Img img={sectionOneImgs[2]} alignment='ImgCenterBottom'/>
-            <Text type={'Dramatic'} text={source[5]} alignment='Source'  />
+            <Text type={'Italic'} text={source[5]} alignment='Source'  />
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 32, end: 33}}>
             <Text type={'Normal'} text={sectionOneTexts[12]} background='WhiteBg' alignment='Mid Center'/>
@@ -374,7 +374,7 @@ return (
 
         <ParallaxLayer sticky={{start: 42, end: 46}}>
             <Video videoPath={sectionTwoVids[0]} alignment='VideoCenter'/>
-            <Text type={'Dramatic'} text={source[6]} alignment='Source'  />
+            <Text type={'Italic'} text={source[6]} alignment='Source'  />
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 43, end: 44}}>
             <Text type={'Normal'} text={sectionTwoTexts[10]} background='WhiteBg' alignment='Mid Bottom'/>
@@ -385,7 +385,7 @@ return (
 
         <ParallaxLayer sticky={{start: 47, end: 55}}>
             <Video videoPath={sectionTwoVids[1]} alignment='VideoCenter'/>
-            <Text type={'Dramatic'} text={source[7]} alignment='Source'  />
+            <Text type={'Italic'} text={source[7]} alignment='Source'  />
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 48, end: 49}}>
             <Text type={'Normal'} text={sectionTwoTexts[12]} background='WhiteBg' alignment='Mid Bottom'/>
@@ -410,7 +410,7 @@ return (
 
         <ParallaxLayer sticky={{start: 59, end: 73}}>
             <Video videoPath={sectionTwoVids[3]} alignment='VideoCenter'/>
-            <Text type={'Dramatic'} text={source[8]} alignment='Source'  />
+            <Text type={'Italic'} text={source[8]} alignment='Source'  />
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 60, end: 61}}>
             <Text type={'Normal'} text={sectionTwoTexts[17]} background='WhiteBg' alignment='Mid Bottom'/>
@@ -440,7 +440,7 @@ return (
                 <Video videoPath={sectionTwoVids[4]} alignment='VideoTop'/>
                 <Video videoPath={sectionTwoVids[5]} alignment='VideoBottom'/>
             </div>
-            <Text type={'Dramatic'} text={source[9]} alignment='Source'  />
+            <Text type={'Italic'} text={source[9]} alignment='Source'  />
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 75, end: 76}}>
             <Text type={'Normal'} text={sectionTwoTexts[25]} background='WhiteBg' alignment='Mid Center'/>
@@ -483,7 +483,7 @@ return (
         />
         <ParallaxLayer sticky={{start: 85, end: 86}}>
             <Video videoPath={sectionThreeVids[0]} alignment='VideoCenter'/>
-            <Text type={'Dramatic'} text={source[10]} alignment='Source'  />
+            <Text type={'Italic'} text={source[10]} alignment='Source'  />
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 85.5, end: 86}}>
             <Text type={'Normal'} text={sectionThreeTexts[0]} background='WhiteBg' alignment='Mid Bottom'/>
@@ -500,7 +500,7 @@ return (
 
         <ParallaxLayer sticky={{start: 91, end: 94}}>
             <Video videoPath={sectionThreeVids[1]} alignment='VideoCenter'/>
-            <Text type={'Dramatic'} text={source[11]} alignment='Source'  />
+            <Text type={'Italic'} text={source[11]} alignment='Source'  />
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 91.5, end: 92}}>
             <Text type={'Normal'} text={sectionThreeTexts[2]} background='WhiteBg' alignment='Mid Bottom'/>
