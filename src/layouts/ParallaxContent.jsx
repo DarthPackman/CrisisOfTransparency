@@ -453,11 +453,11 @@ return (
 
         <ParallaxLayer sticky={{start: 77, end: 79}}>
             <Img img={sectionTwoImgs[9]} alignment='ImgLeftCenter'/>
-            <Img img={sectionTwoImgs[10]} alignment='ImgCenterTop'/>
+            <Img img={sectionTwoImgs[10]} alignment='ImgCenterBottom'/>
             <Img img={sectionTwoImgs[11]} alignment='ImgRightCenter'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 78, end: 79}}>
-            <Text type={'Normal'} text={sectionTwoTexts[26]} background='WhiteBg' alignment='Mid CenterBottom'/>
+            <Text type={'Normal'} text={sectionTwoTexts[26]} background='WhiteBg' alignment='Mid TopCenter1'/>
         </ParallaxLayer>
 
 
