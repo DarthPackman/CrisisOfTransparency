@@ -101,7 +101,7 @@ All commands are run from the root of the project, from a terminal:
 ## 📦 Dependencies
 To install the necessary dependencies for this project, run the following commands:
 
-## Using npm:
+Using npm:
 ```text
 npm install @fontsource/aldrich
 ```
