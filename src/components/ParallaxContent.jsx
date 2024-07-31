@@ -189,7 +189,7 @@ const creditsText = [
 
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import * as VerticalTimeline from 'react-vertical-timeline-component';
-import './/Timeline.css';
+import '../layouts/Timeline.css';
 import 'react-vertical-timeline-component/style.min.css';
 import Video from '../layouts/Video';
 import Text from '../layouts/Text';
