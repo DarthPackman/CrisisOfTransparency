@@ -12,27 +12,6 @@
 		font-size: large;
 		margin: 0;
 	}
-	
-	#TypeWriterBox
-	{
-		margin-top: 2vh;
-		grid-row: 2/3;
-		grid-column: 2/5;
-		border-color: black;
-		border-style: solid;
-		border-width: 1px;
-		color: black;
-		padding:1vh;
-		text-align: center;
-		flex: 1;
-		min-width: 0;
-		overflow-wrap: break-word; /* Allow breaking words to prevent overflow */
-		word-wrap: break-word; /* Add compatibility for older browsers */
-		white-space: normal; /* Allow text to wrap to multiple lines */
-		font-size: 1vh;
-		background-color: white;
-		font-family: 'Aldrich', sans-serif;
-	}
 
 
 	
