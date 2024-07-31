@@ -299,7 +299,7 @@ return (
             <Img img={bannerOneImg[0]} alignment='ImgCenterMid'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 34, end: 36}}>
-            <Text type={'Normal'} text={bannerOneTexts[0]} alignment='Mid Center' type='Title'/>
+            <Text type={'Normal'} text={bannerOneTexts[0]} alignment='Mid Center'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 35, end: 36}}>
             <Typewriter text={bannerOneTexts[1]} alignment='centerBottom' container={'oldTimey'}/>
@@ -317,28 +317,28 @@ return (
         {/* Put a Timeline thingy here */}
     
         <ParallaxLayer sticky={{start: 37, end: 38.5}}>
-            <Text type={'Normal'} text={sectionTwoTexts[0]} background='WhiteBg' alignment='Mid'  />
+            <Text type={'Normal'} text={sectionTwoTexts[0]} background='WhiteBg' alignment='Center Left'  />
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 37.5, end: 38.5 }}>
             <div class="flex-container">
                 <div class="flex-child">
                 <VerticalTimeline.VerticalTimeline layout={'1-column-left'}>
                     <VerticalTimeline.VerticalTimelineElement>
-                    <img src={sectionTwoImgs[0]} alt='Flag' class='flagResize'></img>
-                    <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[1]}</h4>
+                        <img src={sectionTwoImgs[0]} alt='Flag' class='flagResize'></img>
+                        <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[1]}</h4>
                     </VerticalTimeline.VerticalTimelineElement>
                     <VerticalTimeline.VerticalTimelineElement>
-                    <img src={sectionTwoImgs[1]} alt='Flag' class='flagResize'></img>
-                    <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[2]}</h4>
+                        <img src={sectionTwoImgs[1]} alt='Flag' class='flagResize'></img>
+                        <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[2]}</h4>
                     </VerticalTimeline.VerticalTimelineElement>
                     <VerticalTimeline.VerticalTimelineElement>
-                    <img src={sectionTwoImgs[2]} alt='Flag' class='flagResize'></img>
-                    <img src={sectionTwoImgs[3]} alt='Flag' class='flagResize'></img>
-                    <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[3]}</h4>
+                        <img src={sectionTwoImgs[2]} alt='Flag' class='flagResize'></img>
+                        <img src={sectionTwoImgs[3]} alt='Flag' class='flagResize'></img>
+                        <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[3]}</h4>
                     </VerticalTimeline.VerticalTimelineElement>
                     <VerticalTimeline.VerticalTimelineElement>
-                    <img src={sectionTwoImgs[4]} alt='Flag' class='flagResize'></img>
-                    <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[4]}</h4>
+                        <img src={sectionTwoImgs[4]} alt='Flag' class='flagResize'></img>
+                        <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[4]}</h4>
                     </VerticalTimeline.VerticalTimelineElement>
                 </VerticalTimeline.VerticalTimeline>
                 </div>
@@ -347,7 +347,7 @@ return (
 
 
         <ParallaxLayer sticky={{start: 39.5, end: 41}}>
-            <Text type={'Normal'} text={sectionTwoTexts[1]} background='WhiteBg' alignment='Mid'  />
+            <Text type={'Normal'} text={sectionTwoTexts[1]} background='WhiteBg' alignment='Center Left' />
         </ParallaxLayer>
         <ParallaxLayer sticky={{ start: 40, end: 41 }}>
             <div class="flex-container">
