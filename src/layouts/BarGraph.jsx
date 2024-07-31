@@ -68,16 +68,16 @@ const BarGraph = () => {
     plugins: {
       legend: {
         labels: {
-          color: 'white',
-          font: {
-            size: 18, // Change this to the desired font size
-          },
+          color: 'white'
         },
       },
       title: {
         display: true,
         text: 'Breakdown of ATI Requests',
         color: 'white',
+        font: {
+          size: `${10}vh`,
+        },
       },
     },
     layout: {
