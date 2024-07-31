@@ -76,8 +76,46 @@
 ├── README.md
 ├── tailwind.config.mjs
 └── tsconfig.json
-
 ```
+
+## 📁 Directory Structure
+.astro/
+Contains Astro-specific configuration files.
+
+.vscode/
+Contains VSCode configuration files for extensions, launch settings, and workspace settings.
+
+node_modules/
+Contains project dependencies.
+
+public/
+Contains static assets like images and videos that can be served directly.
+
+src/
+Contains the source code for the project.
+
+src/components/
+Contains reusable components for the project.
+
+src/layouts/
+Contains layout components for the project.
+
+src/pages/
+Contains page components that define the routes of the application.
+
+Configuration Files
+.gitignore: Specifies files to be ignored by Git.
+astro.config.mjs: Astro configuration file.
+package-lock.json: Describes the exact version of dependencies installed.
+package.json: Lists project dependencies and scripts.
+README.md: Project documentation.
+tailwind.config.mjs: Tailwind CSS configuration file.
+tsconfig.json: TypeScript configuration file.
+
+##✨ Features
+Component-Based Architecture: The project follows a component-based architecture using Astro, which allows for modular and reusable code.
+Tailwind CSS: The project is styled using Tailwind CSS, providing utility-first CSS for rapid UI development.
+TypeScript: The project uses TypeScript for type safety and better developer experience.
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
