@@ -66,3 +66,23 @@
     bottom: 1vh;
 }
 
+.ImgCenterTop2 {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, 0);
+}
+
+.ImgCenterMid2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ImgCenterBottom2 {
+    position: absolute;
+    left: 50%;
+    bottom: 25%;
+    transform: translate(-50%, 0);
+}

@@ -21,7 +21,7 @@ const sectionOneTexts = [
     `Access to information is a cornerstone of Canadian democracy, keeping governments accountable, encouraging citizen participation, and giving Canadians access to the information their taxes pay for.`,
     `But the current system is in disarray.`,
     `In May 2023, the Information Commissioner, the independent ombudsman for the system, appeared before Parliament…`,
-    `… to criticize the current system and a system that deliberately underfunded her office’s capacity to process complaints by access to information requesters.`,
+    `… to criticize the current system and the government's decision to underfund her office, which processes complaints by access to information requesters.`,
     `The following year, her budget was cut further.`,
     `Today, the system is in sharp decline.`,
     `Delays are endemic.`,
@@ -70,17 +70,17 @@ const sectionTwoTexts = [
     `It also failed.`,
     `Despite continued attempts throughout the 1970s to pass a law, there was no success.  But Baldwin continued in his efforts to champion the need for a law.`,
     `A promising bill was introduced in the short-lived government of Joe Clark, but died before the government fell on a confidence motion.`,
-    `Finally, under the Trudeau government’s law mandate, Secretary of State and Minister of Communications Francis Fox introduced a bill in the House of Commons.`,
+    `Finally, under the Trudeau government’s last mandate, Secretary of State and Minister of Communications Francis Fox introduced a bill in the House of Commons.`,
     `Although the bill eventually passed, it did not look promising at first.  After its introduction, the bill languished in committee.`,
-    `The bill initially made it possible for the Information Commissioner and the courts to review exemptions for cabinet confidences. At the last minute, Prime Minister Trudeau made a last minute amendment completely excluding them from the reach of the bill.`,
-    `Now when the government invokes a cabinet confidence, it is not subject to review even by the courts.  It is the most restrictive type of cabinet secrecy among Westminster-style government counterparts.`,
+    `The bill initially made it possible for the Information Commissioner and the courts to review exemptions for cabinet confidences. Prime Minister Trudeau made a last minute amendment completely excluding them from the reach of the bill.`,
+    `Now when the government invokes a cabinet confidence, it is not subject to review even by the courts.  It is the most restrictive type of cabinet secrecy among Westminster-style governments.`,
     `A confidential cabinet memorandum at the time:`,
-    `It should be noted that there is a fundamental distinction between, on the one hand, exluding information from the scope of Access and, on the other, exempting it from the right of access. Exempt information is subject to the general regime of the Access to Information legislation in that applicants may request it but have no right it it.`,
+    `It should be noted that there is a fundamental distinction between, on the one hand, exluding information from the scope of Access and, on the other, exempting it from the right of access. Exempt information is subject to the general regime of the Access to Information legislation in that applicants may request it but have no right it; when they are denied exempt information they may lodge a complaint with the Information Comissioner and, subsequently, apply to the Federal Court for a review of the denial. Excluding information from the scope of Access is a far more radical step. Not only is there no right to such information but denying such information does not open the way to complaints before the Information Commissioner nor to a review be the Federal Court.`,
     `The bill also excluded the Prime Minister’s Office and the political staff of Ministers’ offices, omitting key parts of government from its reach.`,
     `The omission of cabinet confidences from the bill and the omission of key offices where government power resides was a bruising disappointment. It would undermine the efficacy of the law from its earliest years.`,
     `Finally, on June 28, 1982, the bill passed.  It came into force the following year.`,
     `Despite the legislative requirement to study the law every five years, there has been minimal change to the law since it was passed, even as it has played a vital role in Canadian history over the last forty years…`,
-    `For now, it has fallen on civil society actors to try and fixed the system.`
+    `For now, it has fallen on civil society actors to try and fix the system.`
 ]
 
 const sectionTwoVids = [
@@ -452,12 +452,12 @@ return (
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{start: 77, end: 79}}>
-            <Img img={sectionTwoImgs[9]} alignment='ImgLeftCenter'/>
-            <Img img={sectionTwoImgs[10]} alignment='ImgCenterBottom'/>
-            <Img img={sectionTwoImgs[11]} alignment='ImgRightCenter'/>
+            <Img img={sectionTwoImgs[11]} alignment='ImgCenterTop2'/>
+            <Img img={sectionTwoImgs[10]} alignment='ImgCenterMid2'/>
+            <Img img={sectionTwoImgs[9]} alignment='ImgCenterBottom2'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 78, end: 79}}>
-            <Text type={'Normal'} text={sectionTwoTexts[26]} background='WhiteBg' alignment='Mid TopCenter1'/>
+            <Text type={'Normal'} text={sectionTwoTexts[26]} background='WhiteBg' alignment='Mid TopCenter'/>
         </ParallaxLayer>
 
 
