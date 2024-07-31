@@ -101,7 +101,7 @@ All commands are run from the root of the project, from a terminal:
 ## 📦 Dependencies
 To install the necessary dependencies for this project, run the following commands:
 
-Using npm:
+## Using npm:
 ```npm install @fontsource/aldrich```
 ```npm install @react-spring/parallax```
 ```npm install react-vertical-timeline-component```
@@ -109,7 +109,7 @@ Using npm:
 ```npm install react-chartjs-2```
 ```npm install react-intersection-observer```
 ```npm install react-type-animation```
-Using yarn:
+## Using yarn:
 ```yarn add @fontsource/aldrich```
 ```yarn add @react-spring/parallax```
 ```yarn add react-vertical-timeline-component```
