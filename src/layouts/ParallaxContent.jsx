@@ -325,6 +325,7 @@ return (
                     <Text type={'Normal'} text={sectionTwoTexts[0]} background='WhiteBg' alignment='LeftMid Center'/>
                 </div>
                 <div className="flex-child staggered-item timeline-item">
+                <FadeInSection threshold={1.0}>
                 <VerticalTimeline.VerticalTimeline layout={'1-column-left'}>
                     <VerticalTimeline.VerticalTimelineElement>
                         <img src={sectionTwoImgs[0]} alt='Flag' className='flagResize'></img>
@@ -344,6 +345,7 @@ return (
                         <h4 className="vertical-timeline-element-title TimelineTxt">{sectionTwoTexts[4]}</h4>
                     </VerticalTimeline.VerticalTimelineElement>
                 </VerticalTimeline.VerticalTimeline>
+                </FadeInSection>
                 </div>
             </div>
         </ParallaxLayer>
@@ -354,6 +356,7 @@ return (
                     <Text type={'Normal'} text={sectionTwoTexts[5]} background='WhiteBg' alignment='LeftMid Center'/>
                 </div>
                 <div className="flex-child staggered-item timeline-item">
+                    <FadeInSection threshold={1.0}>
                     <VerticalTimeline.VerticalTimeline layout={'1-column-left'}>
                         <VerticalTimeline.VerticalTimelineElement>
                             <img src={sectionTwoImgs[5]} alt='Flag' className='flagResize'></img>
@@ -372,6 +375,7 @@ return (
                             <h4 className="vertical-timeline-element-title TimelineTxt">{sectionTwoTexts[9]}</h4>
                         </VerticalTimeline.VerticalTimelineElement>
                     </VerticalTimeline.VerticalTimeline>
+                    </FadeInSection>
                 </div>
             </div>
         </ParallaxLayer>
@@ -495,7 +499,7 @@ return (
             <Text type={'Normal'} text={sectionThreeTexts[0]} background='WhiteBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
 
-        <ParallaxLayer style={{backgroundImage: 'linear-gradient(#FFFFFF,#FFFFFF)'}} sticky={{start: 87, end: 88}}>
+        <ParallaxLayer style={{backgroundImage: 'linear-gradient(#FFFFFF,#c0c4d0)'}} sticky={{start: 87, end: 88}}>
             <GroupText type={'Italic'} text={sectionThreeTextPlatform2006} background='RedBg' alignment='Mid Center'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 89, end: 90}}>
@@ -514,7 +518,7 @@ return (
         </ParallaxLayer>
 
         <ParallaxLayer
-            style={{backgroundImage: 'linear-gradient(#FFFFFF,#FFFFFF)'}}
+            style={{backgroundImage: 'linear-gradient(#FFFFFF,#c0c4d0)'}}
             sticky={{start: 95, end: 96}}>
             <GroupText type={'Normal'} text={sectionThreeTextPlatform2015} background='BlueBg' alignment='Mid Center'/>
         </ParallaxLayer>

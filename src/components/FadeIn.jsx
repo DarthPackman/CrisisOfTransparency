@@ -31,7 +31,7 @@ function FadeInSection(props) {
 
     const fadeStyle = {
         opacity: isVisible ? 1 : 0,
-        transition: 'opacity 1s ease-in-out'
+        transition: 'opacity 2.5s ease-in-out'
     };
 
     return (
