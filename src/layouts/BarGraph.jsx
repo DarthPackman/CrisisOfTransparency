@@ -76,7 +76,7 @@ const BarGraph = () => {
         text: 'Breakdown of ATI Requests',
         color: 'white',
         font: {
-          size: `${10}vh`,
+          size: 18,
         },
       },
     },
