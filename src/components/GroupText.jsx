@@ -1,4 +1,4 @@
-import './GroupText.css';
+import './Text.css';
 import React from 'react';
 
 const GroupText = ({ text, background, alignment, type }) => {
@@ -10,7 +10,9 @@ const GroupText = ({ text, background, alignment, type }) => {
                     {isArray ? (
                         text.map((line, index) => (
                             <React.Fragment key={index}>
-                                {line}
+                                <span className={index === 0 ? 'Bold' : 'Normal'}>
+                                    {line}
+                                </span>
                                 <br />
                             </React.Fragment>
                         ))

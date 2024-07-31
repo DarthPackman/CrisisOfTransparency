@@ -9,9 +9,10 @@
     font-style: bold;
 }
 
-.Italic {
+.Source {
     font-size: 2.5vh;
     font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .Normal {
@@ -22,10 +23,15 @@
 .TextContainer {
     box-sizing: border-box;
     display: flex;
-    align-items: center;
+    justify-content: center; 
+    align-items: center; 
     flex-wrap: wrap; 
-    margin-left: 2%; 
-    margin-right: 2%; 
+    padding: 1%;
+    padding-left: 3%; 
+    padding-right: 3%;
+    margin: 1%;
+    margin-left: 3%; 
+    margin-right: 3%; 
 }
 
 .TextDisplay {
@@ -33,6 +39,7 @@
     height: 100%;
     box-sizing: border-box;
     display: grid;
+    place-items: center; /* Center content */
     margin: 1vh;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -109,6 +116,7 @@
 }
 
 /* Absolute Positioning */
+
 .Source {
     position: absolute;
     left: 1%;
@@ -118,8 +126,8 @@
 
 .Source2 {
     position: absolute;
-    left: 0.5%;
-    top: 0;
+    left: 1%;
+    top: 3%;
     z-index: 3;
 }
 
