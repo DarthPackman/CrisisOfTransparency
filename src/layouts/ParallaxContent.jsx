@@ -245,7 +245,7 @@ return (
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{start: 17, end: 19}}>
-            <FadeInSection>
+            <FadeInSection threshold={0.5}>
                 <BarGraph></BarGraph>
             </FadeInSection>
             <Text type={'Source'} text={source[3]} alignment='Source2'  />
@@ -255,7 +255,7 @@ return (
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{start: 20, end: 22}}>
-            <FadeInSection>
+            <FadeInSection threshold={0.5}>
                 <LineGraph></LineGraph>
             </FadeInSection>
             <Text type={'Source'} text={source[3]} alignment='Source2'  />
@@ -532,7 +532,7 @@ return (
             <Text type={'Normal'} text={sectionThreeTexts[5]} background='WhiteBg' alignment='Left Center'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 101, end: 102}}>
-            <FadeInSection>
+            <FadeInSection threshold={1.0}>
                 <Img img={sectionThreeImgs[1]} alignment='ImgRightCenter'/>
             </FadeInSection>
         </ParallaxLayer>

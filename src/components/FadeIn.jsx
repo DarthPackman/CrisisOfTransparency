@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 function FadeInSection(props) {
+    const { threshold = 1.0, children } = props; // Default threshold to 1.0 if not provided
     const [isVisible, setVisible] = useState(false);
     const sectionRef = useRef();
 
@@ -13,7 +14,7 @@ function FadeInSection(props) {
                     }
                 });
             },
-            { threshold: 1.0 } // Adjust this threshold as needed
+            { threshold: threshold } // Use the threshold prop
         );
 
         const currentElement = sectionRef.current;
@@ -26,7 +27,7 @@ function FadeInSection(props) {
                 observer.unobserve(currentElement);
             }
         };
-    }, []);
+    }, [threshold]);
 
     const fadeStyle = {
         opacity: isVisible ? 1 : 0,
@@ -38,7 +39,7 @@ function FadeInSection(props) {
             ref={sectionRef}
             style={fadeStyle}
         >
-            {props.children}
+            {children}
         </div>
     );
 }
