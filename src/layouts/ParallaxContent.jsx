@@ -87,7 +87,7 @@ const sectionTwoVids = [
     `/vids/Vid4S.webm`,
     `/vids/Vid5S.webm`,
     `/vids/Vid6S.webm`,
-    `/vids/Vid7.mp4`,
+    `/vids/Vid7S.webm`,
     `/vids/Vid8S.webm`,
     `/vids/Vid9S.webm`
 ]
