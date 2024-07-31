@@ -3,16 +3,12 @@ import { TypeAnimation } from 'react-type-animation';
 const Typewriter = ({ text, text2, alignment, container }) => {
     const alignmentStyles = {
         centerBottom: {
-            backgroundColor: 'white',
-            border: '2px solid black',
             padding: '1vh',
             position: 'absolute',
             left: '50%',
             bottom: '15%',
             transform: 'translateX(-50%)',
             textAlign: 'center',
-            fontSize: '3vh',
-            color: 'black',
         },
         default: {
         },
@@ -29,10 +25,11 @@ const Typewriter = ({ text, text2, alignment, container }) => {
             fontWeight: 'bold', 
             fontStyle: 'normal', 
             fontsize: '3vh',
+            color: 'black'
         },
         default: {
-            fontSize: '3vh',
-            color: 'black',
+            fontSize: '4vh',
+            color: 'white',
         },
     };
 
