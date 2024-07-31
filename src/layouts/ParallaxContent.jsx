@@ -80,7 +80,8 @@ const sectionTwoTexts = [
     `The omission of cabinet confidences from the bill and the omission of key offices where government power resides was a bruising disappointment. It would undermine the efficacy of the law from its earliest years.`,
     `Finally, on June 28, 1982, the bill passed.  It came into force the following year.`,
     `Despite the legislative requirement to study the law every five years, there has been minimal change to the law since it was passed, even as it has played a vital role in Canadian history over the last forty years…`,
-    `For now, it has fallen on civil society actors to try and fix the system.`
+    `For now, it has fallen on civil society actors to try and fix the system.`,
+    `It should be noted that there is a fundamental distinction between, on the one hand, exluding information from the scope of Access and, on the other, exempting it from the right of access. Exempt information is subject to the general regime of the Access to Information legislation in that applicants may request it but have no right it; when they are denied exempt information they may lodge a complaint with the Information Comissioner and, subsequently, apply to the Federal Court for a review of the denial. Excluding information from the scope of Access is a far more radical step.`
 ]
 
 const sectionTwoVids = [
@@ -307,7 +308,7 @@ return (
             <Text type={'Title'} text={bannerOneTexts[0]} alignment='Mid Center'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 35, end: 36}}>
-            <Typewriter text={bannerOneTexts[1]} alignment='centerBottom'/>
+            <Typewriter text={bannerOneTexts[1]} text2={''} alignment='centerBottom'/>
         </ParallaxLayer>
 
         {/* ------------------ SECTION TWO ------------------*/}
@@ -432,7 +433,7 @@ return (
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 66, end: 67}}>
             <Text type={'Normal'} text={sectionTwoTexts[20]} background='WhiteBg' alignment='Mid TopCenter1'/>
-            <Typewriter text={sectionTwoTexts[21]} text2={''} alignment='centerBottom' container={'oldTimey'}/>
+            <Typewriter text={sectionTwoTexts[21]} text2={sectionTwoTexts[27]} alignment='centerBottom' container={'oldTimey'}/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 68, end: 69}}>
             <Text type={'Normal'} text={sectionTwoTexts[22]} background='WhiteBg' alignment='Mid Bottom'/>
