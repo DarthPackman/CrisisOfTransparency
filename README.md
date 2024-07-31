@@ -105,17 +105,21 @@ To install the necessary dependencies for this project, run the following comman
 ```text
 npm install @fontsource/aldrich
 ```
-```npm install @react-spring/parallax```
-```npm install react-vertical-timeline-component```
-```npm install react```
-```npm install react-chartjs-2```
-```npm install react-intersection-observer```
-```npm install react-type-animation```
-## Using yarn:
-```yarn add @fontsource/aldrich```
-```yarn add @react-spring/parallax```
-```yarn add react-vertical-timeline-component```
-```yarn add react```
-```yarn add react-chartjs-2```
-```yarn add react-intersection-observer```
-```yarn add react-type-animation```
+```text
+npm install @react-spring/parallax
+```
+```text
+npm install react-vertical-timeline-component
+```
+```text
+npm install react
+```
+```text
+npm install react-chartjs-2
+```
+```text
+npm install react-intersection-observer
+```
+```text
+npm install react-type-animation
+```
