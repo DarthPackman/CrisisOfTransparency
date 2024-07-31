@@ -1,26 +1,82 @@
 # Astro Starter Kit: Minimal
 
-```sh
-npm create astro@latest -- --template minimal
-```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
 ```text
 /
+├── .astro/
+│   └── settings.json
+├── .vscode/
+│   ├── extensions.json
+│   ├── launch.json
+│   └── settings.json
+├── node_modules/
 ├── public/
+│   ├── sectionOne/
+│   │   ├── slide12.png
+│   │   ├── slide16a.png
+│   │   └── slide16b.png
+│   ├── sectionThree/
+│   │   ├── S3I1.png
+│   │   └── S3I2.png
+│   ├── sectionTwo/
+│   │   ├── CanadaDeclassified.png
+│   │   ├── Denmark.png
+│   │   ├── Finland.png
+│   │   ├── France.png
+│   │   ├── New_Brunswick.png
+│   │   ├── Newfoundland_and_Labrador.png
+│   │   ├── Norway.png
+│   │   ├── Nova_Scotia.png
+│   │   ├── OpenByDefault.png
+│   │   ├── Quebec.png
+│   │   ├── SecretCanada.png
+│   │   └── Usa.png
+│   ├── vids/
+│   │   ├── Vid1S.webm
+│   │   ├── Vid2S.webm
+│   │   ├── Vid3S.webm
+│   │   ├── Vid4S.webm
+│   │   ├── Vid5S.webm
+│   │   ├── Vid6S.webm
+│   │   ├── Vid7.mp4
+│   │   ├── Vid8S.webm
+│   │   ├── Vid9S.webm
+│   │   ├── Vid10S.webm
+│   │   └── Vid11S.webm
+│   ├── favicon.svg
+│   ├── InsideHOC.png
+│   ├── OutsideHOC.png
+│   └── ParHill.png
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── components/
+│   │   ├── BarGraph.jsx
+│   │   ├── FadeIn.jsx
+│   │   ├── GroupText.jsx
+│   │   ├── Img.css
+│   │   ├── Img.jsx
+│   │   ├── LineGraph.jsx
+│   │   ├── Text.css
+│   │   ├── Text.jsx
+│   │   ├── Timeline.css
+│   │   ├── Typewriter.jsx
+│   │   ├── Video.css
+│   │   └── Video.jsx
+│   ├── layouts/
+│   │   ├── MainLayout.astro
+│   │   ├── MainLayout.css
+│   │   └── ParallaxContent.jsx
+│   ├── pages/
+│   │   └── index.astro
+│   ├── astro.d.ts
+│   ├── env.d.ts
+│   └── vite-env.d.ts
+├── .gitignore
+├── astro.config.mjs
+├── package-lock.json
+├── package.json
+├── README.md
+├── tailwind.config.mjs
+└── tsconfig.json
+
 ```
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
