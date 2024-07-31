@@ -50,6 +50,7 @@ const BarGraph = () => {
         beginAtZero: true,
         grid: {
           display: true,
+          color: 'rgba(99, 99, 99, 0.5)',
         },
         ticks: {
           color: 'white',
@@ -59,6 +60,7 @@ const BarGraph = () => {
         beginAtZero: true,
         grid: {
           display: false,
+          color: 'rgba(99, 99, 99, 0.5)',
         },
         ticks: {
           color: 'white',
@@ -89,13 +91,12 @@ const BarGraph = () => {
       },
     },
     animation: {
-      duration: 2000, // Animation duration in milliseconds
+      duration: 2000, 
     },
   };
 
   React.useEffect(() => {
     if (inView) {
-      // Force a re-render by updating the chart key
       setChartKey(Date.now());
     }
   }, [inView]);

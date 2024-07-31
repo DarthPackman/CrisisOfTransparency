@@ -16,7 +16,7 @@
 }
 
 .Normal {
-    font-size: 2vh;
+    font-size: 2.25vh;
 }
 
 /* Layout Containers */
@@ -51,7 +51,7 @@
     margin: 1vh;
     background-color: rgb(255, 255, 255);
     border: 1px solid black; 
-    box-shadow: 5px 5px; 
+    box-shadow: 5px 5px 0px black; 
 }
 
 .RedBg {
@@ -59,7 +59,7 @@
     margin: 1vh;
     background-color: rgb(255, 75, 75);
     border: 1px solid black; 
-    box-shadow: 10px 10px; 
+    box-shadow: 5px 5px 0px black; 
 }
 
 .BlueBg {
@@ -67,12 +67,16 @@
     margin: 1vh;
     background-color: rgb(75, 75, 255);
     border: 1px solid black; 
-    box-shadow: 10px 10px; 
+    box-shadow: 5px 5px 0px black; 
 }
 
 /* Grid Positioning */
 .Left {
     grid-column: 1/5;
+}
+
+.LeftMid {
+    grid-column: 2/6;
 }
 
 .Mid {
@@ -129,8 +133,4 @@
     left: 1%;
     top: 3%;
     z-index: 3;
-}
-
-/* Tablet Styles */
-@media (max-width: 800px) {
 }

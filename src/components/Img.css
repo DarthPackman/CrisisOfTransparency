@@ -1,6 +1,5 @@
 /* Mobile styles */
-.ImgContainer
-{
+.ImgContainer {
     box-sizing: border-box;
     display: flex;
     margin: 1vh;
@@ -8,18 +7,11 @@
     flex-wrap: wrap;
 }
 
-.ImgCenter {
-    position: absolute;
-    left: 50%;
-    bottom: 35%;
-    transform: translateX(-50%);
-}
-
 .ImgCenterTop {
     position: absolute;
     left: 50%;
     top: 10%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 0);
 }
 
 .ImgCenterMid {
@@ -33,66 +25,44 @@
     position: absolute;
     left: 50%;
     bottom: 10%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 0);
+}
+
+.ImgLeftTop {
+    position: absolute;
+    left: 1vh;
+    top: 1vh;
+}
+
+.ImgLeftCenter {
+    position: absolute;
+    left: 1vh;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 .ImgLeftBottom {
     position: absolute;
-    left: 0;
-    bottom: 0;
-    transform: translateX(0);
-}
-
-.ImgLeftBottom {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    transform: translateX(0);
+    left: 1vh;
+    bottom: 1vh;
 }
 
 .ImgRightTop {
     position: absolute;
-    right: 0;
-    top: 0;
-    transform: translateX(0);
+    right: 1vh;
+    top: 1vh;
 }
 
-.ImgRightTopCenter {
+.ImgRightCenter {
     position: absolute;
-    right: 0;
+    right: 1vh;
     top: 50%;
-    transform: translateY(-50%);
-}
-
-.ImgRightBotCenter {
-    position: absolute;
-    right: 0;
-    bottom: 50%;
-    transform: translateY(50%);
+    transform: translate(0, -50%);
 }
 
 .ImgRightBottom {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    transform: translateX(0);
+    right: 1vh;
+    bottom: 1vh;
 }
 
-.ImgHardTop
-{
-    position: absolute;
-    left: 50%;
-    Top: 0%;
-    transform: translateX(-50%);
-}
-
-
-/* Tablet styles */
-@media (min-width: 481px) 
-{
-}
-
-/* Desktop styles */
-@media (min-width: 769px) 
-{
-}

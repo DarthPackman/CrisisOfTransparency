@@ -62,8 +62,8 @@ const sectionTwoTexts = [
     `In Canada, the provinces began to do so, too.`,
     `Nova Scotia 1977`,
     `New Brunswick 1977`,
-    `Newfoundland and Labrador in 1981`,
-    `Quebec in 1982`,
+    `Newfoundland and Labrador 1981`,
+    `Quebec 1982`,
     `Next, it was the federal government’s turn…`,
     `In 1965, NDP MP Barry Mather introduced the first private member’s bill to pass a Canadian freedom of information law.  It failed.`,
     `In 1971, Progressive Conservative MP Ged Baldwin introduced the first comprehensive legislation in a private member’s bill.`,
@@ -245,7 +245,9 @@ return (
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{start: 17, end: 19}}>
-            <BarGraph></BarGraph>
+            <FadeInSection>
+                <BarGraph></BarGraph>
+            </FadeInSection>
             <Text type={'Source'} text={source[3]} alignment='Source2'  />
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 18, end: 19}}>
@@ -253,7 +255,9 @@ return (
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{start: 20, end: 22}}>
-            <LineGraph></LineGraph>
+            <FadeInSection>
+                <LineGraph></LineGraph>
+            </FadeInSection>
             <Text type={'Source'} text={source[3]} alignment='Source2'  />
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 21, end: 22}}>
@@ -314,63 +318,64 @@ return (
             speed={0}
             style={{backgroundImage: 'linear-gradient(#0a0149,#daeafa)'}}
         />
-    
-        <ParallaxLayer sticky={{ start: 37, end: 38 }}>
-            <div class="flex-container">
-                <div class="flex-child">
-                    <Text type={'Normal'} text={sectionTwoTexts[0]} background='WhiteBg' alignment='Mid Center'/>
+
+        <ParallaxLayer sticky={{ start: 37, end: 38.5 }} style={{ zIndex: 2 }}>
+            <div className="flex-container staggered-container">
+                <div className="flex-child staggered-item text-item">
+                    <Text type={'Normal'} text={sectionTwoTexts[0]} background='WhiteBg' alignment='LeftMid Center'/>
                 </div>
-                <div class="flex-child">
+                <div className="flex-child staggered-item timeline-item">
                 <VerticalTimeline.VerticalTimeline layout={'1-column-left'}>
                     <VerticalTimeline.VerticalTimelineElement>
-                        <img src={sectionTwoImgs[0]} alt='Flag' class='flagResize'></img>
-                        <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[1]}</h4>
+                        <img src={sectionTwoImgs[0]} alt='Flag' className='flagResize'></img>
+                        <h4 className="vertical-timeline-element-title TimelineTxt">{sectionTwoTexts[1]}</h4>
                     </VerticalTimeline.VerticalTimelineElement>
                     <VerticalTimeline.VerticalTimelineElement>
-                        <img src={sectionTwoImgs[1]} alt='Flag' class='flagResize'></img>
-                        <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[2]}</h4>
+                        <img src={sectionTwoImgs[1]} alt='Flag' className='flagResize'></img>
+                        <h4 className="vertical-timeline-element-title TimelineTxt">{sectionTwoTexts[2]}</h4>
                     </VerticalTimeline.VerticalTimelineElement>
                     <VerticalTimeline.VerticalTimelineElement>
-                        <img src={sectionTwoImgs[2]} alt='Flag' class='flagResize'></img>
-                        <img src={sectionTwoImgs[3]} alt='Flag' class='flagResize'></img>
-                        <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[3]}</h4>
+                        <img src={sectionTwoImgs[2]} alt='Flag' className='flagResize'></img>
+                        <img src={sectionTwoImgs[3]} alt='Flag' className='flagResize'></img>
+                        <h4 className="vertical-timeline-element-title TimelineTxt">{sectionTwoTexts[3]}</h4>
                     </VerticalTimeline.VerticalTimelineElement>
                     <VerticalTimeline.VerticalTimelineElement>
-                        <img src={sectionTwoImgs[4]} alt='Flag' class='flagResize'></img>
-                        <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[4]}</h4>
+                        <img src={sectionTwoImgs[4]} alt='Flag' className='flagResize'></img>
+                        <h4 className="vertical-timeline-element-title TimelineTxt">{sectionTwoTexts[4]}</h4>
                     </VerticalTimeline.VerticalTimelineElement>
                 </VerticalTimeline.VerticalTimeline>
                 </div>
             </div>
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{ start: 39, end: 40 }}>
-            <div class="flex-container">
-                <div class="flex-child">
-                    <Text type={'Normal'} text={sectionTwoTexts[5]} background='WhiteBg' alignment='Mid Center'/>
+        <ParallaxLayer sticky={{ start: 39.5, end: 41 }}>
+            <div className="flex-container staggered-container">
+                <div className="flex-child staggered-item text-item">
+                    <Text type={'Normal'} text={sectionTwoTexts[5]} background='WhiteBg' alignment='LeftMid Center'/>
                 </div>
-                <div class="flex-child">
-                <VerticalTimeline.VerticalTimeline layout={'1-column-left'}>
-                    <VerticalTimeline.VerticalTimelineElement>
-                        <img src={sectionTwoImgs[5]} alt='Flag' class='flagResize'></img>
-                        <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[6]}</h4>
-                    </VerticalTimeline.VerticalTimelineElement>
-                    <VerticalTimeline.VerticalTimelineElement>
-                        <img src={sectionTwoImgs[6]} alt='Flag' class='flagResize'></img>
-                        <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[7]}</h4>
-                    </VerticalTimeline.VerticalTimelineElement>
-                    <VerticalTimeline.VerticalTimelineElement>
-                        <img src={sectionTwoImgs[7]} alt='Flag' class='flagResize'></img>
-                        <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[8]}</h4>
-                    </VerticalTimeline.VerticalTimelineElement>
-                    <VerticalTimeline.VerticalTimelineElement>
-                        <img src={sectionTwoImgs[8]} alt='Flag' class='flagResize'></img>
-                        <h4 className="vertical-timeline-element-title" class='TimelineTxt'>{sectionTwoTexts[9]}</h4>
-                    </VerticalTimeline.VerticalTimelineElement>
-                </VerticalTimeline.VerticalTimeline>
+                <div className="flex-child staggered-item timeline-item">
+                    <VerticalTimeline.VerticalTimeline layout={'1-column-left'}>
+                        <VerticalTimeline.VerticalTimelineElement>
+                            <img src={sectionTwoImgs[5]} alt='Flag' className='flagResize'></img>
+                            <h4 className="vertical-timeline-element-title TimelineTxt">{sectionTwoTexts[6]}</h4>
+                        </VerticalTimeline.VerticalTimelineElement>
+                        <VerticalTimeline.VerticalTimelineElement>
+                            <img src={sectionTwoImgs[6]} alt='Flag' className='flagResize'></img>
+                            <h4 className="vertical-timeline-element-title TimelineTxt">{sectionTwoTexts[7]}</h4>
+                        </VerticalTimeline.VerticalTimelineElement>
+                        <VerticalTimeline.VerticalTimelineElement>
+                            <img src={sectionTwoImgs[7]} alt='Flag' className='flagResize'></img>
+                            <h4 className="vertical-timeline-element-title TimelineTxt">{sectionTwoTexts[8]}</h4>
+                        </VerticalTimeline.VerticalTimelineElement>
+                        <VerticalTimeline.VerticalTimelineElement>
+                            <img src={sectionTwoImgs[8]} alt='Flag' className='flagResize'></img>
+                            <h4 className="vertical-timeline-element-title TimelineTxt">{sectionTwoTexts[9]}</h4>
+                        </VerticalTimeline.VerticalTimelineElement>
+                    </VerticalTimeline.VerticalTimeline>
                 </div>
             </div>
         </ParallaxLayer>
+
 
         <ParallaxLayer sticky={{start: 42, end: 46}}>
             <Video videoPath={sectionTwoVids[0]} alignment='VideoCenter'/>
@@ -447,13 +452,14 @@ return (
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{start: 77, end: 79}}>
-            <Text type={'Normal'} text={sectionTwoTexts[26]} background='WhiteBg' alignment='Mid TopCenter1'/>
+            <Img img={sectionTwoImgs[9]} alignment='ImgLeftCenter'/>
+            <Img img={sectionTwoImgs[10]} alignment='ImgCenterTop'/>
+            <Img img={sectionTwoImgs[11]} alignment='ImgRightCenter'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 78, end: 79}}>
-            <Img img={sectionTwoImgs[9]} alignment='ImgCenterMid'/>
-            <Img img={sectionTwoImgs[10]} alignment='ImgLeftBottom'/>
-            <Img img={sectionTwoImgs[11]} alignment='ImgRightBottom'/>
+            <Text type={'Normal'} text={sectionTwoTexts[26]} background='WhiteBg' alignment='Mid CenterBottom'/>
         </ParallaxLayer>
+
 
         {/* ---------------------- BANNER TWO --------------------*/}
 
@@ -519,15 +525,15 @@ return (
         <ParallaxLayer sticky={{start: 99, end: 100}}>
             <Text type={'Normal'} text={sectionThreeTexts[4]} background='WhiteBg' alignment='Left Center'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{start: 99, end: 100}}>
-            <Img img={sectionThreeImgs[0]} alignment='ImgRightTopCenter'/>
+        <ParallaxLayer sticky={{start: 99, end: 102}}>
+            <Img img={sectionThreeImgs[0]} alignment='ImgRightCenter'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 101, end: 102}}>
             <Text type={'Normal'} text={sectionThreeTexts[5]} background='WhiteBg' alignment='Left Center'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 101, end: 102}}>
             <FadeInSection>
-                <Img img={sectionThreeImgs[1]} alignment='ImgRightTopCenter'/>
+                <Img img={sectionThreeImgs[1]} alignment='ImgRightCenter'/>
             </FadeInSection>
         </ParallaxLayer>
 
