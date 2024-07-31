@@ -316,11 +316,11 @@ return (
 
         {/* Put a Timeline thingy here */}
     
-        <ParallaxLayer sticky={{start: 37, end: 38.5}}>
-            <Text type={'Normal'} text={sectionTwoTexts[0]} background='WhiteBg' alignment='Center Left'  />
-        </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 37.5, end: 38.5 }}>
+        <ParallaxLayer sticky={{ start: 37, end: 38 }}>
             <div class="flex-container">
+                <div class="flex-child">
+                    <Text type={'Normal'} text={sectionTwoTexts[0]} background='WhiteBg' alignment='Mid'/>
+                </div>
                 <div class="flex-child">
                 <VerticalTimeline.VerticalTimeline layout={'1-column-left'}>
                     <VerticalTimeline.VerticalTimelineElement>
@@ -345,12 +345,11 @@ return (
             </div>
         </ParallaxLayer>
 
-
-        <ParallaxLayer sticky={{start: 39.5, end: 41}}>
-            <Text type={'Normal'} text={sectionTwoTexts[1]} background='WhiteBg' alignment='Center Left' />
-        </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 40, end: 41 }}>
+        <ParallaxLayer sticky={{ start: 39, end: 40 }}>
             <div class="flex-container">
+                <div class="flex-child">
+                    <Text type={'Normal'} text={sectionTwoTexts[5]} background='WhiteBg' alignment='Mid'/>
+                </div>
                 <div class="flex-child">
                 <VerticalTimeline.VerticalTimeline layout={'1-column-left'}>
                     <VerticalTimeline.VerticalTimelineElement>
@@ -373,6 +372,9 @@ return (
                 </div>
             </div>
         </ParallaxLayer>
+
+
+
         <ParallaxLayer sticky={{start: 42, end: 46}}>
             <Video videoPath={sectionTwoVids[0]} alignment='VideoCenter'/>
             <Text type={'Normal'} text={source[6]} alignment='Source'  />
