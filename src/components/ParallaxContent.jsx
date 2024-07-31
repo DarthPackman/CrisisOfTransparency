@@ -530,7 +530,7 @@ return (
                 <Img img={sectionThreeImgs[0]} alignment='ImgRightTopCenter'/>
             </FadeInSection>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{start: 99, end: 102}}>
+        <ParallaxLayer sticky={{start: 100, end: 102}}>
             <Text type={'Normal'} text={sectionThreeTexts[5]} background='WhiteBg' alignment='Left Center'/>
         </ParallaxLayer>
 
