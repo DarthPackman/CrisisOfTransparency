@@ -1,3 +1,5 @@
+// ------------ CONTENT ---------------------
+
 const source = [
     `Source: The 6ix`,
     `Source: ParlVu`,
@@ -183,7 +185,7 @@ const creditsText = [
     'Thanks: Prof. Kevin O’Neil'
 ];
 
-
+// ------------ IMPORTS ---------------------
 
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Video from '../layouts/Video';
@@ -197,15 +199,13 @@ import FadeInSection from '../layouts/FadeIn';
 import * as VerticalTimeline from 'react-vertical-timeline-component';
 import '../layouts/Timeline.css';
 import 'react-vertical-timeline-component/style.min.css';
-//import pkg from 'react-vertical-timeline-component';
-//const {VerticalTimelineElement} = pkg;
-import InViewVideo from "./InViewVideo.jsx";
-import AnimatedLineGraph from "../layouts/LineGraph";
 
 export default function ParallaxContent() {
 return (
     <Parallax pages={123} id={'CONTAINER'}>
-        {/* SECTION ONE */}
+
+        {/* ------------------ SECTION ONE ------------------------- */}
+
         <ParallaxLayer
             offset={0}
             factor={34}
@@ -288,7 +288,8 @@ return (
             <Text type={'Normal'} text={sectionOneTexts[12]} background='WhiteBg' alignment='Mid Center'/>
         </ParallaxLayer>
 
-        {/* BANNER ONE */}
+        {/* --------------  BANNER ONE ----------------*/}
+
         <ParallaxLayer
             offset={34}
             factor={3}
@@ -305,7 +306,7 @@ return (
             <Typewriter text={bannerOneTexts[1]} alignment='centerBottom' container={'oldTimey'}/>
         </ParallaxLayer>
 
-        {/* SECTION TWO */}
+        {/* ------------------ SECTION TWO ------------------*/}
 
         <ParallaxLayer
             offset={37}
@@ -313,8 +314,6 @@ return (
             speed={0}
             style={{backgroundImage: 'linear-gradient(#0a0149,#daeafa)'}}
         />
-
-        {/* Put a Timeline thingy here */}
     
         <ParallaxLayer sticky={{ start: 37, end: 38 }}>
             <div class="flex-container">
@@ -372,8 +371,6 @@ return (
                 </div>
             </div>
         </ParallaxLayer>
-
-
 
         <ParallaxLayer sticky={{start: 42, end: 46}}>
             <Video videoPath={sectionTwoVids[0]} alignment='VideoCenter'/>
@@ -458,7 +455,8 @@ return (
             <Img img={sectionTwoImgs[11]} alignment='ImgRightBottom'/>
         </ParallaxLayer>
 
-        {/* BANNER TWO */}
+        {/* ---------------------- BANNER TWO --------------------*/}
+
         <ParallaxLayer
             offset={80}
             factor={3}
@@ -475,7 +473,8 @@ return (
             <Text type={'Normal'} text={bannerTwoTexts[1]} background='WhiteBg' alignment='Mid Center'/>
         </ParallaxLayer>
 
-        {/* SECTION THREE */}
+        {/* ------------------ SECTION THREE ------------- */}
+
         <ParallaxLayer
             offset={83}
             factor={20}
@@ -532,7 +531,8 @@ return (
             </FadeInSection>
         </ParallaxLayer>
 
-        {/* BANNER THREE */}
+        {/* --------------------- BANNER THREE ------------------ */}
+
         <ParallaxLayer
             offset={103}
             factor={10}
@@ -558,7 +558,8 @@ return (
             <Text type={'Normal'} text={bannerThreeTexts[4]} background='WhiteBg' alignment='Mid Center'/>
         </ParallaxLayer>
 
-        {/* SECTION FOUR */}
+        {/* ----------------- SECTION FOUR ---------------------------- */}
+        
         <ParallaxLayer
             offset={113}
             factor={9}
@@ -590,7 +591,8 @@ return (
             <Text type={'Normal'} text={sectionFourTexts[7]} background='WhiteBg' alignment='Right Floor'/>
         </ParallaxLayer>
 
-        {/* CREDITS */}
+        {/* -------------------- CREDITS -------------------------- */}
+
         <ParallaxLayer sticky={{start: 122, end: 123}}>
             <GroupText type={'Normal'} text={creditsText} background='WhiteBg' alignment='Mid Center'/>
         </ParallaxLayer>
