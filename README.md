@@ -103,7 +103,7 @@ Contains layout components for the project.
 src/pages/
 Contains page components that define the routes of the application.
 
-Configuration Files
+## Configuration Files
 .gitignore: Specifies files to be ignored by Git.
 
 astro.config.mjs: Astro configuration file.
