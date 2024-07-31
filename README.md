@@ -1,5 +1,3 @@
-# Astro Starter Kit: Minimal
-
 ```text
 /
 ├── .astro/
