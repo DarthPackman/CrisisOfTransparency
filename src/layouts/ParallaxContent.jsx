@@ -1,5 +1,4 @@
 // ------------ CONTENT ---------------------
-
 const source = [
     `Source: The 6ix`,
     `Source: ParlVu`,
@@ -200,6 +199,7 @@ import BarGraph from '../components/BarGraph';
 import LineGraph from '../components/LineGraph';
 import Typewriter from '../components/Typewriter';
 import FadeInSection from '../components/FadeIn';
+import LinkedText from "../components/LinkedText.jsx";
 
 export default function ParallaxContent() {
 return (
@@ -606,6 +606,10 @@ return (
 
         <ParallaxLayer sticky={{start: 122, end: 123}}>
             <GroupText type={'Normal'} text={creditsText} background='WhiteBg' alignment='Mid Center'/>
+        </ParallaxLayer>
+
+        <ParallaxLayer sticky={{start: 123, end: 124}}>
+            <LinkedText type={'Normal'} background='WhiteBg' alignment='Mid Bottom' link1={'http://darthpackman.com/'} link2={'https://carlosavilatech.com/'} link3={'https://kabicomputer.netlify.app/'} />
         </ParallaxLayer>
     </Parallax>
 );
