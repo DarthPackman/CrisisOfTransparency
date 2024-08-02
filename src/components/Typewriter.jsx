@@ -6,7 +6,7 @@ const Typewriter = ({ text, text2, alignment, container }) => {
             padding: '1vh',
             position: 'absolute',
             left: '50%',
-            bottom: '15%',
+            bottom: '5%',
             transform: 'translateX(-50%)',
             textAlign: 'center',
         },
