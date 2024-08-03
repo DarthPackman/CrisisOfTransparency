@@ -35,11 +35,17 @@
     .ImgCenter {
         width: 85%;
     }
+    .ImgCenter2 {
+        width: 60%;
+    }
 }
 
 @media (max-width: 480px) {
     .ImgCenter {
         width: 85%;
+    }
+    .ImgCenter2 {
+        width: 60%;
     }
 }
 
