@@ -1,87 +1,33 @@
 .ImgContainer {
     box-sizing: border-box;
     display: flex;
-    margin: 1vh;
-    align-items: center;
+    flex: 100%;
+}
+
+.ImgContainer2 {
+    box-sizing: border-box;
+    display: flex;
     flex-wrap: wrap;
+    flex: 100%;
+    justify-content: space-around;
+    height: 100%;
 }
 
-.ImgCenterTop {
-    position: absolute;
-    left: 50%;
-    top: 10%;
-    transform: translate(-50%, 0);
+
+.ImgCenter {
+    margin: auto;
+    vertical-align: middle;
+    align-self: center;
+    width: 40%;
+    margin-top: 5rem;
 }
 
-.ImgCenterMid {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.ImgCenter2 {
+    margin: auto;
+    vertical-align: middle;
+    align-self: center;
+    width: 30%;
+    margin-top: 1rem;
 }
 
-.ImgCenterBottom {
-    position: absolute;
-    left: 50%;
-    bottom: 10%;
-    transform: translate(-50%, 0);
-}
 
-.ImgLeftTop {
-    position: absolute;
-    left: 1vh;
-    top: 1vh;
-}
-
-.ImgLeftCenter {
-    position: absolute;
-    left: 1vh;
-    top: 50%;
-    transform: translate(0, -50%);
-}
-
-.ImgLeftBottom {
-    position: absolute;
-    left: 1vh;
-    bottom: 1vh;
-}
-
-.ImgRightTop {
-    position: absolute;
-    right: 1vh;
-    top: 1vh;
-}
-
-.ImgRightCenter {
-    position: absolute;
-    right: 1vh;
-    top: 50%;
-    transform: translate(0, -50%);
-}
-
-.ImgRightBottom {
-    position: absolute;
-    right: 1vh;
-    bottom: 1vh;
-}
-
-.ImgCenterTop2 {
-    position: absolute;
-    left: 50%;
-    top: 25%;
-    transform: translate(-50%, 0);
-}
-
-.ImgCenterMid2 {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.ImgCenterBottom2 {
-    position: absolute;
-    left: 50%;
-    bottom: 25%;
-    transform: translate(-50%, 0);
-}

@@ -33,7 +33,7 @@ const Typewriter = ({ text, text2, alignment, container, className }) => {
             margin: '0',
             fontSize: '2.25rem',
             color: 'white',
-            'text-shadow': '2px 2px 4px rgba(0, 0, 0, 0.5)'
+            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'
         },
     };
 

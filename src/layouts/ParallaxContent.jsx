@@ -199,6 +199,7 @@ import BarGraph from '../components/BarGraph';
 import LineGraph from '../components/LineGraph';
 import Typewriter from '../components/Typewriter';
 import FadeInSection from '../components/FadeIn';
+import Banner from '../components/Banner';
 import LinkedText from "../components/LinkedText.jsx";
 
 export default function ParallaxContent() {
@@ -266,7 +267,7 @@ return (
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{start: 23, end: 25}}>
-            <Img img={sectionOneImgs[0]} alignment='ImgCenterTop'/>
+            <Img img={sectionOneImgs[0]} alignment="ImgCenter" />
             <Text type={'Source'} text={source[3]} alignment='Source'  />
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 24, end: 25}}>
@@ -285,8 +286,10 @@ return (
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{start: 31, end: 33}}>
-            <Img img={sectionOneImgs[1]} alignment='ImgCenterTop'/>
-            <Img img={sectionOneImgs[2]} alignment='ImgCenterBottom'/>
+            <div class='ImgContainer2'>
+                <Img img={sectionOneImgs[1]} alignment='ImgCenter'/>
+                <Img img={sectionOneImgs[2]} alignment='ImgCenter'/>
+            </div>
             <Text type={'Source'} text={source[5]} alignment='Source'  />
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 32, end: 33}}>
@@ -302,7 +305,7 @@ return (
             style={{backgroundImage: 'linear-gradient(#dae0e8,#0a0149)'}}
         />
         <ParallaxLayer sticky={{start: 34, end: 36}}>
-            <Img img={bannerOneImg[0]} alignment='ImgCenterMid'/>
+            <Banner img={bannerOneImg[0]}/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 34, end: 36}}>
             <Text type={'Title'} text={bannerOneTexts[0]} alignment='Mid Center'/>
@@ -457,12 +460,14 @@ return (
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{start: 77, end: 79}}>
-            <Img img={sectionTwoImgs[11]} alignment='ImgCenterTop2'/>
-            <Img img={sectionTwoImgs[10]} alignment='ImgCenterMid2'/>
-            <Img img={sectionTwoImgs[9]} alignment='ImgCenterBottom2'/>
+            <div classsName='ImgContainer2'>
+                <Img img={sectionTwoImgs[11]} alignment='ImgCenter'/>
+                <Img img={sectionTwoImgs[10]} alignment='ImgCenter'/>
+                <Img img={sectionTwoImgs[9]} alignment='ImgCenter'/>
+            </div>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 78, end: 79}}>
-            <Text type={'Normal'} text={sectionTwoTexts[26]} background='WhiteBg' alignment='Mid TopCenter'/>
+            <Text type={'Normal'} text={sectionTwoTexts[26]} background='WhiteBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
 
 
@@ -475,7 +480,7 @@ return (
             style={{backgroundImage: 'linear-gradient(#daeafa,#96a2ba)'}}
         />
         <ParallaxLayer sticky={{start: 80, end: 82}}>
-            <Img img={bannerTwoImg[0]} alignment='ImgCenterMid'/>
+            <Banner img={bannerTwoImg[0]}/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 81, end: 82}}>
             <Text type={'Normal'} text={bannerTwoTexts[0]} background='WhiteBg' alignment='Mid TopCenter2'/>
@@ -527,19 +532,19 @@ return (
             <Text type={'Bold'} text={sectionThreeTexts[1]} background='WhiteBg' alignment='Mid Center'/>
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{start: 99, end: 100}}>
-            <Text type={'Normal'} text={sectionThreeTexts[4]} background='WhiteBg' alignment='Left Center'/>
-        </ParallaxLayer>
         <ParallaxLayer sticky={{start: 99, end: 102}}>
-            <Img img={sectionThreeImgs[0]} alignment='ImgRightCenter'/>
+            <Img img={sectionThreeImgs[0]} alignment='ImgCenter2'/>
         </ParallaxLayer>
-        <ParallaxLayer sticky={{start: 101, end: 102}}>
-            <Text type={'Normal'} text={sectionThreeTexts[5]} background='WhiteBg' alignment='Left Center'/>
+        <ParallaxLayer sticky={{start: 99, end: 100}}>
+            <Text type={'Normal'} text={sectionThreeTexts[4]} background='WhiteBg' alignment='Mid Floor'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 101, end: 102}}>
             <FadeInSection threshold={1.0}>
-                <Img img={sectionThreeImgs[1]} alignment='ImgRightCenter'/>
+                <Img img={sectionThreeImgs[1]} alignment='ImgCenter2'/>
             </FadeInSection>
+        </ParallaxLayer>
+        <ParallaxLayer sticky={{start: 101, end: 102}}>
+            <Text type={'Normal'} text={sectionThreeTexts[5]} background='WhiteBg' alignment='Mid Floor'/>
         </ParallaxLayer>
 
         {/* --------------------- BANNER THREE ------------------ */}
@@ -550,8 +555,8 @@ return (
             speed={0}
             style={{backgroundImage: 'linear-gradient(#dddce2,#adc473)'}}
         />
-        <ParallaxLayer sticky={{start: 103, end: 112}}>
-            <Img img={bannerThreeImg[0]} alignment='ImgCenterMid'/>
+        <ParallaxLayer sticky={{start: 103, end: 111.5}}>
+            <Banner img={bannerThreeImg[0]}/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 103, end: 104}}>
             <Text type={'Normal'} text={bannerThreeTexts[0]} background='WhiteBg' alignment='Mid Center'/>
