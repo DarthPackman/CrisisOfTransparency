@@ -1,15 +1,15 @@
 ---
-const { title} = Astro.props;
+const { title } = Astro.props;
 import "./MainLayout.css";
 import '@fontsource/aldrich';
 ---
 
 <!doctype html>
-<html lang="en" >
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=1280">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
 		<meta name="generator" content={Astro.generator} />
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -17,8 +17,9 @@ import '@fontsource/aldrich';
 	</head>
 	<body>
 		<div id="responsiveDiv">
-		<slot></slot>
+			<slot></slot>
 		</div>
 	</body>
 </html>
+
 
