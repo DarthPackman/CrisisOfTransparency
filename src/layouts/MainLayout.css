@@ -15,15 +15,12 @@ html
 	padding: 0;
 }
 
-/* MainLayout.css */
-
-/* Base styles */
-body {
-    font-family: 'Aldrich', sans-serif;
-    margin: 0;
-    padding: 0;
+body{
+	color: #ffffff;
+	padding: 0;
+	font-size: large;
+	margin: 0;
 }
-
 #responsiveDiv {
     display: flex;
     flex-direction: column;
