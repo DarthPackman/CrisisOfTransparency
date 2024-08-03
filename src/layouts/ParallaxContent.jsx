@@ -308,7 +308,7 @@ return (
             <Text type={'Title'} text={bannerOneTexts[0]} alignment='Mid Center'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 35, end: 36}}>
-            <Typewriter text={bannerOneTexts[1]} text2={''} alignment='centerBottom'/>
+            <Typewriter text={bannerOneTexts[1]} text2={''} alignment='centerBottom' classsName='SubTitle'/>
         </ParallaxLayer>
 
         {/* ------------------ SECTION TWO ------------------*/}
@@ -433,7 +433,7 @@ return (
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 66, end: 67}}>
             <Text type={'Normal'} text={sectionTwoTexts[20]} background='WhiteBg' alignment='Mid TopCenter'/>
-            <Typewriter text={sectionTwoTexts[21]} text2={sectionTwoTexts[27]} alignment='centerBottom' container={'oldTimey'}/>
+            <Typewriter text={sectionTwoTexts[21]} text2={sectionTwoTexts[27]} alignment='centerBottom' container={'oldTimey'} />
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 68, end: 69}}>
             <Text type={'Normal'} text={sectionTwoTexts[22]} background='WhiteBg' alignment='Mid Bottom'/>

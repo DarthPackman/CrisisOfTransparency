@@ -1,6 +1,6 @@
 import { TypeAnimation } from 'react-type-animation';
 
-const Typewriter = ({ text, text2, alignment, container }) => {
+const Typewriter = ({ text, text2, alignment, container, className }) => {
     const alignmentStyles = {
         centerBottom: {
             padding: '1vh',
@@ -23,12 +23,12 @@ const Typewriter = ({ text, text2, alignment, container }) => {
             display: 'inline-block', 
             fontFamily: 'Courier, monospace', 
             fontWeight: 'bold', 
+            fontSize: '1.75rem',
             fontStyle: 'normal', 
-            fontsize: '3vh',
             color: 'black'
         },
         default: {
-            fontSize: '4vh',
+            fontSize: '2.25rem',
             color: 'white',
             'text-shadow': '2px 2px 4px rgba(0, 0, 0, 0.5)'
         },
@@ -38,7 +38,7 @@ const Typewriter = ({ text, text2, alignment, container }) => {
     const selectedContainerStyle = containerStyles[container] || containerStyles.default;
 
     return (
-        <div style={{ ...selectedAlignmentStyle, ...selectedContainerStyle }}>
+        <div style={{ ...selectedAlignmentStyle, ...selectedContainerStyle, className }}>
             <TypeAnimation
                 sequence={[
                     text,
