@@ -138,3 +138,16 @@
     top: 3%;
     z-index: 3;
 }
+
+/* Media Queries for Responsive Font Sizes */
+@media (max-width: 768px) {
+    .RedBg {
+        font-size: 1.2rem; /* Adjust this value as needed */
+    }
+}
+
+@media (max-width: 480px) {
+    .RedBg {
+        font-size: 1rem; /* Adjust this value as needed */
+    }
+}

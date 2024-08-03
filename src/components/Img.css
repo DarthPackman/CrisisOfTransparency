@@ -30,4 +30,17 @@
     margin-top: 1rem;
 }
 
+/* Media Queries for Responsive Font Sizes */
+@media (max-width: 768px) {
+    .ImgCenter {
+        width: 85%;
+    }
+}
+
+@media (max-width: 480px) {
+    .ImgCenter {
+        width: 85%;
+    }
+}
+
 

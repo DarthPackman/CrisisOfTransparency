@@ -41,3 +41,22 @@
     align-self: center;
     width: 40%;
 }
+
+/* Media Queries for Responsive Font Sizes */
+@media (max-width: 768px) {
+    .VideoTop {
+        width: 85%;
+    }
+    .VideoBottom {
+        width: 85%;
+    }
+}
+
+@media (max-width: 480px) {
+    .VideoTop {
+        width: 85%;
+    }
+    .VideoBottom {
+        width: 85%;
+    }
+}
