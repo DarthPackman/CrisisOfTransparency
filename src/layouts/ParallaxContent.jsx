@@ -500,7 +500,7 @@ return (
             <Text type={'Normal'} text={sectionThreeTexts[0]} background='WhiteBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
 
-        <ParallaxLayer style={{backgroundImage: 'linear-gradient(#FFFFFF,#FFFFFF)'}} sticky={{start: 87, end: 88}}>
+        <ParallaxLayer style={{backgroundImage: 'linear-gradient(#FFFFFF,#FFFFFF)'}} sticky={{start: 87.1, end: 87.9}}>
             <GroupText type={'Italic'} text={sectionThreeTextPlatform2006} background='BlueBg' alignment='Mid Center'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 89, end: 90}}>
@@ -520,7 +520,7 @@ return (
 
         <ParallaxLayer
             style={{backgroundImage: 'linear-gradient(#FFFFFF,#FFFFFF)'}}
-            sticky={{start: 95, end: 96}}>
+            sticky={{start: 95.1, end: 95.9}}>
             <GroupText type={'Normal'} text={sectionThreeTextPlatform2015} background='RedBg' alignment='Mid Center'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 97, end: 98}}>
