@@ -1,37 +1,73 @@
+:root {
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(
+        45deg,
+        rgb(var(--accent)),
+        rgb(var(--accent-light)) 30%,
+        white 60%
+    );
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px; /* Base font size for better scaling */
+    color: #ffffff; /* White text color */
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Aldrich'; /* Applying the custom font */
+}
+
 /* General Text Styles */
 .Title {
-    font-size: 4vh;
-    font-weight: bolder;
+    font-size: 2.5rem; /* Responsive base font size */
+    font-weight: bold;
 }
 
 .Bold {
-    font-size: 2.5vh;
-    font-style: bold;
+    font-size: 1.75rem;
 }
 
-.Source {
-    font-size: 2.5vh;
+.Source, .Source2 {
+    font-size: 1.5rem;
     font-style: italic;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: absolute; 
+    z-index: 3;
 }
 
 .Normal {
-    font-size: 2.25vh;
+    font-size: 1.25rem;
+}
+
+.Source {
+    left: 1%;
+    bottom: 0%;
+}
+
+.Source2 {
+    left: 1%;
+    top: 3%;
 }
 
 /* Layout Containers */
 .TextContainer {
     box-sizing: border-box;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     padding: 1%;
-    padding-left: 3%; 
+    padding-left: 3%;
     padding-right: 3%;
     margin: 1%;
-    margin-left: 3%; 
-    margin-right: 3%; 
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .TextDisplay {
@@ -39,35 +75,31 @@
     height: 100%;
     box-sizing: border-box;
     display: grid;
-    place-items: center; /* Center content */
+    place-items: center;
     margin: 1vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
 }
 
 /* Background Colors */
-.WhiteBg {
-    color: black;
+.WhiteBg, .RedBg, .BlueBg {
+    color: white;
     margin: 1vh;
+    border: 1px solid black;
+    box-shadow: 5px 5px 0px black;
+}
+
+.WhiteBg {
     background-color: rgb(255, 255, 255);
-    border: 1px solid black; 
-    box-shadow: 5px 5px 0px black; 
+    color: black; /* Correct text color for readability */
 }
 
 .RedBg {
-    color: white;
-    margin: 1vh;
     background-color: rgb(255, 75, 75);
-    border: 1px solid black; 
-    box-shadow: 5px 5px 0px black; 
 }
 
 .BlueBg {
-    color: white;
-    margin: 1vh;
     background-color: rgb(75, 75, 255);
-    border: 1px solid black; 
-    box-shadow: 5px 5px 0px black; 
 }
 
 /* Grid Positioning */
@@ -85,6 +117,10 @@
 
 .Right {
     grid-column: 4/8;
+}
+
+.Top, .Center, .TopCenter1, .TopCenter2, .Bottom, .Floor, .CenterBottom {
+    grid-row: auto; /* Default to auto for better flexibility */
 }
 
 .Top {
@@ -119,18 +155,29 @@
     grid-row: 1/4;
 }
 
-/* Absolute Positioning */
+@media (max-width: 768px) {
+    /* Adjustments for tablets and below */
+    .TextDisplay {
+        grid-template-columns: repeat(3, 1fr); /* Less columns for smaller screens */
+        grid-template-rows: auto; /* More flexible row sizing */
+    }
 
-.Source {
-    position: absolute;
-    left: 1%;
-    bottom: 0%;
-    z-index: 3;
+    .Title, .Bold, .Source, .Normal {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
 }
 
-.Source2 {
-    position: absolute;
-    left: 1%;
-    top: 3%;
-    z-index: 3;
+@media (max-width: 480px) {
+    /* Adjustments for mobile phones */
+    .TextContainer {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    .TextDisplay {
+        grid-template-columns: 1fr; /* Single column layout on very small screens */
+    }
+
+    .Title, .Bold, .Source, .Normal {
+        font-size: 1.25rem; /* Even smaller font size for mobile */
+    }
 }

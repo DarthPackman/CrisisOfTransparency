@@ -17,22 +17,7 @@ html
 
 /* Base styles */
 body {
-    font-size: 16px; /* Adjust base font size */
 	color: #ffffff;
 	padding: 0;
 	margin: 0;
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-    body {
-        font-size: 18px;
-    }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-    body {
-        font-size: 20px;
-    }
 }
