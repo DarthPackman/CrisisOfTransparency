@@ -297,7 +297,7 @@ return (
 
         <ParallaxLayer
             offset={34}
-            factor={3.1}
+            factor={3.01}
             speed={0}
             style={{backgroundImage: 'linear-gradient(#dae0e8,#0a0149)'}}
         />
@@ -546,7 +546,7 @@ return (
 
         <ParallaxLayer
             offset={103}
-            factor={10.25}
+            factor={10.01}
             speed={0}
             style={{backgroundImage: 'linear-gradient(#dddce2,#adc473)'}}
         />
