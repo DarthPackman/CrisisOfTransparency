@@ -24,12 +24,14 @@ const Typewriter = ({ text, text2, alignment, container, className }) => {
             display: 'inline-block', 
             fontFamily: 'Courier, monospace', 
             fontWeight: 'bold', 
+            fontSize: '1.6rem',
             fontStyle: 'normal', 
             color: 'black'
         },
         default: {
             padding: '0',
             margin: '0',
+            fontSize: '2.25rem',
             color: 'white',
             textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'
         },

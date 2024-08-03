@@ -610,7 +610,7 @@ return (
         {/* -------------------- CREDITS -------------------------- */}
 
         <ParallaxLayer sticky={{start: 122, end: 123}}>
-            <GroupText type={'Normal'} text={creditsText} background='WhiteBg' alignment='Mid TopCenter1'/>
+            <GroupText type={'Normal'} text={creditsText} background='WhiteBg' alignment='Mid TopCenter'/>
         </ParallaxLayer>
 
         <ParallaxLayer sticky={{start: 123, end: 124}}>
