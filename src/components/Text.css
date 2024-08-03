@@ -8,18 +8,18 @@
 }
 
 .Bold {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-style: bold;
 }
 
 .Source {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-style: italic;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .Normal {
-    font-size: 1.35rem;
+    font-size: 1.5rem;
 }
 
 /* Layout Containers */
