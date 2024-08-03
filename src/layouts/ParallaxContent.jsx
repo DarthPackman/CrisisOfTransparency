@@ -551,11 +551,11 @@ return (
 
         <ParallaxLayer
             offset={102.9}
-            factor={10.01}
+            factor={10.25}
             speed={0}
             style={{backgroundImage: 'linear-gradient(#dddce2,#adc473)'}}
         />
-        <ParallaxLayer sticky={{start: 103.15, end: 111.5}}>
+        <ParallaxLayer sticky={{start: 103.15, end: 112}}>
             <Banner img={bannerThreeImg[0]}/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 103, end: 104}}>
