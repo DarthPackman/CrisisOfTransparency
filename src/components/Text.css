@@ -148,10 +148,16 @@
     .RedBg {
         font-size: 1rem; /* Adjust this value as needed */
     }
+    .Leftest {
+        grid-column: 1;
+    }  
 }
 
 @media (max-width: 480px) {
     .RedBg {
         font-size: 1rem; /* Adjust this value as needed */
+    }
+    .Leftest {
+        grid-column: 1;
     }
 }
