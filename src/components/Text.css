@@ -145,8 +145,8 @@
 
 /* Media Queries for Responsive Font Sizes */
 @media (max-width: 768px) {
-    .RedBg {
-        font-size: 1rem; /* Adjust this value as needed */
+    .BlueBg {
+        font-size: 0.5rem; /* Adjust this value as needed */
     }
     .Leftest {
         grid-column: 1;
@@ -154,8 +154,8 @@
 }
 
 @media (max-width: 480px) {
-    .RedBg {
-        font-size: 1rem; /* Adjust this value as needed */
+    .BlueBg {
+        font-size: 0.5rem; /* Adjust this value as needed */
     }
     .Leftest {
         grid-column: 1;
