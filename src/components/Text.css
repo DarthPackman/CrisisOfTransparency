@@ -145,18 +145,12 @@
 
 /* Media Queries for Responsive Font Sizes */
 @media (max-width: 768px) {
-    .BlueBg {
-        font-size: 0.5rem; /* Adjust this value as needed */
-    }
     .Leftest {
         grid-column: 1;
     }  
 }
 
 @media (max-width: 480px) {
-    .BlueBg {
-        font-size: 0.5rem; /* Adjust this value as needed */
-    }
     .Leftest {
         grid-column: 1;
     }
