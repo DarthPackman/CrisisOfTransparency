@@ -3,7 +3,8 @@ import { TypeAnimation } from 'react-type-animation';
 const Typewriter = ({ text, text2, alignment, container, className }) => {
     const alignmentStyles = {
         centerBottom: {
-            padding: '1vh',
+            padding: '0',
+            margin: '0',
             position: 'absolute',
             left: '50%',
             bottom: '5%',
@@ -18,16 +19,18 @@ const Typewriter = ({ text, text2, alignment, container, className }) => {
         oldTimey: {
             backgroundColor: 'white',
             border: '2px solid black',
-            padding: '1vh',
-            borderRadius: '8px',
+            padding: '1rem',
+            borderRadius: '1rem',
             display: 'inline-block', 
             fontFamily: 'Courier, monospace', 
             fontWeight: 'bold', 
-            fontSize: '1.75rem',
+            fontSize: '1.6rem',
             fontStyle: 'normal', 
             color: 'black'
         },
         default: {
+            padding: '0',
+            margin: '0',
             fontSize: '2.25rem',
             color: 'white',
             'text-shadow': '2px 2px 4px rgba(0, 0, 0, 0.5)'
