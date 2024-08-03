@@ -583,25 +583,25 @@ return (
             style={{backgroundImage: 'linear-gradient(#adc473,#ffffff)'}}
         />
         <ParallaxLayer sticky={{start: 113, end: 121}}>
-            <Text type={'Normal'} text={sectionFourTexts[0]} background='WhiteBg' alignment='Left Top'/>
+            <Text type={'Normal'} text={sectionFourTexts[0]} background='WhiteBg' alignment='Leftest Top'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 114, end: 121}}>
             <Text type={'Normal'} text={sectionFourTexts[1]} background='WhiteBg' alignment='Right Top'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 115, end: 121}}>
-            <Text type={'Normal'} text={sectionFourTexts[2]} background='WhiteBg' alignment='Left TopCenter2'/>
+            <Text type={'Normal'} text={sectionFourTexts[2]} background='WhiteBg' alignment='Leftest TopCenter2'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 116, end: 121}}>
             <Text type={'Normal'} text={sectionFourTexts[3]} background='WhiteBg' alignment='Right TopCenter2'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 117, end: 121}}>
-            <Text type={'Normal'} text={sectionFourTexts[4]} background='WhiteBg' alignment='Left CenterBottom'/>
+            <Text type={'Normal'} text={sectionFourTexts[4]} background='WhiteBg' alignment='Leftest CenterBottom'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 118, end: 121}}>
             <Text type={'Normal'} text={sectionFourTexts[5]} background='WhiteBg' alignment='Right CenterBottom'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 119, end: 121}}>
-            <Text type={'Normal'} text={sectionFourTexts[6]} background='WhiteBg' alignment='Left Floor'/>
+            <Text type={'Normal'} text={sectionFourTexts[6]} background='WhiteBg' alignment='Leftest Floor'/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 120, end: 121}}>
             <Text type={'Normal'} text={sectionFourTexts[7]} background='WhiteBg' alignment='Right Floor'/>

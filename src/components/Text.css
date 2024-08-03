@@ -78,6 +78,10 @@
     grid-column: 1/5;
 }
 
+.Leftest {
+    grid-column: 1;
+}
+
 .LeftMid {
     grid-column: 2/6;
 }
