@@ -274,7 +274,7 @@ return (
             <Text type={'Normal'} text={sectionOneTexts[9]} background='WhiteBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{start: 26, end: 30}}>
+        <ParallaxLayer sticky={{start: 26, end: 29.5}}>
             <Video videoPath={sectionOneVids[2]} alignment='VideoCenter'/>
             <Text type={'Source'} text={source[4]} alignment='Source'  />
         </ParallaxLayer>
@@ -421,7 +421,7 @@ return (
             <Text type={'Normal'} text={sectionTwoTexts[16]} background='WhiteBg' alignment='Mid Bottom'/>
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{start: 59, end: 73}}>
+        <ParallaxLayer sticky={{start: 59, end: 72.5}}>
             <Video videoPath={sectionTwoVids[3]} alignment='VideoCenter'/>
             <Text type={'Source'} text={source[8]} alignment='Source'  />
         </ParallaxLayer>
@@ -555,7 +555,7 @@ return (
             speed={0}
             style={{backgroundImage: 'linear-gradient(#dddce2,#adc473)'}}
         />
-        <ParallaxLayer sticky={{start: 103, end: 111.5}}>
+        <ParallaxLayer sticky={{start: 103.25, end: 111.5}}>
             <Banner img={bannerThreeImg[0]}/>
         </ParallaxLayer>
         <ParallaxLayer sticky={{start: 103, end: 104}}>
