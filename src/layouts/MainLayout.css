@@ -21,3 +21,8 @@ body{
 	font-size: large;
 	margin: 0;
 }
+
+#responsiveDiv {
+    width: 1280px; 
+    margin: 0 auto; 
+}
