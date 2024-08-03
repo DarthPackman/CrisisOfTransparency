@@ -1,26 +1,35 @@
-:root {
-	--accent: 136, 58, 234;
-	--accent-light: 224, 204, 250;
-	--accent-dark: 49, 10, 101;
-	--accent-gradient: linear-gradient(
-		45deg,
-		rgb(var(--accent)),
-		rgb(var(--accent-light)) 30%,
-		white 60%
-	);
-}
-html
-{
-	margin: 0;
-	padding: 0;
+/* Comprehensive CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-	color: #ffffff;
-	padding: 0;
-	font-size: large;
-	margin: 0;
+:root {
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(
+        45deg,
+        rgb(var(--accent)),
+        rgb(var(--accent-light)) 30%,
+        white 60%
+    );
 }
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #ffffff;
+    padding: 0;
+    font-size: large;
+    margin: 0;
+    font-family: 'Aldrich', sans-serif; /* Assuming you want to apply the Aldrich font throughout the body */
+}
+
 #responsiveDiv {
     display: flex;
     flex-direction: column;
