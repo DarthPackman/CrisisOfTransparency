@@ -145,6 +145,7 @@
 
 /* Media Queries for Responsive Font Sizes */
 @media (max-width: 768px) {
+
     .Leftest {
         grid-column: 1;
     }  
