@@ -38,7 +38,7 @@ const sectionOneVids = [
 ]
 
 const sectionOneVidsAlt = [
-    `/vids/Vid1G.gif`,
+    `/vids/Vid1.mp4`,
     `/vids/Vid2.mp4`,
     `/vids/Vid3.mp4`
 ]
