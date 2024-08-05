@@ -3,7 +3,7 @@ import './Img.css';
 const Img = ({ img, alignment }) => {
     return (
         <div className={`ImgContainer`}>
-                <img src={img} alt="Image" className={`img ${alignment}`}/>
+                <img src={img} className={`img ${alignment}`}/>
         </div>
     );
 };
